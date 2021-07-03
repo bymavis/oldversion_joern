@@ -1,0 +1,457 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	48211	File	/home/niexu/project/python/preprocess/test/000/240/386/CWE416_Use_After_Free__return_freed_ptr_04.c								
+ANR	48212	Function	helperBad	18:0:546:1166							
+ANR	48213	FunctionDef	helperBad (char * aString)		48212	0					
+ANR	48214	CompoundStatement		19:0:587:1166	48212	0					
+ANR	48215	IdentifierDeclStatement	size_t i = 0 ;	20:4:594:606	48212	0	True				
+ANR	48216	IdentifierDecl	i = 0		48212	0					
+ANR	48217	IdentifierDeclType	size_t		48212	0					
+ANR	48218	Identifier	i		48212	1					
+ANR	48219	AssignmentExpression	i = 0		48212	2		=			
+ANR	48220	Identifier	i		48212	0					
+ANR	48221	PrimaryExpression	0		48212	1					
+ANR	48222	IdentifierDeclStatement	size_t j ;	21:4:613:621	48212	1	True				
+ANR	48223	IdentifierDecl	j		48212	0					
+ANR	48224	IdentifierDeclType	size_t		48212	0					
+ANR	48225	Identifier	j		48212	1					
+ANR	48226	IdentifierDeclStatement	char * reversedString = NULL ;	22:4:628:656	48212	2	True				
+ANR	48227	IdentifierDecl	* reversedString = NULL		48212	0					
+ANR	48228	IdentifierDeclType	char *		48212	0					
+ANR	48229	Identifier	reversedString		48212	1					
+ANR	48230	AssignmentExpression	* reversedString = NULL		48212	2		=			
+ANR	48231	Identifier	NULL		48212	0					
+ANR	48232	Identifier	NULL		48212	1					
+ANR	48233	IfStatement	if ( aString != NULL )		48212	3					
+ANR	48234	Condition	aString != NULL	23:8:667:681	48212	0	True				
+ANR	48235	EqualityExpression	aString != NULL		48212	0		!=			
+ANR	48236	Identifier	aString		48212	0					
+ANR	48237	Identifier	NULL		48212	1					
+ANR	48238	CompoundStatement		6:4:101:101	48212	1					
+ANR	48239	ExpressionStatement	i = strlen ( aString )	25:8:700:719	48212	0	True				
+ANR	48240	AssignmentExpression	i = strlen ( aString )		48212	0		=			
+ANR	48241	Identifier	i		48212	0					
+ANR	48242	CallExpression	strlen ( aString )		48212	1					
+ANR	48243	Callee	strlen		48212	0					
+ANR	48244	Identifier	strlen		48212	0					
+ANR	48245	ArgumentList	aString		48212	1					
+ANR	48246	Argument	aString		48212	0					
+ANR	48247	Identifier	aString		48212	0					
+ANR	48248	ExpressionStatement	reversedString = ( char * ) malloc ( i + 1 )	26:8:730:767	48212	1	True				
+ANR	48249	AssignmentExpression	reversedString = ( char * ) malloc ( i + 1 )		48212	0		=			
+ANR	48250	Identifier	reversedString		48212	0					
+ANR	48251	CastExpression	( char * ) malloc ( i + 1 )		48212	1					
+ANR	48252	CastTarget	char *		48212	0					
+ANR	48253	CallExpression	malloc ( i + 1 )		48212	1					
+ANR	48254	Callee	malloc		48212	0					
+ANR	48255	Identifier	malloc		48212	0					
+ANR	48256	ArgumentList	i + 1		48212	1					
+ANR	48257	Argument	i + 1		48212	0					
+ANR	48258	AdditiveExpression	i + 1		48212	0		+			
+ANR	48259	Identifier	i		48212	0					
+ANR	48260	PrimaryExpression	1		48212	1					
+ANR	48261	IfStatement	if ( reversedString == NULL )		48212	2					
+ANR	48262	Condition	reversedString == NULL	27:12:782:803	48212	0	True				
+ANR	48263	EqualityExpression	reversedString == NULL		48212	0		==			
+ANR	48264	Identifier	reversedString		48212	0					
+ANR	48265	Identifier	NULL		48212	1					
+ANR	48266	CompoundStatement		9:36:218:218	48212	1					
+ANR	48267	ExpressionStatement	exit ( - 1 )	27:37:807:815	48212	0	True				
+ANR	48268	CallExpression	exit ( - 1 )		48212	0					
+ANR	48269	Callee	exit		48212	0					
+ANR	48270	Identifier	exit		48212	0					
+ANR	48271	ArgumentList	- 1		48212	1					
+ANR	48272	Argument	- 1		48212	0					
+ANR	48273	UnaryOperationExpression	- 1		48212	0					
+ANR	48274	UnaryOperator	-		48212	0					
+ANR	48275	PrimaryExpression	1		48212	1					
+ANR	48276	ForStatement	for ( j = 0 ; j < i ; j ++ )		48212	3					
+ANR	48277	ForInit	j = 0 ;	28:13:831:836	48212	0	True				
+ANR	48278	AssignmentExpression	j = 0		48212	0		=			
+ANR	48279	Identifier	j		48212	0					
+ANR	48280	PrimaryExpression	0		48212	1					
+ANR	48281	Condition	j < i	28:20:838:842	48212	1	True				
+ANR	48282	RelationalExpression	j < i		48212	0		<			
+ANR	48283	Identifier	j		48212	0					
+ANR	48284	Identifier	i		48212	1					
+ANR	48285	PostIncDecOperationExpression	j ++	28:27:845:847	48212	2	True				
+ANR	48286	Identifier	j		48212	0					
+ANR	48287	IncDec	++		48212	1					
+ANR	48288	CompoundStatement		11:8:271:271	48212	3					
+ANR	48289	ExpressionStatement	reversedString [ j ] = aString [ i - j - 1 ]	30:12:874:908	48212	0	True				
+ANR	48290	AssignmentExpression	reversedString [ j ] = aString [ i - j - 1 ]		48212	0		=			
+ANR	48291	ArrayIndexing	reversedString [ j ]		48212	0					
+ANR	48292	Identifier	reversedString		48212	0					
+ANR	48293	Identifier	j		48212	1					
+ANR	48294	ArrayIndexing	aString [ i - j - 1 ]		48212	1					
+ANR	48295	Identifier	aString		48212	0					
+ANR	48296	AdditiveExpression	i - j - 1		48212	1		-			
+ANR	48297	Identifier	i		48212	0					
+ANR	48298	AdditiveExpression	j - 1		48212	1		-			
+ANR	48299	Identifier	j		48212	0					
+ANR	48300	PrimaryExpression	1		48212	1					
+ANR	48301	ExpressionStatement	reversedString [ i ] = '\\0'	32:8:930:954	48212	4	True				
+ANR	48302	AssignmentExpression	reversedString [ i ] = '\\0'		48212	0		=			
+ANR	48303	ArrayIndexing	reversedString [ i ]		48212	0					
+ANR	48304	Identifier	reversedString		48212	0					
+ANR	48305	Identifier	i		48212	1					
+ANR	48306	PrimaryExpression	'\\0'		48212	1					
+ANR	48307	ExpressionStatement	free ( reversedString )	34:8:1058:1078	48212	5	True				
+ANR	48308	CallExpression	free ( reversedString )		48212	0					
+ANR	48309	Callee	free		48212	0					
+ANR	48310	Identifier	free		48212	0					
+ANR	48311	ArgumentList	reversedString		48212	1					
+ANR	48312	Argument	reversedString		48212	0					
+ANR	48313	Identifier	reversedString		48212	0					
+ANR	48314	ReturnStatement	return reversedString ;	35:8:1089:1110	48212	6	True				
+ANR	48315	Identifier	reversedString		48212	0					
+ANR	48316	ElseStatement	else		48212	0					
+ANR	48317	CompoundStatement		20:4:546:546	48212	0					
+ANR	48318	ReturnStatement	return NULL ;	39:8:1145:1156	48212	0	True				
+ANR	48319	Identifier	NULL		48212	0					
+ANR	48320	ReturnType	static char *		48212	1					
+ANR	48321	Identifier	helperBad		48212	2					
+ANR	48322	ParameterList	char * aString		48212	3					
+ANR	48323	Parameter	char * aString	18:24:570:583	48212	0	True				
+ANR	48324	ParameterType	char *		48212	0					
+ANR	48325	Identifier	aString		48212	1					
+ANR	48326	CFGEntryNode	ENTRY		48212		True				
+ANR	48327	CFGExitNode	EXIT		48212		True				
+ANR	48328	Symbol	strlen		48212						
+ANR	48329	Symbol	malloc		48212						
+ANR	48330	Symbol	NULL		48212						
+ANR	48331	Symbol	* i		48212						
+ANR	48332	Symbol	aString		48212						
+ANR	48333	Symbol	* j		48212						
+ANR	48334	Symbol	reversedString		48212						
+ANR	48335	Symbol	i		48212						
+ANR	48336	Symbol	* reversedString		48212						
+ANR	48337	Symbol	j		48212						
+ANR	48338	Symbol	* aString		48212						
+ANR	48339	Function	helperGood	43:0:1171:1728							
+ANR	48340	FunctionDef	helperGood (char * aString)		48339	0					
+ANR	48341	CompoundStatement		44:0:1213:1728	48339	0					
+ANR	48342	IdentifierDeclStatement	size_t i = 0 ;	45:4:1220:1232	48339	0	True				
+ANR	48343	IdentifierDecl	i = 0		48339	0					
+ANR	48344	IdentifierDeclType	size_t		48339	0					
+ANR	48345	Identifier	i		48339	1					
+ANR	48346	AssignmentExpression	i = 0		48339	2		=			
+ANR	48347	Identifier	i		48339	0					
+ANR	48348	PrimaryExpression	0		48339	1					
+ANR	48349	IdentifierDeclStatement	size_t j ;	46:4:1239:1247	48339	1	True				
+ANR	48350	IdentifierDecl	j		48339	0					
+ANR	48351	IdentifierDeclType	size_t		48339	0					
+ANR	48352	Identifier	j		48339	1					
+ANR	48353	IdentifierDeclStatement	char * reversedString = NULL ;	47:4:1254:1282	48339	2	True				
+ANR	48354	IdentifierDecl	* reversedString = NULL		48339	0					
+ANR	48355	IdentifierDeclType	char *		48339	0					
+ANR	48356	Identifier	reversedString		48339	1					
+ANR	48357	AssignmentExpression	* reversedString = NULL		48339	2		=			
+ANR	48358	Identifier	NULL		48339	0					
+ANR	48359	Identifier	NULL		48339	1					
+ANR	48360	IfStatement	if ( aString != NULL )		48339	3					
+ANR	48361	Condition	aString != NULL	48:8:1293:1307	48339	0	True				
+ANR	48362	EqualityExpression	aString != NULL		48339	0		!=			
+ANR	48363	Identifier	aString		48339	0					
+ANR	48364	Identifier	NULL		48339	1					
+ANR	48365	CompoundStatement		6:4:101:101	48339	1					
+ANR	48366	ExpressionStatement	i = strlen ( aString )	50:8:1326:1345	48339	0	True				
+ANR	48367	AssignmentExpression	i = strlen ( aString )		48339	0		=			
+ANR	48368	Identifier	i		48339	0					
+ANR	48369	CallExpression	strlen ( aString )		48339	1					
+ANR	48370	Callee	strlen		48339	0					
+ANR	48371	Identifier	strlen		48339	0					
+ANR	48372	ArgumentList	aString		48339	1					
+ANR	48373	Argument	aString		48339	0					
+ANR	48374	Identifier	aString		48339	0					
+ANR	48375	ExpressionStatement	reversedString = ( char * ) malloc ( i + 1 )	51:8:1356:1393	48339	1	True				
+ANR	48376	AssignmentExpression	reversedString = ( char * ) malloc ( i + 1 )		48339	0		=			
+ANR	48377	Identifier	reversedString		48339	0					
+ANR	48378	CastExpression	( char * ) malloc ( i + 1 )		48339	1					
+ANR	48379	CastTarget	char *		48339	0					
+ANR	48380	CallExpression	malloc ( i + 1 )		48339	1					
+ANR	48381	Callee	malloc		48339	0					
+ANR	48382	Identifier	malloc		48339	0					
+ANR	48383	ArgumentList	i + 1		48339	1					
+ANR	48384	Argument	i + 1		48339	0					
+ANR	48385	AdditiveExpression	i + 1		48339	0		+			
+ANR	48386	Identifier	i		48339	0					
+ANR	48387	PrimaryExpression	1		48339	1					
+ANR	48388	IfStatement	if ( reversedString == NULL )		48339	2					
+ANR	48389	Condition	reversedString == NULL	52:12:1408:1429	48339	0	True				
+ANR	48390	EqualityExpression	reversedString == NULL		48339	0		==			
+ANR	48391	Identifier	reversedString		48339	0					
+ANR	48392	Identifier	NULL		48339	1					
+ANR	48393	CompoundStatement		9:36:218:218	48339	1					
+ANR	48394	ExpressionStatement	exit ( - 1 )	52:37:1433:1441	48339	0	True				
+ANR	48395	CallExpression	exit ( - 1 )		48339	0					
+ANR	48396	Callee	exit		48339	0					
+ANR	48397	Identifier	exit		48339	0					
+ANR	48398	ArgumentList	- 1		48339	1					
+ANR	48399	Argument	- 1		48339	0					
+ANR	48400	UnaryOperationExpression	- 1		48339	0					
+ANR	48401	UnaryOperator	-		48339	0					
+ANR	48402	PrimaryExpression	1		48339	1					
+ANR	48403	ForStatement	for ( j = 0 ; j < i ; j ++ )		48339	3					
+ANR	48404	ForInit	j = 0 ;	53:13:1457:1462	48339	0	True				
+ANR	48405	AssignmentExpression	j = 0		48339	0		=			
+ANR	48406	Identifier	j		48339	0					
+ANR	48407	PrimaryExpression	0		48339	1					
+ANR	48408	Condition	j < i	53:20:1464:1468	48339	1	True				
+ANR	48409	RelationalExpression	j < i		48339	0		<			
+ANR	48410	Identifier	j		48339	0					
+ANR	48411	Identifier	i		48339	1					
+ANR	48412	PostIncDecOperationExpression	j ++	53:27:1471:1473	48339	2	True				
+ANR	48413	Identifier	j		48339	0					
+ANR	48414	IncDec	++		48339	1					
+ANR	48415	CompoundStatement		11:8:271:271	48339	3					
+ANR	48416	ExpressionStatement	reversedString [ j ] = aString [ i - j - 1 ]	55:12:1500:1534	48339	0	True				
+ANR	48417	AssignmentExpression	reversedString [ j ] = aString [ i - j - 1 ]		48339	0		=			
+ANR	48418	ArrayIndexing	reversedString [ j ]		48339	0					
+ANR	48419	Identifier	reversedString		48339	0					
+ANR	48420	Identifier	j		48339	1					
+ANR	48421	ArrayIndexing	aString [ i - j - 1 ]		48339	1					
+ANR	48422	Identifier	aString		48339	0					
+ANR	48423	AdditiveExpression	i - j - 1		48339	1		-			
+ANR	48424	Identifier	i		48339	0					
+ANR	48425	AdditiveExpression	j - 1		48339	1		-			
+ANR	48426	Identifier	j		48339	0					
+ANR	48427	PrimaryExpression	1		48339	1					
+ANR	48428	ExpressionStatement	reversedString [ i ] = '\\0'	57:8:1556:1580	48339	4	True				
+ANR	48429	AssignmentExpression	reversedString [ i ] = '\\0'		48339	0		=			
+ANR	48430	ArrayIndexing	reversedString [ i ]		48339	0					
+ANR	48431	Identifier	reversedString		48339	0					
+ANR	48432	Identifier	i		48339	1					
+ANR	48433	PrimaryExpression	'\\0'		48339	1					
+ANR	48434	ReturnStatement	return reversedString ;	59:8:1651:1672	48339	5	True				
+ANR	48435	Identifier	reversedString		48339	0					
+ANR	48436	ElseStatement	else		48339	0					
+ANR	48437	CompoundStatement		19:4:482:482	48339	0					
+ANR	48438	ReturnStatement	return NULL ;	63:8:1707:1718	48339	0	True				
+ANR	48439	Identifier	NULL		48339	0					
+ANR	48440	ReturnType	static char *		48339	1					
+ANR	48441	Identifier	helperGood		48339	2					
+ANR	48442	ParameterList	char * aString		48339	3					
+ANR	48443	Parameter	char * aString	43:25:1196:1209	48339	0	True				
+ANR	48444	ParameterType	char *		48339	0					
+ANR	48445	Identifier	aString		48339	1					
+ANR	48446	CFGEntryNode	ENTRY		48339		True				
+ANR	48447	CFGExitNode	EXIT		48339		True				
+ANR	48448	Symbol	strlen		48339						
+ANR	48449	Symbol	malloc		48339						
+ANR	48450	Symbol	NULL		48339						
+ANR	48451	Symbol	* i		48339						
+ANR	48452	Symbol	aString		48339						
+ANR	48453	Symbol	* j		48339						
+ANR	48454	Symbol	reversedString		48339						
+ANR	48455	Symbol	i		48339						
+ANR	48456	Symbol	* reversedString		48339						
+ANR	48457	Symbol	j		48339						
+ANR	48458	Symbol	* aString		48339						
+ANR	48459	DeclStmt									
+ANR	48460	Decl							const int	const int	STATIC_CONST_TRUE
+ANR	48461	DeclStmt									
+ANR	48462	Decl							const int	const int	STATIC_CONST_FALSE
+ANR	48463	Function	CWE416_Use_After_Free__return_freed_ptr_04_bad	75:0:2023:2554							
+ANR	48464	FunctionDef	CWE416_Use_After_Free__return_freed_ptr_04_bad ()		48463	0					
+ANR	48465	CompoundStatement		76:0:2078:2554	48463	0					
+ANR	48466	IfStatement	if ( STATIC_CONST_TRUE )		48463	0					
+ANR	48467	Condition	STATIC_CONST_TRUE	77:7:2088:2104	48463	0	True				
+ANR	48468	Identifier	STATIC_CONST_TRUE		48463	0					
+ANR	48469	CompoundStatement		3:4:33:33	48463	1					
+ANR	48470	CompoundStatement		6:12:107:151	48463	0					
+ANR	48471	IdentifierDeclStatement	"char * reversedString = helperBad ( ""BadSink"" ) ;"	81:12:2186:2230	48463	0	True				
+ANR	48472	IdentifierDecl	"* reversedString = helperBad ( ""BadSink"" )"		48463	0					
+ANR	48473	IdentifierDeclType	char *		48463	0					
+ANR	48474	Identifier	reversedString		48463	1					
+ANR	48475	AssignmentExpression	"* reversedString = helperBad ( ""BadSink"" )"		48463	2		=			
+ANR	48476	Identifier	reversedString		48463	0					
+ANR	48477	CallExpression	"helperBad ( ""BadSink"" )"		48463	1					
+ANR	48478	Callee	helperBad		48463	0					
+ANR	48479	Identifier	helperBad		48463	0					
+ANR	48480	ArgumentList	"""BadSink"""		48463	1					
+ANR	48481	Argument	"""BadSink"""		48463	0					
+ANR	48482	PrimaryExpression	"""BadSink"""		48463	0					
+ANR	48483	ExpressionStatement	printLine ( reversedString )	82:12:2245:2270	48463	1	True				
+ANR	48484	CallExpression	printLine ( reversedString )		48463	0					
+ANR	48485	Callee	printLine		48463	0					
+ANR	48486	Identifier	printLine		48463	0					
+ANR	48487	ArgumentList	reversedString		48463	1					
+ANR	48488	Argument	reversedString		48463	0					
+ANR	48489	Identifier	reversedString		48463	0					
+ANR	48490	ReturnType	void		48463	1					
+ANR	48491	Identifier	CWE416_Use_After_Free__return_freed_ptr_04_bad		48463	2					
+ANR	48492	ParameterList			48463	3					
+ANR	48493	CFGEntryNode	ENTRY		48463		True				
+ANR	48494	CFGExitNode	EXIT		48463		True				
+ANR	48495	Symbol	helperBad		48463						
+ANR	48496	Symbol	reversedString		48463						
+ANR	48497	Symbol	STATIC_CONST_TRUE		48463						
+ANR	48498	Function	good1	96:0:2679:3324							
+ANR	48499	FunctionDef	good1 ()		48498	0					
+ANR	48500	CompoundStatement		97:0:2700:3324	48498	0					
+ANR	48501	IfStatement	if ( STATIC_CONST_FALSE )		48498	0					
+ANR	48502	Condition	STATIC_CONST_FALSE	98:7:2710:2727	48498	0	True				
+ANR	48503	Identifier	STATIC_CONST_FALSE		48498	0					
+ANR	48504	CompoundStatement		3:4:34:34	48498	1					
+ANR	48505	ExpressionStatement	"printLine ( ""Benign, fixed string"" )"	101:8:2822:2855	48498	0	True				
+ANR	48506	CallExpression	"printLine ( ""Benign, fixed string"" )"		48498	0					
+ANR	48507	Callee	printLine		48498	0					
+ANR	48508	Identifier	printLine		48498	0					
+ANR	48509	ArgumentList	"""Benign, fixed string"""		48498	1					
+ANR	48510	Argument	"""Benign, fixed string"""		48498	0					
+ANR	48511	PrimaryExpression	"""Benign, fixed string"""		48498	0					
+ANR	48512	ElseStatement	else		48498	0					
+ANR	48513	CompoundStatement		8:4:178:178	48498	0					
+ANR	48514	CompoundStatement		11:12:253:299	48498	0					
+ANR	48515	IdentifierDeclStatement	"char * reversedString = helperGood ( ""GoodSink"" ) ;"	107:12:2954:3000	48498	0	True				
+ANR	48516	IdentifierDecl	"* reversedString = helperGood ( ""GoodSink"" )"		48498	0					
+ANR	48517	IdentifierDeclType	char *		48498	0					
+ANR	48518	Identifier	reversedString		48498	1					
+ANR	48519	AssignmentExpression	"* reversedString = helperGood ( ""GoodSink"" )"		48498	2		=			
+ANR	48520	Identifier	reversedString		48498	0					
+ANR	48521	CallExpression	"helperGood ( ""GoodSink"" )"		48498	1					
+ANR	48522	Callee	helperGood		48498	0					
+ANR	48523	Identifier	helperGood		48498	0					
+ANR	48524	ArgumentList	"""GoodSink"""		48498	1					
+ANR	48525	Argument	"""GoodSink"""		48498	0					
+ANR	48526	PrimaryExpression	"""GoodSink"""		48498	0					
+ANR	48527	ExpressionStatement	printLine ( reversedString )	108:12:3015:3040	48498	1	True				
+ANR	48528	CallExpression	printLine ( reversedString )		48498	0					
+ANR	48529	Callee	printLine		48498	0					
+ANR	48530	Identifier	printLine		48498	0					
+ANR	48531	ArgumentList	reversedString		48498	1					
+ANR	48532	Argument	reversedString		48498	0					
+ANR	48533	Identifier	reversedString		48498	0					
+ANR	48534	ReturnType	static void		48498	1					
+ANR	48535	Identifier	good1		48498	2					
+ANR	48536	ParameterList			48498	3					
+ANR	48537	CFGEntryNode	ENTRY		48498		True				
+ANR	48538	CFGExitNode	EXIT		48498		True				
+ANR	48539	Symbol	STATIC_CONST_FALSE		48498						
+ANR	48540	Symbol	reversedString		48498						
+ANR	48541	Symbol	helperGood		48498						
+ANR	48542	Function	good2	118:0:3384:3884							
+ANR	48543	FunctionDef	good2 ()		48542	0					
+ANR	48544	CompoundStatement		119:0:3405:3884	48542	0					
+ANR	48545	IfStatement	if ( STATIC_CONST_TRUE )		48542	0					
+ANR	48546	Condition	STATIC_CONST_TRUE	120:7:3415:3431	48542	0	True				
+ANR	48547	Identifier	STATIC_CONST_TRUE		48542	0					
+ANR	48548	CompoundStatement		3:4:33:33	48542	1					
+ANR	48549	CompoundStatement		6:12:108:154	48542	0					
+ANR	48550	IdentifierDeclStatement	"char * reversedString = helperGood ( ""GoodSink"" ) ;"	124:12:3514:3560	48542	0	True				
+ANR	48551	IdentifierDecl	"* reversedString = helperGood ( ""GoodSink"" )"		48542	0					
+ANR	48552	IdentifierDeclType	char *		48542	0					
+ANR	48553	Identifier	reversedString		48542	1					
+ANR	48554	AssignmentExpression	"* reversedString = helperGood ( ""GoodSink"" )"		48542	2		=			
+ANR	48555	Identifier	reversedString		48542	0					
+ANR	48556	CallExpression	"helperGood ( ""GoodSink"" )"		48542	1					
+ANR	48557	Callee	helperGood		48542	0					
+ANR	48558	Identifier	helperGood		48542	0					
+ANR	48559	ArgumentList	"""GoodSink"""		48542	1					
+ANR	48560	Argument	"""GoodSink"""		48542	0					
+ANR	48561	PrimaryExpression	"""GoodSink"""		48542	0					
+ANR	48562	ExpressionStatement	printLine ( reversedString )	125:12:3575:3600	48542	1	True				
+ANR	48563	CallExpression	printLine ( reversedString )		48542	0					
+ANR	48564	Callee	printLine		48542	0					
+ANR	48565	Identifier	printLine		48542	0					
+ANR	48566	ArgumentList	reversedString		48542	1					
+ANR	48567	Argument	reversedString		48542	0					
+ANR	48568	Identifier	reversedString		48542	0					
+ANR	48569	ReturnType	static void		48542	1					
+ANR	48570	Identifier	good2		48542	2					
+ANR	48571	ParameterList			48542	3					
+ANR	48572	CFGEntryNode	ENTRY		48542		True				
+ANR	48573	CFGExitNode	EXIT		48542		True				
+ANR	48574	Symbol	reversedString		48542						
+ANR	48575	Symbol	helperGood		48542						
+ANR	48576	Symbol	STATIC_CONST_TRUE		48542						
+ANR	48577	Function	CWE416_Use_After_Free__return_freed_ptr_04_good	134:0:3889:3976							
+ANR	48578	FunctionDef	CWE416_Use_After_Free__return_freed_ptr_04_good ()		48577	0					
+ANR	48579	CompoundStatement		135:0:3945:3976	48577	0					
+ANR	48580	ExpressionStatement	good1 ( )	136:4:3952:3959	48577	0	True				
+ANR	48581	CallExpression	good1 ( )		48577	0					
+ANR	48582	Callee	good1		48577	0					
+ANR	48583	Identifier	good1		48577	0					
+ANR	48584	ArgumentList			48577	1					
+ANR	48585	ExpressionStatement	good2 ( )	137:4:3966:3973	48577	1	True				
+ANR	48586	CallExpression	good2 ( )		48577	0					
+ANR	48587	Callee	good2		48577	0					
+ANR	48588	Identifier	good2		48577	0					
+ANR	48589	ArgumentList			48577	1					
+ANR	48590	ReturnType	void		48577	1					
+ANR	48591	Identifier	CWE416_Use_After_Free__return_freed_ptr_04_good		48577	2					
+ANR	48592	ParameterList			48577	3					
+ANR	48593	CFGEntryNode	ENTRY		48577		True				
+ANR	48594	CFGExitNode	EXIT		48577		True				
+ANR	48595	Function	main	149:0:4323:4772							
+ANR	48596	FunctionDef	"main (int argc , char * argv [ ])"		48595	0					
+ANR	48597	CompoundStatement		150:0:4358:4772	48595	0					
+ANR	48598	ExpressionStatement	srand ( ( unsigned ) time ( NULL ) )	152:4:4392:4421	48595	0	True				
+ANR	48599	CallExpression	srand ( ( unsigned ) time ( NULL ) )		48595	0					
+ANR	48600	Callee	srand		48595	0					
+ANR	48601	Identifier	srand		48595	0					
+ANR	48602	ArgumentList	( unsigned ) time ( NULL )		48595	1					
+ANR	48603	Argument	( unsigned ) time ( NULL )		48595	0					
+ANR	48604	CastExpression	( unsigned ) time ( NULL )		48595	0					
+ANR	48605	CastTarget	unsigned		48595	0					
+ANR	48606	CallExpression	time ( NULL )		48595	1					
+ANR	48607	Callee	time		48595	0					
+ANR	48608	Identifier	time		48595	0					
+ANR	48609	ArgumentList	NULL		48595	1					
+ANR	48610	Argument	NULL		48595	0					
+ANR	48611	Identifier	NULL		48595	0					
+ANR	48612	ExpressionStatement	"printLine ( ""Calling good()..."" )"	154:4:4446:4476	48595	1	True				
+ANR	48613	CallExpression	"printLine ( ""Calling good()..."" )"		48595	0					
+ANR	48614	Callee	printLine		48595	0					
+ANR	48615	Identifier	printLine		48595	0					
+ANR	48616	ArgumentList	"""Calling good()..."""		48595	1					
+ANR	48617	Argument	"""Calling good()..."""		48595	0					
+ANR	48618	PrimaryExpression	"""Calling good()..."""		48595	0					
+ANR	48619	ExpressionStatement	CWE416_Use_After_Free__return_freed_ptr_04_good ( )	155:4:4483:4532	48595	2	True				
+ANR	48620	CallExpression	CWE416_Use_After_Free__return_freed_ptr_04_good ( )		48595	0					
+ANR	48621	Callee	CWE416_Use_After_Free__return_freed_ptr_04_good		48595	0					
+ANR	48622	Identifier	CWE416_Use_After_Free__return_freed_ptr_04_good		48595	0					
+ANR	48623	ArgumentList			48595	1					
+ANR	48624	ExpressionStatement	"printLine ( ""Finished good()"" )"	156:4:4539:4567	48595	3	True				
+ANR	48625	CallExpression	"printLine ( ""Finished good()"" )"		48595	0					
+ANR	48626	Callee	printLine		48595	0					
+ANR	48627	Identifier	printLine		48595	0					
+ANR	48628	ArgumentList	"""Finished good()"""		48595	1					
+ANR	48629	Argument	"""Finished good()"""		48595	0					
+ANR	48630	PrimaryExpression	"""Finished good()"""		48595	0					
+ANR	48631	ExpressionStatement	"printLine ( ""Calling bad()..."" )"	159:4:4614:4643	48595	4	True				
+ANR	48632	CallExpression	"printLine ( ""Calling bad()..."" )"		48595	0					
+ANR	48633	Callee	printLine		48595	0					
+ANR	48634	Identifier	printLine		48595	0					
+ANR	48635	ArgumentList	"""Calling bad()..."""		48595	1					
+ANR	48636	Argument	"""Calling bad()..."""		48595	0					
+ANR	48637	PrimaryExpression	"""Calling bad()..."""		48595	0					
+ANR	48638	ExpressionStatement	CWE416_Use_After_Free__return_freed_ptr_04_bad ( )	160:4:4650:4698	48595	5	True				
+ANR	48639	CallExpression	CWE416_Use_After_Free__return_freed_ptr_04_bad ( )		48595	0					
+ANR	48640	Callee	CWE416_Use_After_Free__return_freed_ptr_04_bad		48595	0					
+ANR	48641	Identifier	CWE416_Use_After_Free__return_freed_ptr_04_bad		48595	0					
+ANR	48642	ArgumentList			48595	1					
+ANR	48643	ExpressionStatement	"printLine ( ""Finished bad()"" )"	161:4:4705:4732	48595	6	True				
+ANR	48644	CallExpression	"printLine ( ""Finished bad()"" )"		48595	0					
+ANR	48645	Callee	printLine		48595	0					
+ANR	48646	Identifier	printLine		48595	0					
+ANR	48647	ArgumentList	"""Finished bad()"""		48595	1					
+ANR	48648	Argument	"""Finished bad()"""		48595	0					
+ANR	48649	PrimaryExpression	"""Finished bad()"""		48595	0					
+ANR	48650	ReturnStatement	return 0 ;	163:4:4761:4769	48595	7	True				
+ANR	48651	PrimaryExpression	0		48595	0					
+ANR	48652	ReturnType	int		48595	1					
+ANR	48653	Identifier	main		48595	2					
+ANR	48654	ParameterList	"int argc , char * argv [ ]"		48595	3					
+ANR	48655	Parameter	int argc	149:9:4332:4339	48595	0	True				
+ANR	48656	ParameterType	int		48595	0					
+ANR	48657	Identifier	argc		48595	1					
+ANR	48658	Parameter	char * argv [ ]	149:19:4342:4354	48595	1	True				
+ANR	48659	ParameterType	char * [ ]		48595	0					
+ANR	48660	Identifier	argv		48595	1					
+ANR	48661	CFGEntryNode	ENTRY		48595		True				
+ANR	48662	CFGExitNode	EXIT		48595		True				
+ANR	48663	Symbol	argc		48595						
+ANR	48664	Symbol	NULL		48595						
+ANR	48665	Symbol	time		48595						
+ANR	48666	Symbol	argv		48595						

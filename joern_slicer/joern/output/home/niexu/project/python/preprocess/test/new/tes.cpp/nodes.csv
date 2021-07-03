@@ -1,0 +1,1146 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	54983	File	/home/niexu/project/python/preprocess/test/new/tes.cpp								
+ANR	54984	Function	bshuf_trans_byte_elem_remainder	13:0:421:1332							
+ANR	54985	FunctionDef	"bshuf_trans_byte_elem_remainder (void * in , void * out , const size_t size , const size_t elem_size , const size_t start)"		54984	0					
+ANR	54986	CompoundStatement		14:53:554:1332	54984	0					
+ANR	54987	IdentifierDeclStatement	char * in_b = ( char * ) in ;	16:4:561:584	54984	0	True				
+ANR	54988	IdentifierDecl	* in_b = ( char * ) in		54984	0					
+ANR	54989	IdentifierDeclType	char *		54984	0					
+ANR	54990	Identifier	in_b		54984	1					
+ANR	54991	AssignmentExpression	* in_b = ( char * ) in		54984	2		=			
+ANR	54992	Identifier	in_b		54984	0					
+ANR	54993	CastExpression	( char * ) in		54984	1					
+ANR	54994	CastTarget	char *		54984	0					
+ANR	54995	Identifier	in		54984	1					
+ANR	54996	IdentifierDeclStatement	char * out_b = ( char * ) out ;	17:4:590:615	54984	1	True				
+ANR	54997	IdentifierDecl	* out_b = ( char * ) out		54984	0					
+ANR	54998	IdentifierDeclType	char *		54984	0					
+ANR	54999	Identifier	out_b		54984	1					
+ANR	55000	AssignmentExpression	* out_b = ( char * ) out		54984	2		=			
+ANR	55001	Identifier	out_b		54984	0					
+ANR	55002	CastExpression	( char * ) out		54984	1					
+ANR	55003	CastTarget	char *		54984	0					
+ANR	55004	Identifier	out		54984	1					
+ANR	55005	IdentifierDeclStatement	"size_t ii , jj , kk ;"	18:4:621:638	54984	2	True				
+ANR	55006	IdentifierDecl	ii		54984	0					
+ANR	55007	IdentifierDeclType	size_t		54984	0					
+ANR	55008	Identifier	ii		54984	1					
+ANR	55009	IdentifierDecl	jj		54984	1					
+ANR	55010	IdentifierDeclType	size_t		54984	0					
+ANR	55011	Identifier	jj		54984	1					
+ANR	55012	IdentifierDecl	kk		54984	2					
+ANR	55013	IdentifierDeclType	size_t		54984	0					
+ANR	55014	Identifier	kk		54984	1					
+ANR	55015	ExpressionStatement	CHECK_MULT_EIGHT ( start )	20:4:645:668	54984	3	True				
+ANR	55016	CallExpression	CHECK_MULT_EIGHT ( start )		54984	0					
+ANR	55017	Callee	CHECK_MULT_EIGHT		54984	0					
+ANR	55018	Identifier	CHECK_MULT_EIGHT		54984	0					
+ANR	55019	ArgumentList	start		54984	1					
+ANR	55020	Argument	start		54984	0					
+ANR	55021	Identifier	start		54984	0					
+ANR	55022	IfStatement	if ( size > start )		54984	4					
+ANR	55023	Condition	size > start	22:8:679:690	54984	0	True				
+ANR	55024	RelationalExpression	size > start		54984	0		>			
+ANR	55025	Identifier	size		54984	0					
+ANR	55026	Identifier	start		54984	1					
+ANR	55027	CompoundStatement		9:22:138:138	54984	1					
+ANR	55028	ForStatement	for ( ii = start ; ii + 7 < size ; ii += 8 )		54984	0					
+ANR	55029	ForInit	ii = start ;	25:13:811:821	54984	0	True				
+ANR	55030	AssignmentExpression	ii = start		54984	0		=			
+ANR	55031	Identifier	ii		54984	0					
+ANR	55032	Identifier	start		54984	1					
+ANR	55033	Condition	ii + 7 < size	25:25:823:835	54984	1	True				
+ANR	55034	RelationalExpression	ii + 7 < size		54984	0		<			
+ANR	55035	AdditiveExpression	ii + 7		54984	0		+			
+ANR	55036	Identifier	ii		54984	0					
+ANR	55037	PrimaryExpression	7		54984	1					
+ANR	55038	Identifier	size		54984	1					
+ANR	55039	AssignmentExpression	ii += 8	25:40:838:844	54984	2	True	+=			
+ANR	55040	Identifier	ii		54984	0					
+ANR	55041	PrimaryExpression	8		54984	1					
+ANR	55042	CompoundStatement		12:49:292:292	54984	3					
+ANR	55043	ForStatement	for ( jj = 0 ; jj < elem_size ; jj ++ )		54984	0					
+ANR	55044	ForInit	jj = 0 ;	26:17:866:872	54984	0	True				
+ANR	55045	AssignmentExpression	jj = 0		54984	0		=			
+ANR	55046	Identifier	jj		54984	0					
+ANR	55047	PrimaryExpression	0		54984	1					
+ANR	55048	Condition	jj < elem_size	26:25:874:887	54984	1	True				
+ANR	55049	RelationalExpression	jj < elem_size		54984	0		<			
+ANR	55050	Identifier	jj		54984	0					
+ANR	55051	Identifier	elem_size		54984	1					
+ANR	55052	PostIncDecOperationExpression	jj ++	26:41:890:893	54984	2	True				
+ANR	55053	Identifier	jj		54984	0					
+ANR	55054	IncDec	++		54984	1					
+ANR	55055	CompoundStatement		13:47:341:341	54984	3					
+ANR	55056	ForStatement	for ( kk = 0 ; kk < 8 ; kk ++ )		54984	0					
+ANR	55057	ForInit	kk = 0 ;	27:21:919:925	54984	0	True				
+ANR	55058	AssignmentExpression	kk = 0		54984	0		=			
+ANR	55059	Identifier	kk		54984	0					
+ANR	55060	PrimaryExpression	0		54984	1					
+ANR	55061	Condition	kk < 8	27:29:927:932	54984	1	True				
+ANR	55062	RelationalExpression	kk < 8		54984	0		<			
+ANR	55063	Identifier	kk		54984	0					
+ANR	55064	PrimaryExpression	8		54984	1					
+ANR	55065	PostIncDecOperationExpression	kk ++	27:37:935:938	54984	2	True				
+ANR	55066	Identifier	kk		54984	0					
+ANR	55067	IncDec	++		54984	1					
+ANR	55068	CompoundStatement		14:43:386:386	54984	3					
+ANR	55069	ExpressionStatement	out_b [ jj * size + ii + kk ] = in_b [ ii * elem_size + kk * elem_size + jj ]	28:20:963:1058	54984	0	True				
+ANR	55070	AssignmentExpression	out_b [ jj * size + ii + kk ] = in_b [ ii * elem_size + kk * elem_size + jj ]		54984	0		=			
+ANR	55071	ArrayIndexing	out_b [ jj * size + ii + kk ]		54984	0					
+ANR	55072	Identifier	out_b		54984	0					
+ANR	55073	AdditiveExpression	jj * size + ii + kk		54984	1		+			
+ANR	55074	MultiplicativeExpression	jj * size		54984	0		*			
+ANR	55075	Identifier	jj		54984	0					
+ANR	55076	Identifier	size		54984	1					
+ANR	55077	AdditiveExpression	ii + kk		54984	1		+			
+ANR	55078	Identifier	ii		54984	0					
+ANR	55079	Identifier	kk		54984	1					
+ANR	55080	ArrayIndexing	in_b [ ii * elem_size + kk * elem_size + jj ]		54984	1					
+ANR	55081	Identifier	in_b		54984	0					
+ANR	55082	AdditiveExpression	ii * elem_size + kk * elem_size + jj		54984	1		+			
+ANR	55083	MultiplicativeExpression	ii * elem_size		54984	0		*			
+ANR	55084	Identifier	ii		54984	0					
+ANR	55085	Identifier	elem_size		54984	1					
+ANR	55086	AdditiveExpression	kk * elem_size + jj		54984	1		+			
+ANR	55087	MultiplicativeExpression	kk * elem_size		54984	0		*			
+ANR	55088	Identifier	kk		54984	0					
+ANR	55089	Identifier	elem_size		54984	1					
+ANR	55090	Identifier	jj		54984	1					
+ANR	55091	ForStatement	for ( ii = size - size % 8 ; ii < size ; ii ++ )		54984	1					
+ANR	55092	ForInit	ii = size - size % 8 ;	33:13:1115:1135	54984	0	True				
+ANR	55093	AssignmentExpression	ii = size - size % 8		54984	0		=			
+ANR	55094	Identifier	ii		54984	0					
+ANR	55095	AdditiveExpression	size - size % 8		54984	1		-			
+ANR	55096	Identifier	size		54984	0					
+ANR	55097	MultiplicativeExpression	size % 8		54984	1		%			
+ANR	55098	Identifier	size		54984	0					
+ANR	55099	PrimaryExpression	8		54984	1					
+ANR	55100	Condition	ii < size	33:35:1137:1145	54984	1	True				
+ANR	55101	RelationalExpression	ii < size		54984	0		<			
+ANR	55102	Identifier	ii		54984	0					
+ANR	55103	Identifier	size		54984	1					
+ANR	55104	PostIncDecOperationExpression	ii ++	33:46:1148:1152	54984	2	True				
+ANR	55105	Identifier	ii		54984	0					
+ANR	55106	IncDec	++		54984	1					
+ANR	55107	CompoundStatement		20:53:600:600	54984	3					
+ANR	55108	ForStatement	for ( jj = 0 ; jj < elem_size ; jj ++ )		54984	0					
+ANR	55109	ForInit	jj = 0 ;	34:17:1174:1180	54984	0	True				
+ANR	55110	AssignmentExpression	jj = 0		54984	0		=			
+ANR	55111	Identifier	jj		54984	0					
+ANR	55112	PrimaryExpression	0		54984	1					
+ANR	55113	Condition	jj < elem_size	34:25:1182:1195	54984	1	True				
+ANR	55114	RelationalExpression	jj < elem_size		54984	0		<			
+ANR	55115	Identifier	jj		54984	0					
+ANR	55116	Identifier	elem_size		54984	1					
+ANR	55117	PostIncDecOperationExpression	jj ++	34:41:1198:1201	54984	2	True				
+ANR	55118	Identifier	jj		54984	0					
+ANR	55119	IncDec	++		54984	1					
+ANR	55120	CompoundStatement		21:47:649:649	54984	3					
+ANR	55121	ExpressionStatement	out_b [ jj * size + ii ] = in_b [ ii * elem_size + jj ]	35:16:1222:1271	54984	0	True				
+ANR	55122	AssignmentExpression	out_b [ jj * size + ii ] = in_b [ ii * elem_size + jj ]		54984	0		=			
+ANR	55123	ArrayIndexing	out_b [ jj * size + ii ]		54984	0					
+ANR	55124	Identifier	out_b		54984	0					
+ANR	55125	AdditiveExpression	jj * size + ii		54984	1		+			
+ANR	55126	MultiplicativeExpression	jj * size		54984	0		*			
+ANR	55127	Identifier	jj		54984	0					
+ANR	55128	Identifier	size		54984	1					
+ANR	55129	Identifier	ii		54984	1					
+ANR	55130	ArrayIndexing	in_b [ ii * elem_size + jj ]		54984	1					
+ANR	55131	Identifier	in_b		54984	0					
+ANR	55132	AdditiveExpression	ii * elem_size + jj		54984	1		+			
+ANR	55133	MultiplicativeExpression	ii * elem_size		54984	0		*			
+ANR	55134	Identifier	ii		54984	0					
+ANR	55135	Identifier	elem_size		54984	1					
+ANR	55136	Identifier	jj		54984	1					
+ANR	55137	ReturnStatement	return size * elem_size ;	39:4:1307:1330	54984	5	True				
+ANR	55138	MultiplicativeExpression	size * elem_size		54984	0		*			
+ANR	55139	Identifier	size		54984	0					
+ANR	55140	Identifier	elem_size		54984	1					
+ANR	55141	ReturnType	int64_t		54984	1					
+ANR	55142	Identifier	bshuf_trans_byte_elem_remainder		54984	2					
+ANR	55143	ParameterList	"void * in , void * out , const size_t size , const size_t elem_size , const size_t start"		54984	3					
+ANR	55144	Parameter	void * in	13:40:461:468	54984	0	True				
+ANR	55145	ParameterType	void *		54984	0					
+ANR	55146	Identifier	in		54984	1					
+ANR	55147	Parameter	void * out	13:50:471:479	54984	1	True				
+ANR	55148	ParameterType	void *		54984	0					
+ANR	55149	Identifier	out		54984	1					
+ANR	55150	Parameter	const size_t size	13:61:482:498	54984	2	True				
+ANR	55151	ParameterType	const size_t		54984	0					
+ANR	55152	Identifier	size		54984	1					
+ANR	55153	Parameter	const size_t elem_size	14:9:510:531	54984	3	True				
+ANR	55154	ParameterType	const size_t		54984	0					
+ANR	55155	Identifier	elem_size		54984	1					
+ANR	55156	Parameter	const size_t start	14:33:534:551	54984	4	True				
+ANR	55157	ParameterType	const size_t		54984	0					
+ANR	55158	Identifier	start		54984	1					
+ANR	55159	CFGEntryNode	ENTRY		54984		True				
+ANR	55160	CFGExitNode	EXIT		54984		True				
+ANR	55161	Symbol	jj		54984						
+ANR	55162	Symbol	ii		54984						
+ANR	55163	Symbol	kk		54984						
+ANR	55164	Symbol	* in_b		54984						
+ANR	55165	Symbol	out_b		54984						
+ANR	55166	Symbol	* elem_size		54984						
+ANR	55167	Symbol	in		54984						
+ANR	55168	Symbol	* jj		54984						
+ANR	55169	Symbol	* ii		54984						
+ANR	55170	Symbol	* kk		54984						
+ANR	55171	Symbol	start		54984						
+ANR	55172	Symbol	* out_b		54984						
+ANR	55173	Symbol	out		54984						
+ANR	55174	Symbol	* size		54984						
+ANR	55175	Symbol	size		54984						
+ANR	55176	Symbol	elem_size		54984						
+ANR	55177	Symbol	in_b		54984						
+ANR	55178	Function	bshuf_trans_byte_elem_scal	44:0:1375:1557							
+ANR	55179	FunctionDef	"bshuf_trans_byte_elem_scal (void * in , void * out , const size_t size , const size_t elem_size)"		55178	0					
+ANR	55180	CompoundStatement		45:31:1481:1557	55178	0					
+ANR	55181	ReturnStatement	"return bshuf_trans_byte_elem_remainder ( in , out , size , elem_size , 0 ) ;"	47:4:1488:1555	55178	0	True				
+ANR	55182	CallExpression	"bshuf_trans_byte_elem_remainder ( in , out , size , elem_size , 0 )"		55178	0					
+ANR	55183	Callee	bshuf_trans_byte_elem_remainder		55178	0					
+ANR	55184	Identifier	bshuf_trans_byte_elem_remainder		55178	0					
+ANR	55185	ArgumentList	in		55178	1					
+ANR	55186	Argument	in		55178	0					
+ANR	55187	Identifier	in		55178	0					
+ANR	55188	Argument	out		55178	1					
+ANR	55189	Identifier	out		55178	0					
+ANR	55190	Argument	size		55178	2					
+ANR	55191	Identifier	size		55178	0					
+ANR	55192	Argument	elem_size		55178	3					
+ANR	55193	Identifier	elem_size		55178	0					
+ANR	55194	Argument	0		55178	4					
+ANR	55195	PrimaryExpression	0		55178	0					
+ANR	55196	ReturnType	int64_t		55178	1					
+ANR	55197	Identifier	bshuf_trans_byte_elem_scal		55178	2					
+ANR	55198	ParameterList	"void * in , void * out , const size_t size , const size_t elem_size"		55178	3					
+ANR	55199	Parameter	void * in	44:35:1410:1417	55178	0	True				
+ANR	55200	ParameterType	void *		55178	0					
+ANR	55201	Identifier	in		55178	1					
+ANR	55202	Parameter	void * out	44:45:1420:1428	55178	1	True				
+ANR	55203	ParameterType	void *		55178	0					
+ANR	55204	Identifier	out		55178	1					
+ANR	55205	Parameter	const size_t size	44:56:1431:1447	55178	2	True				
+ANR	55206	ParameterType	const size_t		55178	0					
+ANR	55207	Identifier	size		55178	1					
+ANR	55208	Parameter	const size_t elem_size	45:7:1457:1478	55178	3	True				
+ANR	55209	ParameterType	const size_t		55178	0					
+ANR	55210	Identifier	elem_size		55178	1					
+ANR	55211	CFGEntryNode	ENTRY		55178		True				
+ANR	55212	CFGExitNode	EXIT		55178		True				
+ANR	55213	Symbol	bshuf_trans_byte_elem_remainder		55178						
+ANR	55214	Symbol	size		55178						
+ANR	55215	Symbol	in		55178						
+ANR	55216	Symbol	elem_size		55178						
+ANR	55217	Symbol	out		55178						
+ANR	55218	Function	bshuf_trans_bit_byte_remainder	52:0:1596:2234							
+ANR	55219	FunctionDef	"bshuf_trans_bit_byte_remainder (void * in , void * out , const size_t size , const size_t elem_size , const size_t start_byte)"		55218	0					
+ANR	55220	CompoundStatement		53:58:1733:2234	55218	0					
+ANR	55221	IdentifierDeclStatement	int64_t * in_b = in ;	55:4:1740:1758	55218	0	True				
+ANR	55222	IdentifierDecl	* in_b = in		55218	0					
+ANR	55223	IdentifierDeclType	int64_t *		55218	0					
+ANR	55224	Identifier	in_b		55218	1					
+ANR	55225	AssignmentExpression	* in_b = in		55218	2		=			
+ANR	55226	Identifier	in		55218	0					
+ANR	55227	Identifier	in		55218	1					
+ANR	55228	IdentifierDeclStatement	int8_t * out_b = out ;	56:4:1764:1783	55218	1	True				
+ANR	55229	IdentifierDecl	* out_b = out		55218	0					
+ANR	55230	IdentifierDeclType	int8_t *		55218	0					
+ANR	55231	Identifier	out_b		55218	1					
+ANR	55232	AssignmentExpression	* out_b = out		55218	2		=			
+ANR	55233	Identifier	out		55218	0					
+ANR	55234	Identifier	out		55218	1					
+ANR	55235	IdentifierDeclStatement	"int64_t x , t ;"	58:4:1790:1802	55218	2	True				
+ANR	55236	IdentifierDecl	x		55218	0					
+ANR	55237	IdentifierDeclType	int64_t		55218	0					
+ANR	55238	Identifier	x		55218	1					
+ANR	55239	IdentifierDecl	t		55218	1					
+ANR	55240	IdentifierDeclType	int64_t		55218	0					
+ANR	55241	Identifier	t		55218	1					
+ANR	55242	IdentifierDeclStatement	size_t nbyte = elem_size * size ;	60:4:1809:1840	55218	3	True				
+ANR	55243	IdentifierDecl	nbyte = elem_size * size		55218	0					
+ANR	55244	IdentifierDeclType	size_t		55218	0					
+ANR	55245	Identifier	nbyte		55218	1					
+ANR	55246	AssignmentExpression	nbyte = elem_size * size		55218	2		=			
+ANR	55247	Identifier	nbyte		55218	0					
+ANR	55248	MultiplicativeExpression	elem_size * size		55218	1		*			
+ANR	55249	Identifier	elem_size		55218	0					
+ANR	55250	Identifier	size		55218	1					
+ANR	55251	IdentifierDeclStatement	size_t nbyte_bitrow = nbyte / 8 ;	61:4:1846:1877	55218	4	True				
+ANR	55252	IdentifierDecl	nbyte_bitrow = nbyte / 8		55218	0					
+ANR	55253	IdentifierDeclType	size_t		55218	0					
+ANR	55254	Identifier	nbyte_bitrow		55218	1					
+ANR	55255	AssignmentExpression	nbyte_bitrow = nbyte / 8		55218	2		=			
+ANR	55256	Identifier	nbyte_bitrow		55218	0					
+ANR	55257	MultiplicativeExpression	nbyte / 8		55218	1		/			
+ANR	55258	Identifier	nbyte		55218	0					
+ANR	55259	PrimaryExpression	8		55218	1					
+ANR	55260	IdentifierDeclStatement	size_t ii ;	62:4:1883:1892	55218	5	True				
+ANR	55261	IdentifierDecl	ii		55218	0					
+ANR	55262	IdentifierDeclType	size_t		55218	0					
+ANR	55263	Identifier	ii		55218	1					
+ANR	55264	IdentifierDeclStatement	int kk ;	63:4:1898:1904	55218	6	True				
+ANR	55265	IdentifierDecl	kk		55218	0					
+ANR	55266	IdentifierDeclType	int		55218	0					
+ANR	55267	Identifier	kk		55218	1					
+ANR	55268	ExpressionStatement	CHECK_MULT_EIGHT ( nbyte )	65:4:1911:1934	55218	7	True				
+ANR	55269	CallExpression	CHECK_MULT_EIGHT ( nbyte )		55218	0					
+ANR	55270	Callee	CHECK_MULT_EIGHT		55218	0					
+ANR	55271	Identifier	CHECK_MULT_EIGHT		55218	0					
+ANR	55272	ArgumentList	nbyte		55218	1					
+ANR	55273	Argument	nbyte		55218	0					
+ANR	55274	Identifier	nbyte		55218	0					
+ANR	55275	ExpressionStatement	CHECK_MULT_EIGHT ( start_byte )	66:4:1940:1968	55218	8	True				
+ANR	55276	CallExpression	CHECK_MULT_EIGHT ( start_byte )		55218	0					
+ANR	55277	Callee	CHECK_MULT_EIGHT		55218	0					
+ANR	55278	Identifier	CHECK_MULT_EIGHT		55218	0					
+ANR	55279	ArgumentList	start_byte		55218	1					
+ANR	55280	Argument	start_byte		55218	0					
+ANR	55281	Identifier	start_byte		55218	0					
+ANR	55282	ForStatement	for ( ii = start_byte / 8 ; ii < nbyte_bitrow ; ii ++ )		55218	9					
+ANR	55283	ForInit	ii = start_byte / 8 ;	68:9:1980:1999	55218	0	True				
+ANR	55284	AssignmentExpression	ii = start_byte / 8		55218	0		=			
+ANR	55285	Identifier	ii		55218	0					
+ANR	55286	MultiplicativeExpression	start_byte / 8		55218	1		/			
+ANR	55287	Identifier	start_byte		55218	0					
+ANR	55288	PrimaryExpression	8		55218	1					
+ANR	55289	Condition	ii < nbyte_bitrow	68:30:2001:2017	55218	1	True				
+ANR	55290	RelationalExpression	ii < nbyte_bitrow		55218	0		<			
+ANR	55291	Identifier	ii		55218	0					
+ANR	55292	Identifier	nbyte_bitrow		55218	1					
+ANR	55293	PostIncDecOperationExpression	ii ++	68:49:2020:2024	55218	2	True				
+ANR	55294	Identifier	ii		55218	0					
+ANR	55295	IncDec	++		55218	1					
+ANR	55296	CompoundStatement		16:56:293:293	55218	3					
+ANR	55297	ExpressionStatement	x = in_b [ ii ]	69:8:2037:2049	55218	0	True				
+ANR	55298	AssignmentExpression	x = in_b [ ii ]		55218	0		=			
+ANR	55299	Identifier	x		55218	0					
+ANR	55300	ArrayIndexing	in_b [ ii ]		55218	1					
+ANR	55301	Identifier	in_b		55218	0					
+ANR	55302	Identifier	ii		55218	1					
+ANR	55303	ExpressionStatement	"TRANS_BIT_8X8 ( x , t )"	70:8:2059:2078	55218	1	True				
+ANR	55304	CallExpression	"TRANS_BIT_8X8 ( x , t )"		55218	0					
+ANR	55305	Callee	TRANS_BIT_8X8		55218	0					
+ANR	55306	Identifier	TRANS_BIT_8X8		55218	0					
+ANR	55307	ArgumentList	x		55218	1					
+ANR	55308	Argument	x		55218	0					
+ANR	55309	Identifier	x		55218	0					
+ANR	55310	Argument	t		55218	1					
+ANR	55311	Identifier	t		55218	0					
+ANR	55312	ForStatement	for ( kk = 0 ; kk < 8 ; kk ++ )		55218	2					
+ANR	55313	ForInit	kk = 0 ;	71:13:2093:2099	55218	0	True				
+ANR	55314	AssignmentExpression	kk = 0		55218	0		=			
+ANR	55315	Identifier	kk		55218	0					
+ANR	55316	PrimaryExpression	0		55218	1					
+ANR	55317	Condition	kk < 8	71:21:2101:2106	55218	1	True				
+ANR	55318	RelationalExpression	kk < 8		55218	0		<			
+ANR	55319	Identifier	kk		55218	0					
+ANR	55320	PrimaryExpression	8		55218	1					
+ANR	55321	PostIncDecOperationExpression	kk ++	71:29:2109:2113	55218	2	True				
+ANR	55322	Identifier	kk		55218	0					
+ANR	55323	IncDec	++		55218	1					
+ANR	55324	CompoundStatement		19:36:382:382	55218	3					
+ANR	55325	ExpressionStatement	out_b [ kk * nbyte_bitrow + ii ] = x	72:12:2130:2163	55218	0	True				
+ANR	55326	AssignmentExpression	out_b [ kk * nbyte_bitrow + ii ] = x		55218	0		=			
+ANR	55327	ArrayIndexing	out_b [ kk * nbyte_bitrow + ii ]		55218	0					
+ANR	55328	Identifier	out_b		55218	0					
+ANR	55329	AdditiveExpression	kk * nbyte_bitrow + ii		55218	1		+			
+ANR	55330	MultiplicativeExpression	kk * nbyte_bitrow		55218	0		*			
+ANR	55331	Identifier	kk		55218	0					
+ANR	55332	Identifier	nbyte_bitrow		55218	1					
+ANR	55333	Identifier	ii		55218	1					
+ANR	55334	Identifier	x		55218	1					
+ANR	55335	ExpressionStatement	x = x >> 8	73:12:2177:2187	55218	1	True				
+ANR	55336	AssignmentExpression	x = x >> 8		55218	0		=			
+ANR	55337	Identifier	x		55218	0					
+ANR	55338	ShiftExpression	x >> 8		55218	1		>>			
+ANR	55339	Identifier	x		55218	0					
+ANR	55340	PrimaryExpression	8		55218	1					
+ANR	55341	ReturnStatement	return size * elem_size ;	76:4:2209:2232	55218	10	True				
+ANR	55342	MultiplicativeExpression	size * elem_size		55218	0		*			
+ANR	55343	Identifier	size		55218	0					
+ANR	55344	Identifier	elem_size		55218	1					
+ANR	55345	ReturnType	int64_t		55218	1					
+ANR	55346	Identifier	bshuf_trans_bit_byte_remainder		55218	2					
+ANR	55347	ParameterList	"void * in , void * out , const size_t size , const size_t elem_size , const size_t start_byte"		55218	3					
+ANR	55348	Parameter	void * in	52:39:1635:1642	55218	0	True				
+ANR	55349	ParameterType	void *		55218	0					
+ANR	55350	Identifier	in		55218	1					
+ANR	55351	Parameter	void * out	52:49:1645:1653	55218	1	True				
+ANR	55352	ParameterType	void *		55218	0					
+ANR	55353	Identifier	out		55218	1					
+ANR	55354	Parameter	const size_t size	52:60:1656:1672	55218	2	True				
+ANR	55355	ParameterType	const size_t		55218	0					
+ANR	55356	Identifier	size		55218	1					
+ANR	55357	Parameter	const size_t elem_size	53:9:1684:1705	55218	3	True				
+ANR	55358	ParameterType	const size_t		55218	0					
+ANR	55359	Identifier	elem_size		55218	1					
+ANR	55360	Parameter	const size_t start_byte	53:33:1708:1730	55218	4	True				
+ANR	55361	ParameterType	const size_t		55218	0					
+ANR	55362	Identifier	start_byte		55218	1					
+ANR	55363	CFGEntryNode	ENTRY		55218		True				
+ANR	55364	CFGExitNode	EXIT		55218		True				
+ANR	55365	Symbol	ii		55218						
+ANR	55366	Symbol	kk		55218						
+ANR	55367	Symbol	* in_b		55218						
+ANR	55368	Symbol	out_b		55218						
+ANR	55369	Symbol	in		55218						
+ANR	55370	Symbol	* ii		55218						
+ANR	55371	Symbol	* kk		55218						
+ANR	55372	Symbol	* out_b		55218						
+ANR	55373	Symbol	nbyte		55218						
+ANR	55374	Symbol	out		55218						
+ANR	55375	Symbol	nbyte_bitrow		55218						
+ANR	55376	Symbol	* nbyte_bitrow		55218						
+ANR	55377	Symbol	size		55218						
+ANR	55378	Symbol	t		55218						
+ANR	55379	Symbol	elem_size		55218						
+ANR	55380	Symbol	start_byte		55218						
+ANR	55381	Symbol	x		55218						
+ANR	55382	Symbol	in_b		55218						
+ANR	55383	Function	bshuf_trans_bit_byte_scal	81:0:2273:2455							
+ANR	55384	FunctionDef	"bshuf_trans_bit_byte_scal (void * in , void * out , const size_t size , const size_t elem_size)"		55383	0					
+ANR	55385	CompoundStatement		82:33:2380:2455	55383	0					
+ANR	55386	ReturnStatement	"return bshuf_trans_bit_byte_remainder ( in , out , size , elem_size , 0 ) ;"	84:4:2387:2453	55383	0	True				
+ANR	55387	CallExpression	"bshuf_trans_bit_byte_remainder ( in , out , size , elem_size , 0 )"		55383	0					
+ANR	55388	Callee	bshuf_trans_bit_byte_remainder		55383	0					
+ANR	55389	Identifier	bshuf_trans_bit_byte_remainder		55383	0					
+ANR	55390	ArgumentList	in		55383	1					
+ANR	55391	Argument	in		55383	0					
+ANR	55392	Identifier	in		55383	0					
+ANR	55393	Argument	out		55383	1					
+ANR	55394	Identifier	out		55383	0					
+ANR	55395	Argument	size		55383	2					
+ANR	55396	Identifier	size		55383	0					
+ANR	55397	Argument	elem_size		55383	3					
+ANR	55398	Identifier	elem_size		55383	0					
+ANR	55399	Argument	0		55383	4					
+ANR	55400	PrimaryExpression	0		55383	0					
+ANR	55401	ReturnType	int64_t		55383	1					
+ANR	55402	Identifier	bshuf_trans_bit_byte_scal		55383	2					
+ANR	55403	ParameterList	"void * in , void * out , const size_t size , const size_t elem_size"		55383	3					
+ANR	55404	Parameter	void * in	81:34:2307:2314	55383	0	True				
+ANR	55405	ParameterType	void *		55383	0					
+ANR	55406	Identifier	in		55383	1					
+ANR	55407	Parameter	void * out	81:44:2317:2325	55383	1	True				
+ANR	55408	ParameterType	void *		55383	0					
+ANR	55409	Identifier	out		55383	1					
+ANR	55410	Parameter	const size_t size	81:55:2328:2344	55383	2	True				
+ANR	55411	ParameterType	const size_t		55383	0					
+ANR	55412	Identifier	size		55383	1					
+ANR	55413	Parameter	const size_t elem_size	82:9:2356:2377	55383	3	True				
+ANR	55414	ParameterType	const size_t		55383	0					
+ANR	55415	Identifier	elem_size		55383	1					
+ANR	55416	CFGEntryNode	ENTRY		55383		True				
+ANR	55417	CFGExitNode	EXIT		55383		True				
+ANR	55418	Symbol	size		55383						
+ANR	55419	Symbol	in		55383						
+ANR	55420	Symbol	elem_size		55383						
+ANR	55421	Symbol	bshuf_trans_bit_byte_remainder		55383						
+ANR	55422	Symbol	out		55383						
+ANR	55423	Function	bshuf_trans_elem	89:0:2531:2970							
+ANR	55424	FunctionDef	"bshuf_trans_elem (void * in , void * out , const size_t lda , const size_t ldb , const size_t elem_size)"		55423	0					
+ANR	55425	CompoundStatement		90:50:2645:2970	55423	0					
+ANR	55426	IdentifierDeclStatement	char * in_b = ( char * ) in ;	92:4:2652:2675	55423	0	True				
+ANR	55427	IdentifierDecl	* in_b = ( char * ) in		55423	0					
+ANR	55428	IdentifierDeclType	char *		55423	0					
+ANR	55429	Identifier	in_b		55423	1					
+ANR	55430	AssignmentExpression	* in_b = ( char * ) in		55423	2		=			
+ANR	55431	Identifier	in_b		55423	0					
+ANR	55432	CastExpression	( char * ) in		55423	1					
+ANR	55433	CastTarget	char *		55423	0					
+ANR	55434	Identifier	in		55423	1					
+ANR	55435	IdentifierDeclStatement	char * out_b = ( char * ) out ;	93:4:2681:2706	55423	1	True				
+ANR	55436	IdentifierDecl	* out_b = ( char * ) out		55423	0					
+ANR	55437	IdentifierDeclType	char *		55423	0					
+ANR	55438	Identifier	out_b		55423	1					
+ANR	55439	AssignmentExpression	* out_b = ( char * ) out		55423	2		=			
+ANR	55440	Identifier	out_b		55423	0					
+ANR	55441	CastExpression	( char * ) out		55423	1					
+ANR	55442	CastTarget	char *		55423	0					
+ANR	55443	Identifier	out		55423	1					
+ANR	55444	IdentifierDeclStatement	"size_t ii , jj ;"	94:4:2712:2725	55423	2	True				
+ANR	55445	IdentifierDecl	ii		55423	0					
+ANR	55446	IdentifierDeclType	size_t		55423	0					
+ANR	55447	Identifier	ii		55423	1					
+ANR	55448	IdentifierDecl	jj		55423	1					
+ANR	55449	IdentifierDeclType	size_t		55423	0					
+ANR	55450	Identifier	jj		55423	1					
+ANR	55451	ForStatement	for ( ii = 0 ; ii < lda ; ii ++ )		55423	3					
+ANR	55452	ForInit	ii = 0 ;	95:9:2736:2742	55423	0	True				
+ANR	55453	AssignmentExpression	ii = 0		55423	0		=			
+ANR	55454	Identifier	ii		55423	0					
+ANR	55455	PrimaryExpression	0		55423	1					
+ANR	55456	Condition	ii < lda	95:17:2744:2751	55423	1	True				
+ANR	55457	RelationalExpression	ii < lda		55423	0		<			
+ANR	55458	Identifier	ii		55423	0					
+ANR	55459	Identifier	lda		55423	1					
+ANR	55460	PostIncDecOperationExpression	ii ++	95:27:2754:2757	55423	2	True				
+ANR	55461	Identifier	ii		55423	0					
+ANR	55462	IncDec	++		55423	1					
+ANR	55463	CompoundStatement		6:33:114:114	55423	3					
+ANR	55464	ForStatement	for ( jj = 0 ; jj < ldb ; jj ++ )		55423	0					
+ANR	55465	ForInit	jj = 0 ;	96:13:2775:2781	55423	0	True				
+ANR	55466	AssignmentExpression	jj = 0		55423	0		=			
+ANR	55467	Identifier	jj		55423	0					
+ANR	55468	PrimaryExpression	0		55423	1					
+ANR	55469	Condition	jj < ldb	96:21:2783:2790	55423	1	True				
+ANR	55470	RelationalExpression	jj < ldb		55423	0		<			
+ANR	55471	Identifier	jj		55423	0					
+ANR	55472	Identifier	ldb		55423	1					
+ANR	55473	PostIncDecOperationExpression	jj ++	96:31:2793:2796	55423	2	True				
+ANR	55474	Identifier	jj		55423	0					
+ANR	55475	IncDec	++		55423	1					
+ANR	55476	CompoundStatement		7:37:153:153	55423	3					
+ANR	55477	ExpressionStatement	"memcpy ( & out_b [ ( jj * lda + ii ) * elem_size ] , & in_b [ ( ii * ldb + jj ) * elem_size ] , elem_size )"	97:12:2813:2918	55423	0	True				
+ANR	55478	CallExpression	"memcpy ( & out_b [ ( jj * lda + ii ) * elem_size ] , & in_b [ ( ii * ldb + jj ) * elem_size ] , elem_size )"		55423	0					
+ANR	55479	Callee	memcpy		55423	0					
+ANR	55480	Identifier	memcpy		55423	0					
+ANR	55481	ArgumentList	& out_b [ ( jj * lda + ii ) * elem_size ]		55423	1					
+ANR	55482	Argument	& out_b [ ( jj * lda + ii ) * elem_size ]		55423	0					
+ANR	55483	UnaryOperationExpression	& out_b [ ( jj * lda + ii ) * elem_size ]		55423	0					
+ANR	55484	UnaryOperator	&		55423	0					
+ANR	55485	ArrayIndexing	out_b [ ( jj * lda + ii ) * elem_size ]		55423	1					
+ANR	55486	Identifier	out_b		55423	0					
+ANR	55487	MultiplicativeExpression	( jj * lda + ii ) * elem_size		55423	1		*			
+ANR	55488	AdditiveExpression	jj * lda + ii		55423	0		+			
+ANR	55489	MultiplicativeExpression	jj * lda		55423	0		*			
+ANR	55490	Identifier	jj		55423	0					
+ANR	55491	Identifier	lda		55423	1					
+ANR	55492	Identifier	ii		55423	1					
+ANR	55493	Identifier	elem_size		55423	1					
+ANR	55494	Argument	& in_b [ ( ii * ldb + jj ) * elem_size ]		55423	1					
+ANR	55495	UnaryOperationExpression	& in_b [ ( ii * ldb + jj ) * elem_size ]		55423	0					
+ANR	55496	UnaryOperator	&		55423	0					
+ANR	55497	ArrayIndexing	in_b [ ( ii * ldb + jj ) * elem_size ]		55423	1					
+ANR	55498	Identifier	in_b		55423	0					
+ANR	55499	MultiplicativeExpression	( ii * ldb + jj ) * elem_size		55423	1		*			
+ANR	55500	AdditiveExpression	ii * ldb + jj		55423	0		+			
+ANR	55501	MultiplicativeExpression	ii * ldb		55423	0		*			
+ANR	55502	Identifier	ii		55423	0					
+ANR	55503	Identifier	ldb		55423	1					
+ANR	55504	Identifier	jj		55423	1					
+ANR	55505	Identifier	elem_size		55423	1					
+ANR	55506	Argument	elem_size		55423	2					
+ANR	55507	Identifier	elem_size		55423	0					
+ANR	55508	ReturnStatement	return lda * ldb * elem_size ;	101:4:2940:2968	55423	4	True				
+ANR	55509	MultiplicativeExpression	lda * ldb * elem_size		55423	0		*			
+ANR	55510	Identifier	lda		55423	0					
+ANR	55511	MultiplicativeExpression	ldb * elem_size		55423	1		*			
+ANR	55512	Identifier	ldb		55423	0					
+ANR	55513	Identifier	elem_size		55423	1					
+ANR	55514	ReturnType	int64_t		55423	1					
+ANR	55515	Identifier	bshuf_trans_elem		55423	2					
+ANR	55516	ParameterList	"void * in , void * out , const size_t lda , const size_t ldb , const size_t elem_size"		55423	3					
+ANR	55517	Parameter	void * in	89:25:2556:2563	55423	0	True				
+ANR	55518	ParameterType	void *		55423	0					
+ANR	55519	Identifier	in		55423	1					
+ANR	55520	Parameter	void * out	89:35:2566:2574	55423	1	True				
+ANR	55521	ParameterType	void *		55423	0					
+ANR	55522	Identifier	out		55423	1					
+ANR	55523	Parameter	const size_t lda	89:46:2577:2592	55423	2	True				
+ANR	55524	ParameterType	const size_t		55423	0					
+ANR	55525	Identifier	lda		55423	1					
+ANR	55526	Parameter	const size_t ldb	90:8:2603:2618	55423	3	True				
+ANR	55527	ParameterType	const size_t		55423	0					
+ANR	55528	Identifier	ldb		55423	1					
+ANR	55529	Parameter	const size_t elem_size	90:26:2621:2642	55423	4	True				
+ANR	55530	ParameterType	const size_t		55423	0					
+ANR	55531	Identifier	elem_size		55423	1					
+ANR	55532	CFGEntryNode	ENTRY		55423		True				
+ANR	55533	CFGExitNode	EXIT		55423		True				
+ANR	55534	Symbol	ii		55423						
+ANR	55535	Symbol	jj		55423						
+ANR	55536	Symbol	out_b		55423						
+ANR	55537	Symbol	in		55423						
+ANR	55538	Symbol	elem_size		55423						
+ANR	55539	Symbol	lda		55423						
+ANR	55540	Symbol	in_b		55423						
+ANR	55541	Symbol	ldb		55423						
+ANR	55542	Symbol	out		55423						
+ANR	55543	Function	bshuf_trans_bitrow_eight	106:0:3049:3290							
+ANR	55544	FunctionDef	"bshuf_trans_bitrow_eight (void * in , void * out , const size_t size , const size_t elem_size)"		55543	0					
+ANR	55545	CompoundStatement		107:33:3155:3290	55543	0					
+ANR	55546	IdentifierDeclStatement	size_t nbyte_bitrow = size / 8 ;	109:4:3162:3192	55543	0	True				
+ANR	55547	IdentifierDecl	nbyte_bitrow = size / 8		55543	0					
+ANR	55548	IdentifierDeclType	size_t		55543	0					
+ANR	55549	Identifier	nbyte_bitrow		55543	1					
+ANR	55550	AssignmentExpression	nbyte_bitrow = size / 8		55543	2		=			
+ANR	55551	Identifier	nbyte_bitrow		55543	0					
+ANR	55552	MultiplicativeExpression	size / 8		55543	1		/			
+ANR	55553	Identifier	size		55543	0					
+ANR	55554	PrimaryExpression	8		55543	1					
+ANR	55555	ExpressionStatement	CHECK_MULT_EIGHT ( size )	111:4:3199:3221	55543	1	True				
+ANR	55556	CallExpression	CHECK_MULT_EIGHT ( size )		55543	0					
+ANR	55557	Callee	CHECK_MULT_EIGHT		55543	0					
+ANR	55558	Identifier	CHECK_MULT_EIGHT		55543	0					
+ANR	55559	ArgumentList	size		55543	1					
+ANR	55560	Argument	size		55543	0					
+ANR	55561	Identifier	size		55543	0					
+ANR	55562	ReturnStatement	"return bshuf_trans_elem ( in , out , 8 , elem_size , nbyte_bitrow ) ;"	113:4:3228:3288	55543	2	True				
+ANR	55563	CallExpression	"bshuf_trans_elem ( in , out , 8 , elem_size , nbyte_bitrow )"		55543	0					
+ANR	55564	Callee	bshuf_trans_elem		55543	0					
+ANR	55565	Identifier	bshuf_trans_elem		55543	0					
+ANR	55566	ArgumentList	in		55543	1					
+ANR	55567	Argument	in		55543	0					
+ANR	55568	Identifier	in		55543	0					
+ANR	55569	Argument	out		55543	1					
+ANR	55570	Identifier	out		55543	0					
+ANR	55571	Argument	8		55543	2					
+ANR	55572	PrimaryExpression	8		55543	0					
+ANR	55573	Argument	elem_size		55543	3					
+ANR	55574	Identifier	elem_size		55543	0					
+ANR	55575	Argument	nbyte_bitrow		55543	4					
+ANR	55576	Identifier	nbyte_bitrow		55543	0					
+ANR	55577	ReturnType	int64_t		55543	1					
+ANR	55578	Identifier	bshuf_trans_bitrow_eight		55543	2					
+ANR	55579	ParameterList	"void * in , void * out , const size_t size , const size_t elem_size"		55543	3					
+ANR	55580	Parameter	void * in	106:33:3082:3089	55543	0	True				
+ANR	55581	ParameterType	void *		55543	0					
+ANR	55582	Identifier	in		55543	1					
+ANR	55583	Parameter	void * out	106:43:3092:3100	55543	1	True				
+ANR	55584	ParameterType	void *		55543	0					
+ANR	55585	Identifier	out		55543	1					
+ANR	55586	Parameter	const size_t size	106:54:3103:3119	55543	2	True				
+ANR	55587	ParameterType	const size_t		55543	0					
+ANR	55588	Identifier	size		55543	1					
+ANR	55589	Parameter	const size_t elem_size	107:9:3131:3152	55543	3	True				
+ANR	55590	ParameterType	const size_t		55543	0					
+ANR	55591	Identifier	elem_size		55543	1					
+ANR	55592	CFGEntryNode	ENTRY		55543		True				
+ANR	55593	CFGExitNode	EXIT		55543		True				
+ANR	55594	Symbol	size		55543						
+ANR	55595	Symbol	in		55543						
+ANR	55596	Symbol	elem_size		55543						
+ANR	55597	Symbol	bshuf_trans_elem		55543						
+ANR	55598	Symbol	out		55543						
+ANR	55599	Symbol	nbyte_bitrow		55543						
+ANR	55600	Function	bshuf_trans_bit_elem_scal	118:0:3332:3799							
+ANR	55601	FunctionDef	"bshuf_trans_bit_elem_scal (void * in , void * out , const size_t size , const size_t elem_size , void * tmp_buf)"		55600	0					
+ANR	55602	CompoundStatement		119:73:3479:3799	55600	0					
+ANR	55603	IdentifierDeclStatement	int64_t count ;	121:4:3486:3499	55600	0	True				
+ANR	55604	IdentifierDecl	count		55600	0					
+ANR	55605	IdentifierDeclType	int64_t		55600	0					
+ANR	55606	Identifier	count		55600	1					
+ANR	55607	ExpressionStatement	CHECK_MULT_EIGHT ( size )	123:4:3506:3528	55600	1	True				
+ANR	55608	CallExpression	CHECK_MULT_EIGHT ( size )		55600	0					
+ANR	55609	Callee	CHECK_MULT_EIGHT		55600	0					
+ANR	55610	Identifier	CHECK_MULT_EIGHT		55600	0					
+ANR	55611	ArgumentList	size		55600	1					
+ANR	55612	Argument	size		55600	0					
+ANR	55613	Identifier	size		55600	0					
+ANR	55614	ExpressionStatement	"count = bshuf_trans_byte_elem_scal ( in , out , size , elem_size )"	125:4:3535:3595	55600	2	True				
+ANR	55615	AssignmentExpression	"count = bshuf_trans_byte_elem_scal ( in , out , size , elem_size )"		55600	0		=			
+ANR	55616	Identifier	count		55600	0					
+ANR	55617	CallExpression	"bshuf_trans_byte_elem_scal ( in , out , size , elem_size )"		55600	1					
+ANR	55618	Callee	bshuf_trans_byte_elem_scal		55600	0					
+ANR	55619	Identifier	bshuf_trans_byte_elem_scal		55600	0					
+ANR	55620	ArgumentList	in		55600	1					
+ANR	55621	Argument	in		55600	0					
+ANR	55622	Identifier	in		55600	0					
+ANR	55623	Argument	out		55600	1					
+ANR	55624	Identifier	out		55600	0					
+ANR	55625	Argument	size		55600	2					
+ANR	55626	Identifier	size		55600	0					
+ANR	55627	Argument	elem_size		55600	3					
+ANR	55628	Identifier	elem_size		55600	0					
+ANR	55629	ExpressionStatement	CHECK_ERR ( count )	126:4:3601:3617	55600	3	True				
+ANR	55630	CallExpression	CHECK_ERR ( count )		55600	0					
+ANR	55631	Callee	CHECK_ERR		55600	0					
+ANR	55632	Identifier	CHECK_ERR		55600	0					
+ANR	55633	ArgumentList	count		55600	1					
+ANR	55634	Argument	count		55600	0					
+ANR	55635	Identifier	count		55600	0					
+ANR	55636	ExpressionStatement	"count = bshuf_trans_bit_byte_scal ( out , tmp_buf , size , elem_size )"	127:4:3623:3687	55600	4	True				
+ANR	55637	AssignmentExpression	"count = bshuf_trans_bit_byte_scal ( out , tmp_buf , size , elem_size )"		55600	0		=			
+ANR	55638	Identifier	count		55600	0					
+ANR	55639	CallExpression	"bshuf_trans_bit_byte_scal ( out , tmp_buf , size , elem_size )"		55600	1					
+ANR	55640	Callee	bshuf_trans_bit_byte_scal		55600	0					
+ANR	55641	Identifier	bshuf_trans_bit_byte_scal		55600	0					
+ANR	55642	ArgumentList	out		55600	1					
+ANR	55643	Argument	out		55600	0					
+ANR	55644	Identifier	out		55600	0					
+ANR	55645	Argument	tmp_buf		55600	1					
+ANR	55646	Identifier	tmp_buf		55600	0					
+ANR	55647	Argument	size		55600	2					
+ANR	55648	Identifier	size		55600	0					
+ANR	55649	Argument	elem_size		55600	3					
+ANR	55650	Identifier	elem_size		55600	0					
+ANR	55651	ExpressionStatement	CHECK_ERR ( count )	128:4:3693:3709	55600	5	True				
+ANR	55652	CallExpression	CHECK_ERR ( count )		55600	0					
+ANR	55653	Callee	CHECK_ERR		55600	0					
+ANR	55654	Identifier	CHECK_ERR		55600	0					
+ANR	55655	ArgumentList	count		55600	1					
+ANR	55656	Argument	count		55600	0					
+ANR	55657	Identifier	count		55600	0					
+ANR	55658	ExpressionStatement	"count = bshuf_trans_bitrow_eight ( tmp_buf , out , size , elem_size )"	129:4:3715:3778	55600	6	True				
+ANR	55659	AssignmentExpression	"count = bshuf_trans_bitrow_eight ( tmp_buf , out , size , elem_size )"		55600	0		=			
+ANR	55660	Identifier	count		55600	0					
+ANR	55661	CallExpression	"bshuf_trans_bitrow_eight ( tmp_buf , out , size , elem_size )"		55600	1					
+ANR	55662	Callee	bshuf_trans_bitrow_eight		55600	0					
+ANR	55663	Identifier	bshuf_trans_bitrow_eight		55600	0					
+ANR	55664	ArgumentList	tmp_buf		55600	1					
+ANR	55665	Argument	tmp_buf		55600	0					
+ANR	55666	Identifier	tmp_buf		55600	0					
+ANR	55667	Argument	out		55600	1					
+ANR	55668	Identifier	out		55600	0					
+ANR	55669	Argument	size		55600	2					
+ANR	55670	Identifier	size		55600	0					
+ANR	55671	Argument	elem_size		55600	3					
+ANR	55672	Identifier	elem_size		55600	0					
+ANR	55673	ReturnStatement	return count ;	131:4:3785:3797	55600	7	True				
+ANR	55674	Identifier	count		55600	0					
+ANR	55675	ReturnType	int64_t		55600	1					
+ANR	55676	Identifier	bshuf_trans_bit_elem_scal		55600	2					
+ANR	55677	ParameterList	"void * in , void * out , const size_t size , const size_t elem_size , void * tmp_buf"		55600	3					
+ANR	55678	Parameter	void * in	118:34:3366:3373	55600	0	True				
+ANR	55679	ParameterType	void *		55600	0					
+ANR	55680	Identifier	in		55600	1					
+ANR	55681	Parameter	void * out	118:44:3376:3384	55600	1	True				
+ANR	55682	ParameterType	void *		55600	0					
+ANR	55683	Identifier	out		55600	1					
+ANR	55684	Parameter	const size_t size	118:55:3387:3403	55600	2	True				
+ANR	55685	ParameterType	const size_t		55600	0					
+ANR	55686	Identifier	size		55600	1					
+ANR	55687	Parameter	const size_t elem_size	119:34:3440:3461	55600	3	True				
+ANR	55688	ParameterType	const size_t		55600	0					
+ANR	55689	Identifier	elem_size		55600	1					
+ANR	55690	Parameter	void * tmp_buf	119:58:3464:3476	55600	4	True				
+ANR	55691	ParameterType	void *		55600	0					
+ANR	55692	Identifier	tmp_buf		55600	1					
+ANR	55693	CFGEntryNode	ENTRY		55600		True				
+ANR	55694	CFGExitNode	EXIT		55600		True				
+ANR	55695	Symbol	tmp_buf		55600						
+ANR	55696	Symbol	size		55600						
+ANR	55697	Symbol	in		55600						
+ANR	55698	Symbol	elem_size		55600						
+ANR	55699	Symbol	count		55600						
+ANR	55700	Symbol	bshuf_trans_bitrow_eight		55600						
+ANR	55701	Symbol	bshuf_trans_bit_byte_scal		55600						
+ANR	55702	Symbol	out		55600						
+ANR	55703	Symbol	bshuf_trans_byte_elem_scal		55600						
+ANR	55704	Function	bshuf_trans_byte_bitrow_scal	137:0:3898:4465							
+ANR	55705	FunctionDef	"bshuf_trans_byte_bitrow_scal (void * in , void * out , const size_t size , const size_t elem_size)"		55704	0					
+ANR	55706	CompoundStatement		138:33:4008:4465	55704	0					
+ANR	55707	IdentifierDeclStatement	char * in_b = ( char * ) in ;	139:4:4014:4037	55704	0	True				
+ANR	55708	IdentifierDecl	* in_b = ( char * ) in		55704	0					
+ANR	55709	IdentifierDeclType	char *		55704	0					
+ANR	55710	Identifier	in_b		55704	1					
+ANR	55711	AssignmentExpression	* in_b = ( char * ) in		55704	2		=			
+ANR	55712	Identifier	in_b		55704	0					
+ANR	55713	CastExpression	( char * ) in		55704	1					
+ANR	55714	CastTarget	char *		55704	0					
+ANR	55715	Identifier	in		55704	1					
+ANR	55716	IdentifierDeclStatement	char * out_b = ( char * ) out ;	140:4:4043:4068	55704	1	True				
+ANR	55717	IdentifierDecl	* out_b = ( char * ) out		55704	0					
+ANR	55718	IdentifierDeclType	char *		55704	0					
+ANR	55719	Identifier	out_b		55704	1					
+ANR	55720	AssignmentExpression	* out_b = ( char * ) out		55704	2		=			
+ANR	55721	Identifier	out_b		55704	0					
+ANR	55722	CastExpression	( char * ) out		55704	1					
+ANR	55723	CastTarget	char *		55704	0					
+ANR	55724	Identifier	out		55704	1					
+ANR	55725	IdentifierDeclStatement	size_t nbyte_row = size / 8 ;	142:4:4075:4102	55704	2	True				
+ANR	55726	IdentifierDecl	nbyte_row = size / 8		55704	0					
+ANR	55727	IdentifierDeclType	size_t		55704	0					
+ANR	55728	Identifier	nbyte_row		55704	1					
+ANR	55729	AssignmentExpression	nbyte_row = size / 8		55704	2		=			
+ANR	55730	Identifier	nbyte_row		55704	0					
+ANR	55731	MultiplicativeExpression	size / 8		55704	1		/			
+ANR	55732	Identifier	size		55704	0					
+ANR	55733	PrimaryExpression	8		55704	1					
+ANR	55734	IdentifierDeclStatement	"size_t ii , jj , kk ;"	143:4:4108:4125	55704	3	True				
+ANR	55735	IdentifierDecl	ii		55704	0					
+ANR	55736	IdentifierDeclType	size_t		55704	0					
+ANR	55737	Identifier	ii		55704	1					
+ANR	55738	IdentifierDecl	jj		55704	1					
+ANR	55739	IdentifierDeclType	size_t		55704	0					
+ANR	55740	Identifier	jj		55704	1					
+ANR	55741	IdentifierDecl	kk		55704	2					
+ANR	55742	IdentifierDeclType	size_t		55704	0					
+ANR	55743	Identifier	kk		55704	1					
+ANR	55744	ExpressionStatement	CHECK_MULT_EIGHT ( size )	145:4:4132:4154	55704	4	True				
+ANR	55745	CallExpression	CHECK_MULT_EIGHT ( size )		55704	0					
+ANR	55746	Callee	CHECK_MULT_EIGHT		55704	0					
+ANR	55747	Identifier	CHECK_MULT_EIGHT		55704	0					
+ANR	55748	ArgumentList	size		55704	1					
+ANR	55749	Argument	size		55704	0					
+ANR	55750	Identifier	size		55704	0					
+ANR	55751	ForStatement	for ( jj = 0 ; jj < elem_size ; jj ++ )		55704	5					
+ANR	55752	ForInit	jj = 0 ;	147:9:4166:4172	55704	0	True				
+ANR	55753	AssignmentExpression	jj = 0		55704	0		=			
+ANR	55754	Identifier	jj		55704	0					
+ANR	55755	PrimaryExpression	0		55704	1					
+ANR	55756	Condition	jj < elem_size	147:17:4174:4187	55704	1	True				
+ANR	55757	RelationalExpression	jj < elem_size		55704	0		<			
+ANR	55758	Identifier	jj		55704	0					
+ANR	55759	Identifier	elem_size		55704	1					
+ANR	55760	PostIncDecOperationExpression	jj ++	147:33:4190:4193	55704	2	True				
+ANR	55761	Identifier	jj		55704	0					
+ANR	55762	IncDec	++		55704	1					
+ANR	55763	CompoundStatement		10:39:187:187	55704	3					
+ANR	55764	ForStatement	for ( ii = 0 ; ii < nbyte_row ; ii ++ )		55704	0					
+ANR	55765	ForInit	ii = 0 ;	148:13:4211:4217	55704	0	True				
+ANR	55766	AssignmentExpression	ii = 0		55704	0		=			
+ANR	55767	Identifier	ii		55704	0					
+ANR	55768	PrimaryExpression	0		55704	1					
+ANR	55769	Condition	ii < nbyte_row	148:21:4219:4232	55704	1	True				
+ANR	55770	RelationalExpression	ii < nbyte_row		55704	0		<			
+ANR	55771	Identifier	ii		55704	0					
+ANR	55772	Identifier	nbyte_row		55704	1					
+ANR	55773	PostIncDecOperationExpression	ii ++	148:37:4235:4238	55704	2	True				
+ANR	55774	Identifier	ii		55704	0					
+ANR	55775	IncDec	++		55704	1					
+ANR	55776	CompoundStatement		11:43:232:232	55704	3					
+ANR	55777	ForStatement	for ( kk = 0 ; kk < 8 ; kk ++ )		55704	0					
+ANR	55778	ForInit	kk = 0 ;	149:17:4260:4266	55704	0	True				
+ANR	55779	AssignmentExpression	kk = 0		55704	0		=			
+ANR	55780	Identifier	kk		55704	0					
+ANR	55781	PrimaryExpression	0		55704	1					
+ANR	55782	Condition	kk < 8	149:25:4268:4273	55704	1	True				
+ANR	55783	RelationalExpression	kk < 8		55704	0		<			
+ANR	55784	Identifier	kk		55704	0					
+ANR	55785	PrimaryExpression	8		55704	1					
+ANR	55786	PostIncDecOperationExpression	kk ++	149:33:4276:4279	55704	2	True				
+ANR	55787	Identifier	kk		55704	0					
+ANR	55788	IncDec	++		55704	1					
+ANR	55789	CompoundStatement		12:39:273:273	55704	3					
+ANR	55790	ExpressionStatement	out_b [ ii * 8 * elem_size + jj * 8 + kk ] = in_b [ ( jj * 8 + kk ) * nbyte_row + ii ]	150:16:4300:4404	55704	0	True				
+ANR	55791	AssignmentExpression	out_b [ ii * 8 * elem_size + jj * 8 + kk ] = in_b [ ( jj * 8 + kk ) * nbyte_row + ii ]		55704	0		=			
+ANR	55792	ArrayIndexing	out_b [ ii * 8 * elem_size + jj * 8 + kk ]		55704	0					
+ANR	55793	Identifier	out_b		55704	0					
+ANR	55794	AdditiveExpression	ii * 8 * elem_size + jj * 8 + kk		55704	1		+			
+ANR	55795	MultiplicativeExpression	ii * 8 * elem_size		55704	0		*			
+ANR	55796	Identifier	ii		55704	0					
+ANR	55797	MultiplicativeExpression	8 * elem_size		55704	1		*			
+ANR	55798	PrimaryExpression	8		55704	0					
+ANR	55799	Identifier	elem_size		55704	1					
+ANR	55800	AdditiveExpression	jj * 8 + kk		55704	1		+			
+ANR	55801	MultiplicativeExpression	jj * 8		55704	0		*			
+ANR	55802	Identifier	jj		55704	0					
+ANR	55803	PrimaryExpression	8		55704	1					
+ANR	55804	Identifier	kk		55704	1					
+ANR	55805	ArrayIndexing	in_b [ ( jj * 8 + kk ) * nbyte_row + ii ]		55704	1					
+ANR	55806	Identifier	in_b		55704	0					
+ANR	55807	AdditiveExpression	( jj * 8 + kk ) * nbyte_row + ii		55704	1		+			
+ANR	55808	MultiplicativeExpression	( jj * 8 + kk ) * nbyte_row		55704	0		*			
+ANR	55809	AdditiveExpression	jj * 8 + kk		55704	0		+			
+ANR	55810	MultiplicativeExpression	jj * 8		55704	0		*			
+ANR	55811	Identifier	jj		55704	0					
+ANR	55812	PrimaryExpression	8		55704	1					
+ANR	55813	Identifier	kk		55704	1					
+ANR	55814	Identifier	nbyte_row		55704	1					
+ANR	55815	Identifier	ii		55704	1					
+ANR	55816	ReturnStatement	return size * elem_size ;	155:4:4440:4463	55704	6	True				
+ANR	55817	MultiplicativeExpression	size * elem_size		55704	0		*			
+ANR	55818	Identifier	size		55704	0					
+ANR	55819	Identifier	elem_size		55704	1					
+ANR	55820	ReturnType	int64_t		55704	1					
+ANR	55821	Identifier	bshuf_trans_byte_bitrow_scal		55704	2					
+ANR	55822	ParameterList	"void * in , void * out , const size_t size , const size_t elem_size"		55704	3					
+ANR	55823	Parameter	void * in	137:37:3935:3942	55704	0	True				
+ANR	55824	ParameterType	void *		55704	0					
+ANR	55825	Identifier	in		55704	1					
+ANR	55826	Parameter	void * out	137:47:3945:3953	55704	1	True				
+ANR	55827	ParameterType	void *		55704	0					
+ANR	55828	Identifier	out		55704	1					
+ANR	55829	Parameter	const size_t size	137:58:3956:3972	55704	2	True				
+ANR	55830	ParameterType	const size_t		55704	0					
+ANR	55831	Identifier	size		55704	1					
+ANR	55832	Parameter	const size_t elem_size	138:9:3984:4005	55704	3	True				
+ANR	55833	ParameterType	const size_t		55704	0					
+ANR	55834	Identifier	elem_size		55704	1					
+ANR	55835	CFGEntryNode	ENTRY		55704		True				
+ANR	55836	CFGExitNode	EXIT		55704		True				
+ANR	55837	Symbol	ii		55704						
+ANR	55838	Symbol	jj		55704						
+ANR	55839	Symbol	kk		55704						
+ANR	55840	Symbol	* in_b		55704						
+ANR	55841	Symbol	out_b		55704						
+ANR	55842	Symbol	* elem_size		55704						
+ANR	55843	Symbol	in		55704						
+ANR	55844	Symbol	* ii		55704						
+ANR	55845	Symbol	* jj		55704						
+ANR	55846	Symbol	* kk		55704						
+ANR	55847	Symbol	* out_b		55704						
+ANR	55848	Symbol	nbyte_row		55704						
+ANR	55849	Symbol	out		55704						
+ANR	55850	Symbol	size		55704						
+ANR	55851	Symbol	elem_size		55704						
+ANR	55852	Symbol	* nbyte_row		55704						
+ANR	55853	Symbol	in_b		55704						
+ANR	55854	Function	bshuf_shuffle_bit_eightelem_scal	160:0:4530:5216							
+ANR	55855	FunctionDef	"bshuf_shuffle_bit_eightelem_scal (void * in , void * out , const size_t size , const size_t elem_size)"		55854	0					
+ANR	55856	CompoundStatement		161:51:4643:5216	55854	0					
+ANR	55857	IdentifierDeclStatement	char * in_b = ( char * ) in ;	162:4:4649:4672	55854	0	True				
+ANR	55858	IdentifierDecl	* in_b = ( char * ) in		55854	0					
+ANR	55859	IdentifierDeclType	char *		55854	0					
+ANR	55860	Identifier	in_b		55854	1					
+ANR	55861	AssignmentExpression	* in_b = ( char * ) in		55854	2		=			
+ANR	55862	Identifier	in_b		55854	0					
+ANR	55863	CastExpression	( char * ) in		55854	1					
+ANR	55864	CastTarget	char *		55854	0					
+ANR	55865	Identifier	in		55854	1					
+ANR	55866	IdentifierDeclStatement	char * out_b = ( char * ) out ;	163:4:4678:4703	55854	1	True				
+ANR	55867	IdentifierDecl	* out_b = ( char * ) out		55854	0					
+ANR	55868	IdentifierDeclType	char *		55854	0					
+ANR	55869	Identifier	out_b		55854	1					
+ANR	55870	AssignmentExpression	* out_b = ( char * ) out		55854	2		=			
+ANR	55871	Identifier	out_b		55854	0					
+ANR	55872	CastExpression	( char * ) out		55854	1					
+ANR	55873	CastTarget	char *		55854	0					
+ANR	55874	Identifier	out		55854	1					
+ANR	55875	IdentifierDeclStatement	size_t nbyte = elem_size * size ;	164:4:4709:4740	55854	2	True				
+ANR	55876	IdentifierDecl	nbyte = elem_size * size		55854	0					
+ANR	55877	IdentifierDeclType	size_t		55854	0					
+ANR	55878	Identifier	nbyte		55854	1					
+ANR	55879	AssignmentExpression	nbyte = elem_size * size		55854	2		=			
+ANR	55880	Identifier	nbyte		55854	0					
+ANR	55881	MultiplicativeExpression	elem_size * size		55854	1		*			
+ANR	55882	Identifier	elem_size		55854	0					
+ANR	55883	Identifier	size		55854	1					
+ANR	55884	IdentifierDeclStatement	"int64_t x , t ;"	165:4:4746:4758	55854	3	True				
+ANR	55885	IdentifierDecl	x		55854	0					
+ANR	55886	IdentifierDeclType	int64_t		55854	0					
+ANR	55887	Identifier	x		55854	1					
+ANR	55888	IdentifierDecl	t		55854	1					
+ANR	55889	IdentifierDeclType	int64_t		55854	0					
+ANR	55890	Identifier	t		55854	1					
+ANR	55891	IdentifierDeclStatement	"size_t jj , ii , kk ;"	166:4:4764:4781	55854	4	True				
+ANR	55892	IdentifierDecl	jj		55854	0					
+ANR	55893	IdentifierDeclType	size_t		55854	0					
+ANR	55894	Identifier	jj		55854	1					
+ANR	55895	IdentifierDecl	ii		55854	1					
+ANR	55896	IdentifierDeclType	size_t		55854	0					
+ANR	55897	Identifier	ii		55854	1					
+ANR	55898	IdentifierDecl	kk		55854	2					
+ANR	55899	IdentifierDeclType	size_t		55854	0					
+ANR	55900	Identifier	kk		55854	1					
+ANR	55901	ExpressionStatement	CHECK_MULT_EIGHT ( size )	168:4:4788:4810	55854	5	True				
+ANR	55902	CallExpression	CHECK_MULT_EIGHT ( size )		55854	0					
+ANR	55903	Callee	CHECK_MULT_EIGHT		55854	0					
+ANR	55904	Identifier	CHECK_MULT_EIGHT		55854	0					
+ANR	55905	ArgumentList	size		55854	1					
+ANR	55906	Argument	size		55854	0					
+ANR	55907	Identifier	size		55854	0					
+ANR	55908	ForStatement	for ( jj = 0 ; jj < 8 * elem_size ; jj += 8 )		55854	6					
+ANR	55909	ForInit	jj = 0 ;	170:9:4822:4828	55854	0	True				
+ANR	55910	AssignmentExpression	jj = 0		55854	0		=			
+ANR	55911	Identifier	jj		55854	0					
+ANR	55912	PrimaryExpression	0		55854	1					
+ANR	55913	Condition	jj < 8 * elem_size	170:17:4830:4847	55854	1	True				
+ANR	55914	RelationalExpression	jj < 8 * elem_size		55854	0		<			
+ANR	55915	Identifier	jj		55854	0					
+ANR	55916	MultiplicativeExpression	8 * elem_size		55854	1		*			
+ANR	55917	PrimaryExpression	8		55854	0					
+ANR	55918	Identifier	elem_size		55854	1					
+ANR	55919	AssignmentExpression	jj += 8	170:37:4850:4856	55854	2	True	+=			
+ANR	55920	Identifier	jj		55854	0					
+ANR	55921	PrimaryExpression	8		55854	1					
+ANR	55922	CompoundStatement		10:46:215:215	55854	3					
+ANR	55923	ForStatement	for ( ii = 0 ; ii + 8 * elem_size - 1 < nbyte ; ii += 8 * elem_size )		55854	0					
+ANR	55924	ForInit	ii = 0 ;	171:13:4874:4880	55854	0	True				
+ANR	55925	AssignmentExpression	ii = 0		55854	0		=			
+ANR	55926	Identifier	ii		55854	0					
+ANR	55927	PrimaryExpression	0		55854	1					
+ANR	55928	Condition	ii + 8 * elem_size - 1 < nbyte	171:21:4882:4911	55854	1	True				
+ANR	55929	RelationalExpression	ii + 8 * elem_size - 1 < nbyte		55854	0		<			
+ANR	55930	AdditiveExpression	ii + 8 * elem_size - 1		55854	0		+			
+ANR	55931	Identifier	ii		55854	0					
+ANR	55932	AdditiveExpression	8 * elem_size - 1		55854	1		-			
+ANR	55933	MultiplicativeExpression	8 * elem_size		55854	0		*			
+ANR	55934	PrimaryExpression	8		55854	0					
+ANR	55935	Identifier	elem_size		55854	1					
+ANR	55936	PrimaryExpression	1		55854	1					
+ANR	55937	Identifier	nbyte		55854	1					
+ANR	55938	AssignmentExpression	ii += 8 * elem_size	171:53:4914:4932	55854	2	True	+=			
+ANR	55939	Identifier	ii		55854	0					
+ANR	55940	MultiplicativeExpression	8 * elem_size		55854	1		*			
+ANR	55941	PrimaryExpression	8		55854	0					
+ANR	55942	Identifier	elem_size		55854	1					
+ANR	55943	CompoundStatement		11:74:291:291	55854	3					
+ANR	55944	ExpressionStatement	x = * ( ( int64_t * ) & in_b [ ii + jj ] )	172:12:4949:4981	55854	0	True				
+ANR	55945	AssignmentExpression	x = * ( ( int64_t * ) & in_b [ ii + jj ] )		55854	0		=			
+ANR	55946	Identifier	x		55854	0					
+ANR	55947	UnaryOperationExpression	* ( ( int64_t * ) & in_b [ ii + jj ] )		55854	1					
+ANR	55948	UnaryOperator	*		55854	0					
+ANR	55949	CastExpression	( int64_t * ) & in_b [ ii + jj ]		55854	1					
+ANR	55950	CastTarget	int64_t *		55854	0					
+ANR	55951	UnaryOperationExpression	& in_b [ ii + jj ]		55854	1					
+ANR	55952	UnaryOperator	&		55854	0					
+ANR	55953	ArrayIndexing	in_b [ ii + jj ]		55854	1					
+ANR	55954	Identifier	in_b		55854	0					
+ANR	55955	AdditiveExpression	ii + jj		55854	1		+			
+ANR	55956	Identifier	ii		55854	0					
+ANR	55957	Identifier	jj		55854	1					
+ANR	55958	ExpressionStatement	"TRANS_BIT_8X8 ( x , t )"	173:12:4995:5014	55854	1	True				
+ANR	55959	CallExpression	"TRANS_BIT_8X8 ( x , t )"		55854	0					
+ANR	55960	Callee	TRANS_BIT_8X8		55854	0					
+ANR	55961	Identifier	TRANS_BIT_8X8		55854	0					
+ANR	55962	ArgumentList	x		55854	1					
+ANR	55963	Argument	x		55854	0					
+ANR	55964	Identifier	x		55854	0					
+ANR	55965	Argument	t		55854	1					
+ANR	55966	Identifier	t		55854	0					
+ANR	55967	ForStatement	for ( kk = 0 ; kk < 8 ; kk ++ )		55854	2					
+ANR	55968	ForInit	kk = 0 ;	174:17:5033:5039	55854	0	True				
+ANR	55969	AssignmentExpression	kk = 0		55854	0		=			
+ANR	55970	Identifier	kk		55854	0					
+ANR	55971	PrimaryExpression	0		55854	1					
+ANR	55972	Condition	kk < 8	174:25:5041:5046	55854	1	True				
+ANR	55973	RelationalExpression	kk < 8		55854	0		<			
+ANR	55974	Identifier	kk		55854	0					
+ANR	55975	PrimaryExpression	8		55854	1					
+ANR	55976	PostIncDecOperationExpression	kk ++	174:33:5049:5052	55854	2	True				
+ANR	55977	Identifier	kk		55854	0					
+ANR	55978	IncDec	++		55854	1					
+ANR	55979	CompoundStatement		14:39:411:411	55854	3					
+ANR	55980	ExpressionStatement	* ( ( uint8_t * ) & out_b [ ii + jj / 8 + kk * elem_size ] ) = x	175:16:5073:5127	55854	0	True				
+ANR	55981	AssignmentExpression	* ( ( uint8_t * ) & out_b [ ii + jj / 8 + kk * elem_size ] ) = x		55854	0		=			
+ANR	55982	UnaryOperationExpression	* ( ( uint8_t * ) & out_b [ ii + jj / 8 + kk * elem_size ] )		55854	0					
+ANR	55983	UnaryOperator	*		55854	0					
+ANR	55984	CastExpression	( uint8_t * ) & out_b [ ii + jj / 8 + kk * elem_size ]		55854	1					
+ANR	55985	CastTarget	uint8_t *		55854	0					
+ANR	55986	UnaryOperationExpression	& out_b [ ii + jj / 8 + kk * elem_size ]		55854	1					
+ANR	55987	UnaryOperator	&		55854	0					
+ANR	55988	ArrayIndexing	out_b [ ii + jj / 8 + kk * elem_size ]		55854	1					
+ANR	55989	Identifier	out_b		55854	0					
+ANR	55990	AdditiveExpression	ii + jj / 8 + kk * elem_size		55854	1		+			
+ANR	55991	Identifier	ii		55854	0					
+ANR	55992	AdditiveExpression	jj / 8 + kk * elem_size		55854	1		+			
+ANR	55993	MultiplicativeExpression	jj / 8		55854	0		/			
+ANR	55994	Identifier	jj		55854	0					
+ANR	55995	PrimaryExpression	8		55854	1					
+ANR	55996	MultiplicativeExpression	kk * elem_size		55854	1		*			
+ANR	55997	Identifier	kk		55854	0					
+ANR	55998	Identifier	elem_size		55854	1					
+ANR	55999	Identifier	x		55854	1					
+ANR	56000	ExpressionStatement	x = x >> 8	176:16:5145:5155	55854	1	True				
+ANR	56001	AssignmentExpression	x = x >> 8		55854	0		=			
+ANR	56002	Identifier	x		55854	0					
+ANR	56003	ShiftExpression	x >> 8		55854	1		>>			
+ANR	56004	Identifier	x		55854	0					
+ANR	56005	PrimaryExpression	8		55854	1					
+ANR	56006	ReturnStatement	return size * elem_size ;	180:4:5191:5214	55854	7	True				
+ANR	56007	MultiplicativeExpression	size * elem_size		55854	0		*			
+ANR	56008	Identifier	size		55854	0					
+ANR	56009	Identifier	elem_size		55854	1					
+ANR	56010	ReturnType	int64_t		55854	1					
+ANR	56011	Identifier	bshuf_shuffle_bit_eightelem_scal		55854	2					
+ANR	56012	ParameterList	"void * in , void * out , const size_t size , const size_t elem_size"		55854	3					
+ANR	56013	Parameter	void * in	160:41:4571:4578	55854	0	True				
+ANR	56014	ParameterType	void *		55854	0					
+ANR	56015	Identifier	in		55854	1					
+ANR	56016	Parameter	void * out	160:51:4581:4589	55854	1	True				
+ANR	56017	ParameterType	void *		55854	0					
+ANR	56018	Identifier	out		55854	1					
+ANR	56019	Parameter	const size_t size	161:8:4600:4616	55854	2	True				
+ANR	56020	ParameterType	const size_t		55854	0					
+ANR	56021	Identifier	size		55854	1					
+ANR	56022	Parameter	const size_t elem_size	161:27:4619:4640	55854	3	True				
+ANR	56023	ParameterType	const size_t		55854	0					
+ANR	56024	Identifier	elem_size		55854	1					
+ANR	56025	CFGEntryNode	ENTRY		55854		True				
+ANR	56026	CFGExitNode	EXIT		55854		True				
+ANR	56027	Symbol	kk		55854						
+ANR	56028	Symbol	jj		55854						
+ANR	56029	Symbol	ii		55854						
+ANR	56030	Symbol	* in_b		55854						
+ANR	56031	Symbol	out_b		55854						
+ANR	56032	Symbol	* elem_size		55854						
+ANR	56033	Symbol	in		55854						
+ANR	56034	Symbol	* ii		55854						
+ANR	56035	Symbol	* jj		55854						
+ANR	56036	Symbol	* kk		55854						
+ANR	56037	Symbol	* out_b		55854						
+ANR	56038	Symbol	nbyte		55854						
+ANR	56039	Symbol	* ( ( int64_t * ) & in_b [ ii + jj ] )		55854						
+ANR	56040	Symbol	out		55854						
+ANR	56041	Symbol	* ( ( uint8_t * ) & out_b [ ii + jj / 8 + kk * elem_size ] )		55854						
+ANR	56042	Symbol	size		55854						
+ANR	56043	Symbol	t		55854						
+ANR	56044	Symbol	elem_size		55854						
+ANR	56045	Symbol	x		55854						
+ANR	56046	Symbol	in_b		55854						
+ANR	56047	Function	bshuf_untrans_bit_elem_scal	185:0:5260:5654							
+ANR	56048	FunctionDef	"bshuf_untrans_bit_elem_scal (void * in , void * out , const size_t size , const size_t elem_size , void * tmp_buf)"		56047	0					
+ANR	56049	CompoundStatement		186:75:5411:5654	56047	0					
+ANR	56050	IdentifierDeclStatement	int64_t count ;	188:4:5418:5431	56047	0	True				
+ANR	56051	IdentifierDecl	count		56047	0					
+ANR	56052	IdentifierDeclType	int64_t		56047	0					
+ANR	56053	Identifier	count		56047	1					
+ANR	56054	ExpressionStatement	CHECK_MULT_EIGHT ( size )	190:4:5438:5460	56047	1	True				
+ANR	56055	CallExpression	CHECK_MULT_EIGHT ( size )		56047	0					
+ANR	56056	Callee	CHECK_MULT_EIGHT		56047	0					
+ANR	56057	Identifier	CHECK_MULT_EIGHT		56047	0					
+ANR	56058	ArgumentList	size		56047	1					
+ANR	56059	Argument	size		56047	0					
+ANR	56060	Identifier	size		56047	0					
+ANR	56061	ExpressionStatement	"count = bshuf_trans_byte_bitrow_scal ( in , tmp_buf , size , elem_size )"	192:4:5467:5533	56047	2	True				
+ANR	56062	AssignmentExpression	"count = bshuf_trans_byte_bitrow_scal ( in , tmp_buf , size , elem_size )"		56047	0		=			
+ANR	56063	Identifier	count		56047	0					
+ANR	56064	CallExpression	"bshuf_trans_byte_bitrow_scal ( in , tmp_buf , size , elem_size )"		56047	1					
+ANR	56065	Callee	bshuf_trans_byte_bitrow_scal		56047	0					
+ANR	56066	Identifier	bshuf_trans_byte_bitrow_scal		56047	0					
+ANR	56067	ArgumentList	in		56047	1					
+ANR	56068	Argument	in		56047	0					
+ANR	56069	Identifier	in		56047	0					
+ANR	56070	Argument	tmp_buf		56047	1					
+ANR	56071	Identifier	tmp_buf		56047	0					
+ANR	56072	Argument	size		56047	2					
+ANR	56073	Identifier	size		56047	0					
+ANR	56074	Argument	elem_size		56047	3					
+ANR	56075	Identifier	elem_size		56047	0					
+ANR	56076	ExpressionStatement	CHECK_ERR ( count )	193:4:5539:5555	56047	3	True				
+ANR	56077	CallExpression	CHECK_ERR ( count )		56047	0					
+ANR	56078	Callee	CHECK_ERR		56047	0					
+ANR	56079	Identifier	CHECK_ERR		56047	0					
+ANR	56080	ArgumentList	count		56047	1					
+ANR	56081	Argument	count		56047	0					
+ANR	56082	Identifier	count		56047	0					
+ANR	56083	ExpressionStatement	"count = bshuf_shuffle_bit_eightelem_scal ( tmp_buf , out , size , elem_size )"	194:4:5561:5633	56047	4	True				
+ANR	56084	AssignmentExpression	"count = bshuf_shuffle_bit_eightelem_scal ( tmp_buf , out , size , elem_size )"		56047	0		=			
+ANR	56085	Identifier	count		56047	0					
+ANR	56086	CallExpression	"bshuf_shuffle_bit_eightelem_scal ( tmp_buf , out , size , elem_size )"		56047	1					
+ANR	56087	Callee	bshuf_shuffle_bit_eightelem_scal		56047	0					
+ANR	56088	Identifier	bshuf_shuffle_bit_eightelem_scal		56047	0					
+ANR	56089	ArgumentList	tmp_buf		56047	1					
+ANR	56090	Argument	tmp_buf		56047	0					
+ANR	56091	Identifier	tmp_buf		56047	0					
+ANR	56092	Argument	out		56047	1					
+ANR	56093	Identifier	out		56047	0					
+ANR	56094	Argument	size		56047	2					
+ANR	56095	Identifier	size		56047	0					
+ANR	56096	Argument	elem_size		56047	3					
+ANR	56097	Identifier	elem_size		56047	0					
+ANR	56098	ReturnStatement	return count ;	196:4:5640:5652	56047	5	True				
+ANR	56099	Identifier	count		56047	0					
+ANR	56100	ReturnType	int64_t		56047	1					
+ANR	56101	Identifier	bshuf_untrans_bit_elem_scal		56047	2					
+ANR	56102	ParameterList	"void * in , void * out , const size_t size , const size_t elem_size , void * tmp_buf"		56047	3					
+ANR	56103	Parameter	void * in	185:36:5296:5303	56047	0	True				
+ANR	56104	ParameterType	void *		56047	0					
+ANR	56105	Identifier	in		56047	1					
+ANR	56106	Parameter	void * out	185:46:5306:5314	56047	1	True				
+ANR	56107	ParameterType	void *		56047	0					
+ANR	56108	Identifier	out		56047	1					
+ANR	56109	Parameter	const size_t size	185:57:5317:5333	56047	2	True				
+ANR	56110	ParameterType	const size_t		56047	0					
+ANR	56111	Identifier	size		56047	1					
+ANR	56112	Parameter	const size_t elem_size	186:36:5372:5393	56047	3	True				
+ANR	56113	ParameterType	const size_t		56047	0					
+ANR	56114	Identifier	elem_size		56047	1					
+ANR	56115	Parameter	void * tmp_buf	186:60:5396:5408	56047	4	True				
+ANR	56116	ParameterType	void *		56047	0					
+ANR	56117	Identifier	tmp_buf		56047	1					
+ANR	56118	CFGEntryNode	ENTRY		56047		True				
+ANR	56119	CFGExitNode	EXIT		56047		True				
+ANR	56120	Symbol	tmp_buf		56047						
+ANR	56121	Symbol	bshuf_trans_byte_bitrow_scal		56047						
+ANR	56122	Symbol	size		56047						
+ANR	56123	Symbol	in		56047						
+ANR	56124	Symbol	elem_size		56047						
+ANR	56125	Symbol	count		56047						
+ANR	56126	Symbol	out		56047						
+ANR	56127	Symbol	bshuf_shuffle_bit_eightelem_scal		56047						

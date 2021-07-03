@@ -1,0 +1,627 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	21600	File	/home/niexu/project/python/preprocess/test/000/240/333/CWE416_Use_After_Free__malloc_free_long_11.c								
+ANR	21601	Function	CWE416_Use_After_Free__malloc_free_long_11_bad	24:0:668:1406							
+ANR	21602	FunctionDef	CWE416_Use_After_Free__malloc_free_long_11_bad ()		21601	0					
+ANR	21603	CompoundStatement		25:0:723:1406	21601	0					
+ANR	21604	IdentifierDeclStatement	long * data ;	26:4:730:741	21601	0	True				
+ANR	21605	IdentifierDecl	* data		21601	0					
+ANR	21606	IdentifierDeclType	long *		21601	0					
+ANR	21607	Identifier	data		21601	1					
+ANR	21608	ExpressionStatement	data = NULL	28:4:775:786	21601	1	True				
+ANR	21609	AssignmentExpression	data = NULL		21601	0		=			
+ANR	21610	Identifier	data		21601	0					
+ANR	21611	Identifier	NULL		21601	1					
+ANR	21612	IfStatement	if ( globalReturnsTrue ( ) )		21601	2					
+ANR	21613	Condition	globalReturnsTrue ( )	29:7:796:814	21601	0	True				
+ANR	21614	CallExpression	globalReturnsTrue ( )		21601	0					
+ANR	21615	Callee	globalReturnsTrue		21601	0					
+ANR	21616	Identifier	globalReturnsTrue		21601	0					
+ANR	21617	ArgumentList			21601	1					
+ANR	21618	CompoundStatement		6:4:98:98	21601	1					
+ANR	21619	ExpressionStatement	data = ( long * ) malloc ( 100 * sizeof ( long ) )	31:8:833:872	21601	0	True				
+ANR	21620	AssignmentExpression	data = ( long * ) malloc ( 100 * sizeof ( long ) )		21601	0		=			
+ANR	21621	Identifier	data		21601	0					
+ANR	21622	CastExpression	( long * ) malloc ( 100 * sizeof ( long ) )		21601	1					
+ANR	21623	CastTarget	long *		21601	0					
+ANR	21624	CallExpression	malloc ( 100 * sizeof ( long ) )		21601	1					
+ANR	21625	Callee	malloc		21601	0					
+ANR	21626	Identifier	malloc		21601	0					
+ANR	21627	ArgumentList	100 * sizeof ( long )		21601	1					
+ANR	21628	Argument	100 * sizeof ( long )		21601	0					
+ANR	21629	MultiplicativeExpression	100 * sizeof ( long )		21601	0		*			
+ANR	21630	PrimaryExpression	100		21601	0					
+ANR	21631	SizeofExpression	sizeof ( long )		21601	1					
+ANR	21632	Sizeof	sizeof		21601	0					
+ANR	21633	SizeofOperand	long		21601	1					
+ANR	21634	IfStatement	if ( data == NULL )		21601	1					
+ANR	21635	Condition	data == NULL	32:12:887:898	21601	0	True				
+ANR	21636	EqualityExpression	data == NULL		21601	0		==			
+ANR	21637	Identifier	data		21601	0					
+ANR	21638	Identifier	NULL		21601	1					
+ANR	21639	CompoundStatement		8:26:177:177	21601	1					
+ANR	21640	ExpressionStatement	exit ( - 1 )	32:27:902:910	21601	0	True				
+ANR	21641	CallExpression	exit ( - 1 )		21601	0					
+ANR	21642	Callee	exit		21601	0					
+ANR	21643	Identifier	exit		21601	0					
+ANR	21644	ArgumentList	- 1		21601	1					
+ANR	21645	Argument	- 1		21601	0					
+ANR	21646	UnaryOperationExpression	- 1		21601	0					
+ANR	21647	UnaryOperator	-		21601	0					
+ANR	21648	PrimaryExpression	1		21601	1					
+ANR	21649	CompoundStatement		10:12:212:220	21601	2					
+ANR	21650	IdentifierDeclStatement	size_t i ;	34:12:936:944	21601	0	True				
+ANR	21651	IdentifierDecl	i		21601	0					
+ANR	21652	IdentifierDeclType	size_t		21601	0					
+ANR	21653	Identifier	i		21601	1					
+ANR	21654	ForStatement	for ( i = 0 ; i < 100 ; i ++ )		21601	1					
+ANR	21655	ForInit	i = 0 ;	35:16:963:968	21601	0	True				
+ANR	21656	AssignmentExpression	i = 0		21601	0		=			
+ANR	21657	Identifier	i		21601	0					
+ANR	21658	PrimaryExpression	0		21601	1					
+ANR	21659	Condition	i < 100	35:23:970:976	21601	1	True				
+ANR	21660	RelationalExpression	i < 100		21601	0		<			
+ANR	21661	Identifier	i		21601	0					
+ANR	21662	PrimaryExpression	100		21601	1					
+ANR	21663	PostIncDecOperationExpression	i ++	35:32:979:981	21601	2	True				
+ANR	21664	Identifier	i		21601	0					
+ANR	21665	IncDec	++		21601	1					
+ANR	21666	CompoundStatement		12:12:273:273	21601	3					
+ANR	21667	ExpressionStatement	data [ i ] = 5L	37:16:1016:1028	21601	0	True				
+ANR	21668	AssignmentExpression	data [ i ] = 5L		21601	0		=			
+ANR	21669	ArrayIndexing	data [ i ]		21601	0					
+ANR	21670	Identifier	data		21601	0					
+ANR	21671	Identifier	i		21601	1					
+ANR	21672	PrimaryExpression	5L		21601	1					
+ANR	21673	ExpressionStatement	free ( data )	41:8:1156:1166	21601	3	True				
+ANR	21674	CallExpression	free ( data )		21601	0					
+ANR	21675	Callee	free		21601	0					
+ANR	21676	Identifier	free		21601	0					
+ANR	21677	ArgumentList	data		21601	1					
+ANR	21678	Argument	data		21601	0					
+ANR	21679	Identifier	data		21601	0					
+ANR	21680	IfStatement	if ( globalReturnsTrue ( ) )		21601	3					
+ANR	21681	Condition	globalReturnsTrue ( )	43:7:1183:1201	21601	0	True				
+ANR	21682	CallExpression	globalReturnsTrue ( )		21601	0					
+ANR	21683	Callee	globalReturnsTrue		21601	0					
+ANR	21684	Identifier	globalReturnsTrue		21601	0					
+ANR	21685	ArgumentList			21601	1					
+ANR	21686	CompoundStatement		20:4:485:485	21601	1					
+ANR	21687	ExpressionStatement	printLongLine ( data [ 0 ] )	46:8:1288:1310	21601	0	True				
+ANR	21688	CallExpression	printLongLine ( data [ 0 ] )		21601	0					
+ANR	21689	Callee	printLongLine		21601	0					
+ANR	21690	Identifier	printLongLine		21601	0					
+ANR	21691	ArgumentList	data [ 0 ]		21601	1					
+ANR	21692	Argument	data [ 0 ]		21601	0					
+ANR	21693	ArrayIndexing	data [ 0 ]		21601	0					
+ANR	21694	Identifier	data		21601	0					
+ANR	21695	PrimaryExpression	0		21601	1					
+ANR	21696	ReturnType	void		21601	1					
+ANR	21697	Identifier	CWE416_Use_After_Free__malloc_free_long_11_bad		21601	2					
+ANR	21698	ParameterList			21601	3					
+ANR	21699	CFGEntryNode	ENTRY		21601		True				
+ANR	21700	CFGExitNode	EXIT		21601		True				
+ANR	21701	Symbol	malloc		21601						
+ANR	21702	Symbol	NULL		21601						
+ANR	21703	Symbol	* i		21601						
+ANR	21704	Symbol	data		21601						
+ANR	21705	Symbol	i		21601						
+ANR	21706	Symbol	globalReturnsTrue		21601						
+ANR	21707	Symbol	* data		21601						
+ANR	21708	Function	goodB2G1	56:0:1569:2477							
+ANR	21709	FunctionDef	goodB2G1 ()		21708	0					
+ANR	21710	CompoundStatement		57:0:1593:2477	21708	0					
+ANR	21711	IdentifierDeclStatement	long * data ;	58:4:1600:1611	21708	0	True				
+ANR	21712	IdentifierDecl	* data		21708	0					
+ANR	21713	IdentifierDeclType	long *		21708	0					
+ANR	21714	Identifier	data		21708	1					
+ANR	21715	ExpressionStatement	data = NULL	60:4:1645:1656	21708	1	True				
+ANR	21716	AssignmentExpression	data = NULL		21708	0		=			
+ANR	21717	Identifier	data		21708	0					
+ANR	21718	Identifier	NULL		21708	1					
+ANR	21719	IfStatement	if ( globalReturnsTrue ( ) )		21708	2					
+ANR	21720	Condition	globalReturnsTrue ( )	61:7:1666:1684	21708	0	True				
+ANR	21721	CallExpression	globalReturnsTrue ( )		21708	0					
+ANR	21722	Callee	globalReturnsTrue		21708	0					
+ANR	21723	Identifier	globalReturnsTrue		21708	0					
+ANR	21724	ArgumentList			21708	1					
+ANR	21725	CompoundStatement		6:4:98:98	21708	1					
+ANR	21726	ExpressionStatement	data = ( long * ) malloc ( 100 * sizeof ( long ) )	63:8:1703:1742	21708	0	True				
+ANR	21727	AssignmentExpression	data = ( long * ) malloc ( 100 * sizeof ( long ) )		21708	0		=			
+ANR	21728	Identifier	data		21708	0					
+ANR	21729	CastExpression	( long * ) malloc ( 100 * sizeof ( long ) )		21708	1					
+ANR	21730	CastTarget	long *		21708	0					
+ANR	21731	CallExpression	malloc ( 100 * sizeof ( long ) )		21708	1					
+ANR	21732	Callee	malloc		21708	0					
+ANR	21733	Identifier	malloc		21708	0					
+ANR	21734	ArgumentList	100 * sizeof ( long )		21708	1					
+ANR	21735	Argument	100 * sizeof ( long )		21708	0					
+ANR	21736	MultiplicativeExpression	100 * sizeof ( long )		21708	0		*			
+ANR	21737	PrimaryExpression	100		21708	0					
+ANR	21738	SizeofExpression	sizeof ( long )		21708	1					
+ANR	21739	Sizeof	sizeof		21708	0					
+ANR	21740	SizeofOperand	long		21708	1					
+ANR	21741	IfStatement	if ( data == NULL )		21708	1					
+ANR	21742	Condition	data == NULL	64:12:1757:1768	21708	0	True				
+ANR	21743	EqualityExpression	data == NULL		21708	0		==			
+ANR	21744	Identifier	data		21708	0					
+ANR	21745	Identifier	NULL		21708	1					
+ANR	21746	CompoundStatement		8:26:177:177	21708	1					
+ANR	21747	ExpressionStatement	exit ( - 1 )	64:27:1772:1780	21708	0	True				
+ANR	21748	CallExpression	exit ( - 1 )		21708	0					
+ANR	21749	Callee	exit		21708	0					
+ANR	21750	Identifier	exit		21708	0					
+ANR	21751	ArgumentList	- 1		21708	1					
+ANR	21752	Argument	- 1		21708	0					
+ANR	21753	UnaryOperationExpression	- 1		21708	0					
+ANR	21754	UnaryOperator	-		21708	0					
+ANR	21755	PrimaryExpression	1		21708	1					
+ANR	21756	CompoundStatement		10:12:212:220	21708	2					
+ANR	21757	IdentifierDeclStatement	size_t i ;	66:12:1806:1814	21708	0	True				
+ANR	21758	IdentifierDecl	i		21708	0					
+ANR	21759	IdentifierDeclType	size_t		21708	0					
+ANR	21760	Identifier	i		21708	1					
+ANR	21761	ForStatement	for ( i = 0 ; i < 100 ; i ++ )		21708	1					
+ANR	21762	ForInit	i = 0 ;	67:16:1833:1838	21708	0	True				
+ANR	21763	AssignmentExpression	i = 0		21708	0		=			
+ANR	21764	Identifier	i		21708	0					
+ANR	21765	PrimaryExpression	0		21708	1					
+ANR	21766	Condition	i < 100	67:23:1840:1846	21708	1	True				
+ANR	21767	RelationalExpression	i < 100		21708	0		<			
+ANR	21768	Identifier	i		21708	0					
+ANR	21769	PrimaryExpression	100		21708	1					
+ANR	21770	PostIncDecOperationExpression	i ++	67:32:1849:1851	21708	2	True				
+ANR	21771	Identifier	i		21708	0					
+ANR	21772	IncDec	++		21708	1					
+ANR	21773	CompoundStatement		12:12:273:273	21708	3					
+ANR	21774	ExpressionStatement	data [ i ] = 5L	69:16:1886:1898	21708	0	True				
+ANR	21775	AssignmentExpression	data [ i ] = 5L		21708	0		=			
+ANR	21776	ArrayIndexing	data [ i ]		21708	0					
+ANR	21777	Identifier	data		21708	0					
+ANR	21778	Identifier	i		21708	1					
+ANR	21779	PrimaryExpression	5L		21708	1					
+ANR	21780	ExpressionStatement	free ( data )	73:8:2026:2036	21708	3	True				
+ANR	21781	CallExpression	free ( data )		21708	0					
+ANR	21782	Callee	free		21708	0					
+ANR	21783	Identifier	free		21708	0					
+ANR	21784	ArgumentList	data		21708	1					
+ANR	21785	Argument	data		21708	0					
+ANR	21786	Identifier	data		21708	0					
+ANR	21787	IfStatement	if ( globalReturnsFalse ( ) )		21708	3					
+ANR	21788	Condition	globalReturnsFalse ( )	75:7:2053:2072	21708	0	True				
+ANR	21789	CallExpression	globalReturnsFalse ( )		21708	0					
+ANR	21790	Callee	globalReturnsFalse		21708	0					
+ANR	21791	Identifier	globalReturnsFalse		21708	0					
+ANR	21792	ArgumentList			21708	1					
+ANR	21793	CompoundStatement		20:4:486:486	21708	1					
+ANR	21794	ExpressionStatement	"printLine ( ""Benign, fixed string"" )"	78:8:2167:2200	21708	0	True				
+ANR	21795	CallExpression	"printLine ( ""Benign, fixed string"" )"		21708	0					
+ANR	21796	Callee	printLine		21708	0					
+ANR	21797	Identifier	printLine		21708	0					
+ANR	21798	ArgumentList	"""Benign, fixed string"""		21708	1					
+ANR	21799	Argument	"""Benign, fixed string"""		21708	0					
+ANR	21800	PrimaryExpression	"""Benign, fixed string"""		21708	0					
+ANR	21801	ElseStatement	else		21708	0					
+ANR	21802	CompoundStatement		25:4:630:630	21708	0					
+ANR	21803	ExpressionStatement		85:8:2415:2415	21708	0	True				
+ANR	21804	ReturnType	static void		21708	1					
+ANR	21805	Identifier	goodB2G1		21708	2					
+ANR	21806	ParameterList			21708	3					
+ANR	21807	CFGEntryNode	ENTRY		21708		True				
+ANR	21808	CFGExitNode	EXIT		21708		True				
+ANR	21809	Symbol	malloc		21708						
+ANR	21810	Symbol	globalReturnsFalse		21708						
+ANR	21811	Symbol	NULL		21708						
+ANR	21812	Symbol	* i		21708						
+ANR	21813	Symbol	data		21708						
+ANR	21814	Symbol	i		21708						
+ANR	21815	Symbol	globalReturnsTrue		21708						
+ANR	21816	Symbol	* data		21708						
+ANR	21817	Function	goodB2G2	90:0:2570:3333							
+ANR	21818	FunctionDef	goodB2G2 ()		21817	0					
+ANR	21819	CompoundStatement		91:0:2594:3333	21817	0					
+ANR	21820	IdentifierDeclStatement	long * data ;	92:4:2601:2612	21817	0	True				
+ANR	21821	IdentifierDecl	* data		21817	0					
+ANR	21822	IdentifierDeclType	long *		21817	0					
+ANR	21823	Identifier	data		21817	1					
+ANR	21824	ExpressionStatement	data = NULL	94:4:2646:2657	21817	1	True				
+ANR	21825	AssignmentExpression	data = NULL		21817	0		=			
+ANR	21826	Identifier	data		21817	0					
+ANR	21827	Identifier	NULL		21817	1					
+ANR	21828	IfStatement	if ( globalReturnsTrue ( ) )		21817	2					
+ANR	21829	Condition	globalReturnsTrue ( )	95:7:2667:2685	21817	0	True				
+ANR	21830	CallExpression	globalReturnsTrue ( )		21817	0					
+ANR	21831	Callee	globalReturnsTrue		21817	0					
+ANR	21832	Identifier	globalReturnsTrue		21817	0					
+ANR	21833	ArgumentList			21817	1					
+ANR	21834	CompoundStatement		6:4:98:98	21817	1					
+ANR	21835	ExpressionStatement	data = ( long * ) malloc ( 100 * sizeof ( long ) )	97:8:2704:2743	21817	0	True				
+ANR	21836	AssignmentExpression	data = ( long * ) malloc ( 100 * sizeof ( long ) )		21817	0		=			
+ANR	21837	Identifier	data		21817	0					
+ANR	21838	CastExpression	( long * ) malloc ( 100 * sizeof ( long ) )		21817	1					
+ANR	21839	CastTarget	long *		21817	0					
+ANR	21840	CallExpression	malloc ( 100 * sizeof ( long ) )		21817	1					
+ANR	21841	Callee	malloc		21817	0					
+ANR	21842	Identifier	malloc		21817	0					
+ANR	21843	ArgumentList	100 * sizeof ( long )		21817	1					
+ANR	21844	Argument	100 * sizeof ( long )		21817	0					
+ANR	21845	MultiplicativeExpression	100 * sizeof ( long )		21817	0		*			
+ANR	21846	PrimaryExpression	100		21817	0					
+ANR	21847	SizeofExpression	sizeof ( long )		21817	1					
+ANR	21848	Sizeof	sizeof		21817	0					
+ANR	21849	SizeofOperand	long		21817	1					
+ANR	21850	IfStatement	if ( data == NULL )		21817	1					
+ANR	21851	Condition	data == NULL	98:12:2758:2769	21817	0	True				
+ANR	21852	EqualityExpression	data == NULL		21817	0		==			
+ANR	21853	Identifier	data		21817	0					
+ANR	21854	Identifier	NULL		21817	1					
+ANR	21855	CompoundStatement		8:26:177:177	21817	1					
+ANR	21856	ExpressionStatement	exit ( - 1 )	98:27:2773:2781	21817	0	True				
+ANR	21857	CallExpression	exit ( - 1 )		21817	0					
+ANR	21858	Callee	exit		21817	0					
+ANR	21859	Identifier	exit		21817	0					
+ANR	21860	ArgumentList	- 1		21817	1					
+ANR	21861	Argument	- 1		21817	0					
+ANR	21862	UnaryOperationExpression	- 1		21817	0					
+ANR	21863	UnaryOperator	-		21817	0					
+ANR	21864	PrimaryExpression	1		21817	1					
+ANR	21865	CompoundStatement		10:12:212:220	21817	2					
+ANR	21866	IdentifierDeclStatement	size_t i ;	100:12:2807:2815	21817	0	True				
+ANR	21867	IdentifierDecl	i		21817	0					
+ANR	21868	IdentifierDeclType	size_t		21817	0					
+ANR	21869	Identifier	i		21817	1					
+ANR	21870	ForStatement	for ( i = 0 ; i < 100 ; i ++ )		21817	1					
+ANR	21871	ForInit	i = 0 ;	101:16:2834:2839	21817	0	True				
+ANR	21872	AssignmentExpression	i = 0		21817	0		=			
+ANR	21873	Identifier	i		21817	0					
+ANR	21874	PrimaryExpression	0		21817	1					
+ANR	21875	Condition	i < 100	101:23:2841:2847	21817	1	True				
+ANR	21876	RelationalExpression	i < 100		21817	0		<			
+ANR	21877	Identifier	i		21817	0					
+ANR	21878	PrimaryExpression	100		21817	1					
+ANR	21879	PostIncDecOperationExpression	i ++	101:32:2850:2852	21817	2	True				
+ANR	21880	Identifier	i		21817	0					
+ANR	21881	IncDec	++		21817	1					
+ANR	21882	CompoundStatement		12:12:273:273	21817	3					
+ANR	21883	ExpressionStatement	data [ i ] = 5L	103:16:2887:2899	21817	0	True				
+ANR	21884	AssignmentExpression	data [ i ] = 5L		21817	0		=			
+ANR	21885	ArrayIndexing	data [ i ]		21817	0					
+ANR	21886	Identifier	data		21817	0					
+ANR	21887	Identifier	i		21817	1					
+ANR	21888	PrimaryExpression	5L		21817	1					
+ANR	21889	ExpressionStatement	free ( data )	107:8:3027:3037	21817	3	True				
+ANR	21890	CallExpression	free ( data )		21817	0					
+ANR	21891	Callee	free		21817	0					
+ANR	21892	Identifier	free		21817	0					
+ANR	21893	ArgumentList	data		21817	1					
+ANR	21894	Argument	data		21817	0					
+ANR	21895	Identifier	data		21817	0					
+ANR	21896	IfStatement	if ( globalReturnsTrue ( ) )		21817	3					
+ANR	21897	Condition	globalReturnsTrue ( )	109:7:3054:3072	21817	0	True				
+ANR	21898	CallExpression	globalReturnsTrue ( )		21817	0					
+ANR	21899	Callee	globalReturnsTrue		21817	0					
+ANR	21900	Identifier	globalReturnsTrue		21817	0					
+ANR	21901	ArgumentList			21817	1					
+ANR	21902	CompoundStatement		20:4:485:485	21817	1					
+ANR	21903	ExpressionStatement		114:8:3271:3271	21817	0	True				
+ANR	21904	ReturnType	static void		21817	1					
+ANR	21905	Identifier	goodB2G2		21817	2					
+ANR	21906	ParameterList			21817	3					
+ANR	21907	CFGEntryNode	ENTRY		21817		True				
+ANR	21908	CFGExitNode	EXIT		21817		True				
+ANR	21909	Symbol	malloc		21817						
+ANR	21910	Symbol	NULL		21817						
+ANR	21911	Symbol	* i		21817						
+ANR	21912	Symbol	data		21817						
+ANR	21913	Symbol	i		21817						
+ANR	21914	Symbol	globalReturnsTrue		21817						
+ANR	21915	Symbol	* data		21817						
+ANR	21916	Function	goodG2B1	119:0:3451:4242							
+ANR	21917	FunctionDef	goodG2B1 ()		21916	0					
+ANR	21918	CompoundStatement		120:0:3475:4242	21916	0					
+ANR	21919	IdentifierDeclStatement	long * data ;	121:4:3482:3493	21916	0	True				
+ANR	21920	IdentifierDecl	* data		21916	0					
+ANR	21921	IdentifierDeclType	long *		21916	0					
+ANR	21922	Identifier	data		21916	1					
+ANR	21923	ExpressionStatement	data = NULL	123:4:3527:3538	21916	1	True				
+ANR	21924	AssignmentExpression	data = NULL		21916	0		=			
+ANR	21925	Identifier	data		21916	0					
+ANR	21926	Identifier	NULL		21916	1					
+ANR	21927	IfStatement	if ( globalReturnsFalse ( ) )		21916	2					
+ANR	21928	Condition	globalReturnsFalse ( )	124:7:3548:3567	21916	0	True				
+ANR	21929	CallExpression	globalReturnsFalse ( )		21916	0					
+ANR	21930	Callee	globalReturnsFalse		21916	0					
+ANR	21931	Identifier	globalReturnsFalse		21916	0					
+ANR	21932	ArgumentList			21916	1					
+ANR	21933	CompoundStatement		6:4:99:99	21916	1					
+ANR	21934	ExpressionStatement	"printLine ( ""Benign, fixed string"" )"	127:8:3662:3695	21916	0	True				
+ANR	21935	CallExpression	"printLine ( ""Benign, fixed string"" )"		21916	0					
+ANR	21936	Callee	printLine		21916	0					
+ANR	21937	Identifier	printLine		21916	0					
+ANR	21938	ArgumentList	"""Benign, fixed string"""		21916	1					
+ANR	21939	Argument	"""Benign, fixed string"""		21916	0					
+ANR	21940	PrimaryExpression	"""Benign, fixed string"""		21916	0					
+ANR	21941	ElseStatement	else		21916	0					
+ANR	21942	CompoundStatement		11:4:243:243	21916	0					
+ANR	21943	ExpressionStatement	data = ( long * ) malloc ( 100 * sizeof ( long ) )	131:8:3730:3769	21916	0	True				
+ANR	21944	AssignmentExpression	data = ( long * ) malloc ( 100 * sizeof ( long ) )		21916	0		=			
+ANR	21945	Identifier	data		21916	0					
+ANR	21946	CastExpression	( long * ) malloc ( 100 * sizeof ( long ) )		21916	1					
+ANR	21947	CastTarget	long *		21916	0					
+ANR	21948	CallExpression	malloc ( 100 * sizeof ( long ) )		21916	1					
+ANR	21949	Callee	malloc		21916	0					
+ANR	21950	Identifier	malloc		21916	0					
+ANR	21951	ArgumentList	100 * sizeof ( long )		21916	1					
+ANR	21952	Argument	100 * sizeof ( long )		21916	0					
+ANR	21953	MultiplicativeExpression	100 * sizeof ( long )		21916	0		*			
+ANR	21954	PrimaryExpression	100		21916	0					
+ANR	21955	SizeofExpression	sizeof ( long )		21916	1					
+ANR	21956	Sizeof	sizeof		21916	0					
+ANR	21957	SizeofOperand	long		21916	1					
+ANR	21958	IfStatement	if ( data == NULL )		21916	1					
+ANR	21959	Condition	data == NULL	132:12:3784:3795	21916	0	True				
+ANR	21960	EqualityExpression	data == NULL		21916	0		==			
+ANR	21961	Identifier	data		21916	0					
+ANR	21962	Identifier	NULL		21916	1					
+ANR	21963	CompoundStatement		13:26:322:322	21916	1					
+ANR	21964	ExpressionStatement	exit ( - 1 )	132:27:3799:3807	21916	0	True				
+ANR	21965	CallExpression	exit ( - 1 )		21916	0					
+ANR	21966	Callee	exit		21916	0					
+ANR	21967	Identifier	exit		21916	0					
+ANR	21968	ArgumentList	- 1		21916	1					
+ANR	21969	Argument	- 1		21916	0					
+ANR	21970	UnaryOperationExpression	- 1		21916	0					
+ANR	21971	UnaryOperator	-		21916	0					
+ANR	21972	PrimaryExpression	1		21916	1					
+ANR	21973	CompoundStatement		15:12:357:365	21916	2					
+ANR	21974	IdentifierDeclStatement	size_t i ;	134:12:3833:3841	21916	0	True				
+ANR	21975	IdentifierDecl	i		21916	0					
+ANR	21976	IdentifierDeclType	size_t		21916	0					
+ANR	21977	Identifier	i		21916	1					
+ANR	21978	ForStatement	for ( i = 0 ; i < 100 ; i ++ )		21916	1					
+ANR	21979	ForInit	i = 0 ;	135:16:3860:3865	21916	0	True				
+ANR	21980	AssignmentExpression	i = 0		21916	0		=			
+ANR	21981	Identifier	i		21916	0					
+ANR	21982	PrimaryExpression	0		21916	1					
+ANR	21983	Condition	i < 100	135:23:3867:3873	21916	1	True				
+ANR	21984	RelationalExpression	i < 100		21916	0		<			
+ANR	21985	Identifier	i		21916	0					
+ANR	21986	PrimaryExpression	100		21916	1					
+ANR	21987	PostIncDecOperationExpression	i ++	135:32:3876:3878	21916	2	True				
+ANR	21988	Identifier	i		21916	0					
+ANR	21989	IncDec	++		21916	1					
+ANR	21990	CompoundStatement		17:12:418:418	21916	3					
+ANR	21991	ExpressionStatement	data [ i ] = 5L	137:16:3913:3925	21916	0	True				
+ANR	21992	AssignmentExpression	data [ i ] = 5L		21916	0		=			
+ANR	21993	ArrayIndexing	data [ i ]		21916	0					
+ANR	21994	Identifier	data		21916	0					
+ANR	21995	Identifier	i		21916	1					
+ANR	21996	PrimaryExpression	5L		21916	1					
+ANR	21997	IfStatement	if ( globalReturnsTrue ( ) )		21916	3					
+ANR	21998	Condition	globalReturnsTrue ( )	142:7:4019:4037	21916	0	True				
+ANR	21999	CallExpression	globalReturnsTrue ( )		21916	0					
+ANR	22000	Callee	globalReturnsTrue		21916	0					
+ANR	22001	Identifier	globalReturnsTrue		21916	0					
+ANR	22002	ArgumentList			21916	1					
+ANR	22003	CompoundStatement		24:4:569:569	21916	1					
+ANR	22004	ExpressionStatement	printLongLine ( data [ 0 ] )	145:8:4124:4146	21916	0	True				
+ANR	22005	CallExpression	printLongLine ( data [ 0 ] )		21916	0					
+ANR	22006	Callee	printLongLine		21916	0					
+ANR	22007	Identifier	printLongLine		21916	0					
+ANR	22008	ArgumentList	data [ 0 ]		21916	1					
+ANR	22009	Argument	data [ 0 ]		21916	0					
+ANR	22010	ArrayIndexing	data [ 0 ]		21916	0					
+ANR	22011	Identifier	data		21916	0					
+ANR	22012	PrimaryExpression	0		21916	1					
+ANR	22013	ReturnType	static void		21916	1					
+ANR	22014	Identifier	goodG2B1		21916	2					
+ANR	22015	ParameterList			21916	3					
+ANR	22016	CFGEntryNode	ENTRY		21916		True				
+ANR	22017	CFGExitNode	EXIT		21916		True				
+ANR	22018	Symbol	globalReturnsFalse		21916						
+ANR	22019	Symbol	malloc		21916						
+ANR	22020	Symbol	NULL		21916						
+ANR	22021	Symbol	* i		21916						
+ANR	22022	Symbol	data		21916						
+ANR	22023	Symbol	i		21916						
+ANR	22024	Symbol	globalReturnsTrue		21916						
+ANR	22025	Symbol	* data		21916						
+ANR	22026	Function	goodG2B2	151:0:4334:4980							
+ANR	22027	FunctionDef	goodG2B2 ()		22026	0					
+ANR	22028	CompoundStatement		152:0:4358:4980	22026	0					
+ANR	22029	IdentifierDeclStatement	long * data ;	153:4:4365:4376	22026	0	True				
+ANR	22030	IdentifierDecl	* data		22026	0					
+ANR	22031	IdentifierDeclType	long *		22026	0					
+ANR	22032	Identifier	data		22026	1					
+ANR	22033	ExpressionStatement	data = NULL	155:4:4410:4421	22026	1	True				
+ANR	22034	AssignmentExpression	data = NULL		22026	0		=			
+ANR	22035	Identifier	data		22026	0					
+ANR	22036	Identifier	NULL		22026	1					
+ANR	22037	IfStatement	if ( globalReturnsTrue ( ) )		22026	2					
+ANR	22038	Condition	globalReturnsTrue ( )	156:7:4431:4449	22026	0	True				
+ANR	22039	CallExpression	globalReturnsTrue ( )		22026	0					
+ANR	22040	Callee	globalReturnsTrue		22026	0					
+ANR	22041	Identifier	globalReturnsTrue		22026	0					
+ANR	22042	ArgumentList			22026	1					
+ANR	22043	CompoundStatement		6:4:98:98	22026	1					
+ANR	22044	ExpressionStatement	data = ( long * ) malloc ( 100 * sizeof ( long ) )	158:8:4468:4507	22026	0	True				
+ANR	22045	AssignmentExpression	data = ( long * ) malloc ( 100 * sizeof ( long ) )		22026	0		=			
+ANR	22046	Identifier	data		22026	0					
+ANR	22047	CastExpression	( long * ) malloc ( 100 * sizeof ( long ) )		22026	1					
+ANR	22048	CastTarget	long *		22026	0					
+ANR	22049	CallExpression	malloc ( 100 * sizeof ( long ) )		22026	1					
+ANR	22050	Callee	malloc		22026	0					
+ANR	22051	Identifier	malloc		22026	0					
+ANR	22052	ArgumentList	100 * sizeof ( long )		22026	1					
+ANR	22053	Argument	100 * sizeof ( long )		22026	0					
+ANR	22054	MultiplicativeExpression	100 * sizeof ( long )		22026	0		*			
+ANR	22055	PrimaryExpression	100		22026	0					
+ANR	22056	SizeofExpression	sizeof ( long )		22026	1					
+ANR	22057	Sizeof	sizeof		22026	0					
+ANR	22058	SizeofOperand	long		22026	1					
+ANR	22059	IfStatement	if ( data == NULL )		22026	1					
+ANR	22060	Condition	data == NULL	159:12:4522:4533	22026	0	True				
+ANR	22061	EqualityExpression	data == NULL		22026	0		==			
+ANR	22062	Identifier	data		22026	0					
+ANR	22063	Identifier	NULL		22026	1					
+ANR	22064	CompoundStatement		8:26:177:177	22026	1					
+ANR	22065	ExpressionStatement	exit ( - 1 )	159:27:4537:4545	22026	0	True				
+ANR	22066	CallExpression	exit ( - 1 )		22026	0					
+ANR	22067	Callee	exit		22026	0					
+ANR	22068	Identifier	exit		22026	0					
+ANR	22069	ArgumentList	- 1		22026	1					
+ANR	22070	Argument	- 1		22026	0					
+ANR	22071	UnaryOperationExpression	- 1		22026	0					
+ANR	22072	UnaryOperator	-		22026	0					
+ANR	22073	PrimaryExpression	1		22026	1					
+ANR	22074	CompoundStatement		10:12:212:220	22026	2					
+ANR	22075	IdentifierDeclStatement	size_t i ;	161:12:4571:4579	22026	0	True				
+ANR	22076	IdentifierDecl	i		22026	0					
+ANR	22077	IdentifierDeclType	size_t		22026	0					
+ANR	22078	Identifier	i		22026	1					
+ANR	22079	ForStatement	for ( i = 0 ; i < 100 ; i ++ )		22026	1					
+ANR	22080	ForInit	i = 0 ;	162:16:4598:4603	22026	0	True				
+ANR	22081	AssignmentExpression	i = 0		22026	0		=			
+ANR	22082	Identifier	i		22026	0					
+ANR	22083	PrimaryExpression	0		22026	1					
+ANR	22084	Condition	i < 100	162:23:4605:4611	22026	1	True				
+ANR	22085	RelationalExpression	i < 100		22026	0		<			
+ANR	22086	Identifier	i		22026	0					
+ANR	22087	PrimaryExpression	100		22026	1					
+ANR	22088	PostIncDecOperationExpression	i ++	162:32:4614:4616	22026	2	True				
+ANR	22089	Identifier	i		22026	0					
+ANR	22090	IncDec	++		22026	1					
+ANR	22091	CompoundStatement		12:12:273:273	22026	3					
+ANR	22092	ExpressionStatement	data [ i ] = 5L	164:16:4651:4663	22026	0	True				
+ANR	22093	AssignmentExpression	data [ i ] = 5L		22026	0		=			
+ANR	22094	ArrayIndexing	data [ i ]		22026	0					
+ANR	22095	Identifier	data		22026	0					
+ANR	22096	Identifier	i		22026	1					
+ANR	22097	PrimaryExpression	5L		22026	1					
+ANR	22098	IfStatement	if ( globalReturnsTrue ( ) )		22026	3					
+ANR	22099	Condition	globalReturnsTrue ( )	169:7:4757:4775	22026	0	True				
+ANR	22100	CallExpression	globalReturnsTrue ( )		22026	0					
+ANR	22101	Callee	globalReturnsTrue		22026	0					
+ANR	22102	Identifier	globalReturnsTrue		22026	0					
+ANR	22103	ArgumentList			22026	1					
+ANR	22104	CompoundStatement		19:4:424:424	22026	1					
+ANR	22105	ExpressionStatement	printLongLine ( data [ 0 ] )	172:8:4862:4884	22026	0	True				
+ANR	22106	CallExpression	printLongLine ( data [ 0 ] )		22026	0					
+ANR	22107	Callee	printLongLine		22026	0					
+ANR	22108	Identifier	printLongLine		22026	0					
+ANR	22109	ArgumentList	data [ 0 ]		22026	1					
+ANR	22110	Argument	data [ 0 ]		22026	0					
+ANR	22111	ArrayIndexing	data [ 0 ]		22026	0					
+ANR	22112	Identifier	data		22026	0					
+ANR	22113	PrimaryExpression	0		22026	1					
+ANR	22114	ReturnType	static void		22026	1					
+ANR	22115	Identifier	goodG2B2		22026	2					
+ANR	22116	ParameterList			22026	3					
+ANR	22117	CFGEntryNode	ENTRY		22026		True				
+ANR	22118	CFGExitNode	EXIT		22026		True				
+ANR	22119	Symbol	malloc		22026						
+ANR	22120	Symbol	NULL		22026						
+ANR	22121	Symbol	* i		22026						
+ANR	22122	Symbol	data		22026						
+ANR	22123	Symbol	i		22026						
+ANR	22124	Symbol	globalReturnsTrue		22026						
+ANR	22125	Symbol	* data		22026						
+ANR	22126	Function	CWE416_Use_After_Free__malloc_free_long_11_good	177:0:4985:5112							
+ANR	22127	FunctionDef	CWE416_Use_After_Free__malloc_free_long_11_good ()		22126	0					
+ANR	22128	CompoundStatement		178:0:5041:5112	22126	0					
+ANR	22129	ExpressionStatement	goodB2G1 ( )	179:4:5048:5058	22126	0	True				
+ANR	22130	CallExpression	goodB2G1 ( )		22126	0					
+ANR	22131	Callee	goodB2G1		22126	0					
+ANR	22132	Identifier	goodB2G1		22126	0					
+ANR	22133	ArgumentList			22126	1					
+ANR	22134	ExpressionStatement	goodB2G2 ( )	180:4:5065:5075	22126	1	True				
+ANR	22135	CallExpression	goodB2G2 ( )		22126	0					
+ANR	22136	Callee	goodB2G2		22126	0					
+ANR	22137	Identifier	goodB2G2		22126	0					
+ANR	22138	ArgumentList			22126	1					
+ANR	22139	ExpressionStatement	goodG2B1 ( )	181:4:5082:5092	22126	2	True				
+ANR	22140	CallExpression	goodG2B1 ( )		22126	0					
+ANR	22141	Callee	goodG2B1		22126	0					
+ANR	22142	Identifier	goodG2B1		22126	0					
+ANR	22143	ArgumentList			22126	1					
+ANR	22144	ExpressionStatement	goodG2B2 ( )	182:4:5099:5109	22126	3	True				
+ANR	22145	CallExpression	goodG2B2 ( )		22126	0					
+ANR	22146	Callee	goodG2B2		22126	0					
+ANR	22147	Identifier	goodG2B2		22126	0					
+ANR	22148	ArgumentList			22126	1					
+ANR	22149	ReturnType	void		22126	1					
+ANR	22150	Identifier	CWE416_Use_After_Free__malloc_free_long_11_good		22126	2					
+ANR	22151	ParameterList			22126	3					
+ANR	22152	CFGEntryNode	ENTRY		22126		True				
+ANR	22153	CFGExitNode	EXIT		22126		True				
+ANR	22154	Function	main	194:0:5459:5908							
+ANR	22155	FunctionDef	"main (int argc , char * argv [ ])"		22154	0					
+ANR	22156	CompoundStatement		195:0:5494:5908	22154	0					
+ANR	22157	ExpressionStatement	srand ( ( unsigned ) time ( NULL ) )	197:4:5528:5557	22154	0	True				
+ANR	22158	CallExpression	srand ( ( unsigned ) time ( NULL ) )		22154	0					
+ANR	22159	Callee	srand		22154	0					
+ANR	22160	Identifier	srand		22154	0					
+ANR	22161	ArgumentList	( unsigned ) time ( NULL )		22154	1					
+ANR	22162	Argument	( unsigned ) time ( NULL )		22154	0					
+ANR	22163	CastExpression	( unsigned ) time ( NULL )		22154	0					
+ANR	22164	CastTarget	unsigned		22154	0					
+ANR	22165	CallExpression	time ( NULL )		22154	1					
+ANR	22166	Callee	time		22154	0					
+ANR	22167	Identifier	time		22154	0					
+ANR	22168	ArgumentList	NULL		22154	1					
+ANR	22169	Argument	NULL		22154	0					
+ANR	22170	Identifier	NULL		22154	0					
+ANR	22171	ExpressionStatement	"printLine ( ""Calling good()..."" )"	199:4:5582:5612	22154	1	True				
+ANR	22172	CallExpression	"printLine ( ""Calling good()..."" )"		22154	0					
+ANR	22173	Callee	printLine		22154	0					
+ANR	22174	Identifier	printLine		22154	0					
+ANR	22175	ArgumentList	"""Calling good()..."""		22154	1					
+ANR	22176	Argument	"""Calling good()..."""		22154	0					
+ANR	22177	PrimaryExpression	"""Calling good()..."""		22154	0					
+ANR	22178	ExpressionStatement	CWE416_Use_After_Free__malloc_free_long_11_good ( )	200:4:5619:5668	22154	2	True				
+ANR	22179	CallExpression	CWE416_Use_After_Free__malloc_free_long_11_good ( )		22154	0					
+ANR	22180	Callee	CWE416_Use_After_Free__malloc_free_long_11_good		22154	0					
+ANR	22181	Identifier	CWE416_Use_After_Free__malloc_free_long_11_good		22154	0					
+ANR	22182	ArgumentList			22154	1					
+ANR	22183	ExpressionStatement	"printLine ( ""Finished good()"" )"	201:4:5675:5703	22154	3	True				
+ANR	22184	CallExpression	"printLine ( ""Finished good()"" )"		22154	0					
+ANR	22185	Callee	printLine		22154	0					
+ANR	22186	Identifier	printLine		22154	0					
+ANR	22187	ArgumentList	"""Finished good()"""		22154	1					
+ANR	22188	Argument	"""Finished good()"""		22154	0					
+ANR	22189	PrimaryExpression	"""Finished good()"""		22154	0					
+ANR	22190	ExpressionStatement	"printLine ( ""Calling bad()..."" )"	204:4:5750:5779	22154	4	True				
+ANR	22191	CallExpression	"printLine ( ""Calling bad()..."" )"		22154	0					
+ANR	22192	Callee	printLine		22154	0					
+ANR	22193	Identifier	printLine		22154	0					
+ANR	22194	ArgumentList	"""Calling bad()..."""		22154	1					
+ANR	22195	Argument	"""Calling bad()..."""		22154	0					
+ANR	22196	PrimaryExpression	"""Calling bad()..."""		22154	0					
+ANR	22197	ExpressionStatement	CWE416_Use_After_Free__malloc_free_long_11_bad ( )	205:4:5786:5834	22154	5	True				
+ANR	22198	CallExpression	CWE416_Use_After_Free__malloc_free_long_11_bad ( )		22154	0					
+ANR	22199	Callee	CWE416_Use_After_Free__malloc_free_long_11_bad		22154	0					
+ANR	22200	Identifier	CWE416_Use_After_Free__malloc_free_long_11_bad		22154	0					
+ANR	22201	ArgumentList			22154	1					
+ANR	22202	ExpressionStatement	"printLine ( ""Finished bad()"" )"	206:4:5841:5868	22154	6	True				
+ANR	22203	CallExpression	"printLine ( ""Finished bad()"" )"		22154	0					
+ANR	22204	Callee	printLine		22154	0					
+ANR	22205	Identifier	printLine		22154	0					
+ANR	22206	ArgumentList	"""Finished bad()"""		22154	1					
+ANR	22207	Argument	"""Finished bad()"""		22154	0					
+ANR	22208	PrimaryExpression	"""Finished bad()"""		22154	0					
+ANR	22209	ReturnStatement	return 0 ;	208:4:5897:5905	22154	7	True				
+ANR	22210	PrimaryExpression	0		22154	0					
+ANR	22211	ReturnType	int		22154	1					
+ANR	22212	Identifier	main		22154	2					
+ANR	22213	ParameterList	"int argc , char * argv [ ]"		22154	3					
+ANR	22214	Parameter	int argc	194:9:5468:5475	22154	0	True				
+ANR	22215	ParameterType	int		22154	0					
+ANR	22216	Identifier	argc		22154	1					
+ANR	22217	Parameter	char * argv [ ]	194:19:5478:5490	22154	1	True				
+ANR	22218	ParameterType	char * [ ]		22154	0					
+ANR	22219	Identifier	argv		22154	1					
+ANR	22220	CFGEntryNode	ENTRY		22154		True				
+ANR	22221	CFGExitNode	EXIT		22154		True				
+ANR	22222	Symbol	argc		22154						
+ANR	22223	Symbol	NULL		22154						
+ANR	22224	Symbol	time		22154						
+ANR	22225	Symbol	argv		22154						

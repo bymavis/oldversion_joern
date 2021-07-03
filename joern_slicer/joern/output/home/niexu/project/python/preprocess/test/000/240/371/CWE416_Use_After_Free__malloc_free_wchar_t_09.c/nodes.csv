@@ -1,0 +1,566 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	41630	File	/home/niexu/project/python/preprocess/test/000/240/371/CWE416_Use_After_Free__malloc_free_wchar_t_09.c								
+ANR	41631	Function	CWE416_Use_After_Free__malloc_free_wchar_t_09_bad	24:0:667:1330							
+ANR	41632	FunctionDef	CWE416_Use_After_Free__malloc_free_wchar_t_09_bad ()		41631	0					
+ANR	41633	CompoundStatement		25:0:725:1330	41631	0					
+ANR	41634	IdentifierDeclStatement	wchar_t * data ;	26:4:732:746	41631	0	True				
+ANR	41635	IdentifierDecl	* data		41631	0					
+ANR	41636	IdentifierDeclType	wchar_t *		41631	0					
+ANR	41637	Identifier	data		41631	1					
+ANR	41638	ExpressionStatement	data = NULL	28:4:780:791	41631	1	True				
+ANR	41639	AssignmentExpression	data = NULL		41631	0		=			
+ANR	41640	Identifier	data		41631	0					
+ANR	41641	Identifier	NULL		41631	1					
+ANR	41642	IfStatement	if ( GLOBAL_CONST_TRUE )		41631	2					
+ANR	41643	Condition	GLOBAL_CONST_TRUE	29:7:801:817	41631	0	True				
+ANR	41644	Identifier	GLOBAL_CONST_TRUE		41631	0					
+ANR	41645	CompoundStatement		6:4:99:99	41631	1					
+ANR	41646	ExpressionStatement	data = ( wchar_t * ) malloc ( 100 * sizeof ( wchar_t ) )	31:8:836:881	41631	0	True				
+ANR	41647	AssignmentExpression	data = ( wchar_t * ) malloc ( 100 * sizeof ( wchar_t ) )		41631	0		=			
+ANR	41648	Identifier	data		41631	0					
+ANR	41649	CastExpression	( wchar_t * ) malloc ( 100 * sizeof ( wchar_t ) )		41631	1					
+ANR	41650	CastTarget	wchar_t *		41631	0					
+ANR	41651	CallExpression	malloc ( 100 * sizeof ( wchar_t ) )		41631	1					
+ANR	41652	Callee	malloc		41631	0					
+ANR	41653	Identifier	malloc		41631	0					
+ANR	41654	ArgumentList	100 * sizeof ( wchar_t )		41631	1					
+ANR	41655	Argument	100 * sizeof ( wchar_t )		41631	0					
+ANR	41656	MultiplicativeExpression	100 * sizeof ( wchar_t )		41631	0		*			
+ANR	41657	PrimaryExpression	100		41631	0					
+ANR	41658	SizeofExpression	sizeof ( wchar_t )		41631	1					
+ANR	41659	Sizeof	sizeof		41631	0					
+ANR	41660	SizeofOperand	wchar_t		41631	1					
+ANR	41661	IfStatement	if ( data == NULL )		41631	1					
+ANR	41662	Condition	data == NULL	32:12:896:907	41631	0	True				
+ANR	41663	EqualityExpression	data == NULL		41631	0		==			
+ANR	41664	Identifier	data		41631	0					
+ANR	41665	Identifier	NULL		41631	1					
+ANR	41666	CompoundStatement		8:26:184:184	41631	1					
+ANR	41667	ExpressionStatement	exit ( - 1 )	32:27:911:919	41631	0	True				
+ANR	41668	CallExpression	exit ( - 1 )		41631	0					
+ANR	41669	Callee	exit		41631	0					
+ANR	41670	Identifier	exit		41631	0					
+ANR	41671	ArgumentList	- 1		41631	1					
+ANR	41672	Argument	- 1		41631	0					
+ANR	41673	UnaryOperationExpression	- 1		41631	0					
+ANR	41674	UnaryOperator	-		41631	0					
+ANR	41675	PrimaryExpression	1		41631	1					
+ANR	41676	Statement	wmemset	33:8:930:936	41631	2	True				
+ANR	41677	Statement	(	33:15:937:937	41631	3	True				
+ANR	41678	Statement	data	33:16:938:941	41631	4	True				
+ANR	41679	Statement	","	33:20:942:942	41631	5	True				
+ANR	41680	Statement	L	33:22:944:944	41631	6	True				
+ANR	41681	Statement	'A'	33:23:945:947	41631	7	True				
+ANR	41682	Statement	","	33:26:948:948	41631	8	True				
+ANR	41683	Statement	100	33:28:950:952	41631	9	True				
+ANR	41684	Statement	-	33:31:953:953	41631	10	True				
+ANR	41685	Statement	1	33:32:954:954	41631	11	True				
+ANR	41686	Statement	)	33:33:955:955	41631	12	True				
+ANR	41687	ExpressionStatement		33:34:956:956	41631	13	True				
+ANR	41688	Statement	data	34:8:967:970	41631	14	True				
+ANR	41689	Statement	[	34:12:971:971	41631	15	True				
+ANR	41690	Statement	100	34:13:972:974	41631	16	True				
+ANR	41691	Statement	-	34:16:975:975	41631	17	True				
+ANR	41692	Statement	1	34:17:976:976	41631	18	True				
+ANR	41693	Statement	]	34:18:977:977	41631	19	True				
+ANR	41694	Statement	=	34:20:979:979	41631	20	True				
+ANR	41695	Statement	L	34:22:981:981	41631	21	True				
+ANR	41696	ExpressionStatement	'\\0'	34:23:982:986	41631	22	True				
+ANR	41697	PrimaryExpression	'\\0'		41631	0					
+ANR	41698	ExpressionStatement	free ( data )	36:8:1088:1098	41631	23	True				
+ANR	41699	CallExpression	free ( data )		41631	0					
+ANR	41700	Callee	free		41631	0					
+ANR	41701	Identifier	free		41631	0					
+ANR	41702	ArgumentList	data		41631	1					
+ANR	41703	Argument	data		41631	0					
+ANR	41704	Identifier	data		41631	0					
+ANR	41705	IfStatement	if ( GLOBAL_CONST_TRUE )		41631	3					
+ANR	41706	Condition	GLOBAL_CONST_TRUE	38:7:1115:1131	41631	0	True				
+ANR	41707	Identifier	GLOBAL_CONST_TRUE		41631	0					
+ANR	41708	CompoundStatement		15:4:413:413	41631	1					
+ANR	41709	ExpressionStatement	printWLine ( data )	41:8:1218:1234	41631	0	True				
+ANR	41710	CallExpression	printWLine ( data )		41631	0					
+ANR	41711	Callee	printWLine		41631	0					
+ANR	41712	Identifier	printWLine		41631	0					
+ANR	41713	ArgumentList	data		41631	1					
+ANR	41714	Argument	data		41631	0					
+ANR	41715	Identifier	data		41631	0					
+ANR	41716	ReturnType	void		41631	1					
+ANR	41717	Identifier	CWE416_Use_After_Free__malloc_free_wchar_t_09_bad		41631	2					
+ANR	41718	ParameterList			41631	3					
+ANR	41719	CFGEntryNode	ENTRY		41631		True				
+ANR	41720	CFGExitNode	EXIT		41631		True				
+ANR	41721	Symbol	malloc		41631						
+ANR	41722	Symbol	NULL		41631						
+ANR	41723	Symbol	data		41631						
+ANR	41724	Symbol	GLOBAL_CONST_TRUE		41631						
+ANR	41725	Function	goodB2G1	51:0:1489:2325							
+ANR	41726	FunctionDef	goodB2G1 ()		41725	0					
+ANR	41727	CompoundStatement		52:0:1513:2325	41725	0					
+ANR	41728	IdentifierDeclStatement	wchar_t * data ;	53:4:1520:1534	41725	0	True				
+ANR	41729	IdentifierDecl	* data		41725	0					
+ANR	41730	IdentifierDeclType	wchar_t *		41725	0					
+ANR	41731	Identifier	data		41725	1					
+ANR	41732	ExpressionStatement	data = NULL	55:4:1568:1579	41725	1	True				
+ANR	41733	AssignmentExpression	data = NULL		41725	0		=			
+ANR	41734	Identifier	data		41725	0					
+ANR	41735	Identifier	NULL		41725	1					
+ANR	41736	IfStatement	if ( GLOBAL_CONST_TRUE )		41725	2					
+ANR	41737	Condition	GLOBAL_CONST_TRUE	56:7:1589:1605	41725	0	True				
+ANR	41738	Identifier	GLOBAL_CONST_TRUE		41725	0					
+ANR	41739	CompoundStatement		6:4:99:99	41725	1					
+ANR	41740	ExpressionStatement	data = ( wchar_t * ) malloc ( 100 * sizeof ( wchar_t ) )	58:8:1624:1669	41725	0	True				
+ANR	41741	AssignmentExpression	data = ( wchar_t * ) malloc ( 100 * sizeof ( wchar_t ) )		41725	0		=			
+ANR	41742	Identifier	data		41725	0					
+ANR	41743	CastExpression	( wchar_t * ) malloc ( 100 * sizeof ( wchar_t ) )		41725	1					
+ANR	41744	CastTarget	wchar_t *		41725	0					
+ANR	41745	CallExpression	malloc ( 100 * sizeof ( wchar_t ) )		41725	1					
+ANR	41746	Callee	malloc		41725	0					
+ANR	41747	Identifier	malloc		41725	0					
+ANR	41748	ArgumentList	100 * sizeof ( wchar_t )		41725	1					
+ANR	41749	Argument	100 * sizeof ( wchar_t )		41725	0					
+ANR	41750	MultiplicativeExpression	100 * sizeof ( wchar_t )		41725	0		*			
+ANR	41751	PrimaryExpression	100		41725	0					
+ANR	41752	SizeofExpression	sizeof ( wchar_t )		41725	1					
+ANR	41753	Sizeof	sizeof		41725	0					
+ANR	41754	SizeofOperand	wchar_t		41725	1					
+ANR	41755	IfStatement	if ( data == NULL )		41725	1					
+ANR	41756	Condition	data == NULL	59:12:1684:1695	41725	0	True				
+ANR	41757	EqualityExpression	data == NULL		41725	0		==			
+ANR	41758	Identifier	data		41725	0					
+ANR	41759	Identifier	NULL		41725	1					
+ANR	41760	CompoundStatement		8:26:184:184	41725	1					
+ANR	41761	ExpressionStatement	exit ( - 1 )	59:27:1699:1707	41725	0	True				
+ANR	41762	CallExpression	exit ( - 1 )		41725	0					
+ANR	41763	Callee	exit		41725	0					
+ANR	41764	Identifier	exit		41725	0					
+ANR	41765	ArgumentList	- 1		41725	1					
+ANR	41766	Argument	- 1		41725	0					
+ANR	41767	UnaryOperationExpression	- 1		41725	0					
+ANR	41768	UnaryOperator	-		41725	0					
+ANR	41769	PrimaryExpression	1		41725	1					
+ANR	41770	Statement	wmemset	60:8:1718:1724	41725	2	True				
+ANR	41771	Statement	(	60:15:1725:1725	41725	3	True				
+ANR	41772	Statement	data	60:16:1726:1729	41725	4	True				
+ANR	41773	Statement	","	60:20:1730:1730	41725	5	True				
+ANR	41774	Statement	L	60:22:1732:1732	41725	6	True				
+ANR	41775	Statement	'A'	60:23:1733:1735	41725	7	True				
+ANR	41776	Statement	","	60:26:1736:1736	41725	8	True				
+ANR	41777	Statement	100	60:28:1738:1740	41725	9	True				
+ANR	41778	Statement	-	60:31:1741:1741	41725	10	True				
+ANR	41779	Statement	1	60:32:1742:1742	41725	11	True				
+ANR	41780	Statement	)	60:33:1743:1743	41725	12	True				
+ANR	41781	ExpressionStatement		60:34:1744:1744	41725	13	True				
+ANR	41782	Statement	data	61:8:1755:1758	41725	14	True				
+ANR	41783	Statement	[	61:12:1759:1759	41725	15	True				
+ANR	41784	Statement	100	61:13:1760:1762	41725	16	True				
+ANR	41785	Statement	-	61:16:1763:1763	41725	17	True				
+ANR	41786	Statement	1	61:17:1764:1764	41725	18	True				
+ANR	41787	Statement	]	61:18:1765:1765	41725	19	True				
+ANR	41788	Statement	=	61:20:1767:1767	41725	20	True				
+ANR	41789	Statement	L	61:22:1769:1769	41725	21	True				
+ANR	41790	ExpressionStatement	'\\0'	61:23:1770:1774	41725	22	True				
+ANR	41791	PrimaryExpression	'\\0'		41725	0					
+ANR	41792	ExpressionStatement	free ( data )	63:8:1876:1886	41725	23	True				
+ANR	41793	CallExpression	free ( data )		41725	0					
+ANR	41794	Callee	free		41725	0					
+ANR	41795	Identifier	free		41725	0					
+ANR	41796	ArgumentList	data		41725	1					
+ANR	41797	Argument	data		41725	0					
+ANR	41798	Identifier	data		41725	0					
+ANR	41799	IfStatement	if ( GLOBAL_CONST_FALSE )		41725	3					
+ANR	41800	Condition	GLOBAL_CONST_FALSE	65:7:1903:1920	41725	0	True				
+ANR	41801	Identifier	GLOBAL_CONST_FALSE		41725	0					
+ANR	41802	CompoundStatement		15:4:414:414	41725	1					
+ANR	41803	ExpressionStatement	"printLine ( ""Benign, fixed string"" )"	68:8:2015:2048	41725	0	True				
+ANR	41804	CallExpression	"printLine ( ""Benign, fixed string"" )"		41725	0					
+ANR	41805	Callee	printLine		41725	0					
+ANR	41806	Identifier	printLine		41725	0					
+ANR	41807	ArgumentList	"""Benign, fixed string"""		41725	1					
+ANR	41808	Argument	"""Benign, fixed string"""		41725	0					
+ANR	41809	PrimaryExpression	"""Benign, fixed string"""		41725	0					
+ANR	41810	ElseStatement	else		41725	0					
+ANR	41811	CompoundStatement		20:4:558:558	41725	0					
+ANR	41812	ExpressionStatement		75:8:2263:2263	41725	0	True				
+ANR	41813	ReturnType	static void		41725	1					
+ANR	41814	Identifier	goodB2G1		41725	2					
+ANR	41815	ParameterList			41725	3					
+ANR	41816	CFGEntryNode	ENTRY		41725		True				
+ANR	41817	CFGExitNode	EXIT		41725		True				
+ANR	41818	Symbol	GLOBAL_CONST_FALSE		41725						
+ANR	41819	Symbol	malloc		41725						
+ANR	41820	Symbol	NULL		41725						
+ANR	41821	Symbol	data		41725						
+ANR	41822	Symbol	GLOBAL_CONST_TRUE		41725						
+ANR	41823	Function	goodB2G2	80:0:2418:3109							
+ANR	41824	FunctionDef	goodB2G2 ()		41823	0					
+ANR	41825	CompoundStatement		81:0:2442:3109	41823	0					
+ANR	41826	IdentifierDeclStatement	wchar_t * data ;	82:4:2449:2463	41823	0	True				
+ANR	41827	IdentifierDecl	* data		41823	0					
+ANR	41828	IdentifierDeclType	wchar_t *		41823	0					
+ANR	41829	Identifier	data		41823	1					
+ANR	41830	ExpressionStatement	data = NULL	84:4:2497:2508	41823	1	True				
+ANR	41831	AssignmentExpression	data = NULL		41823	0		=			
+ANR	41832	Identifier	data		41823	0					
+ANR	41833	Identifier	NULL		41823	1					
+ANR	41834	IfStatement	if ( GLOBAL_CONST_TRUE )		41823	2					
+ANR	41835	Condition	GLOBAL_CONST_TRUE	85:7:2518:2534	41823	0	True				
+ANR	41836	Identifier	GLOBAL_CONST_TRUE		41823	0					
+ANR	41837	CompoundStatement		6:4:99:99	41823	1					
+ANR	41838	ExpressionStatement	data = ( wchar_t * ) malloc ( 100 * sizeof ( wchar_t ) )	87:8:2553:2598	41823	0	True				
+ANR	41839	AssignmentExpression	data = ( wchar_t * ) malloc ( 100 * sizeof ( wchar_t ) )		41823	0		=			
+ANR	41840	Identifier	data		41823	0					
+ANR	41841	CastExpression	( wchar_t * ) malloc ( 100 * sizeof ( wchar_t ) )		41823	1					
+ANR	41842	CastTarget	wchar_t *		41823	0					
+ANR	41843	CallExpression	malloc ( 100 * sizeof ( wchar_t ) )		41823	1					
+ANR	41844	Callee	malloc		41823	0					
+ANR	41845	Identifier	malloc		41823	0					
+ANR	41846	ArgumentList	100 * sizeof ( wchar_t )		41823	1					
+ANR	41847	Argument	100 * sizeof ( wchar_t )		41823	0					
+ANR	41848	MultiplicativeExpression	100 * sizeof ( wchar_t )		41823	0		*			
+ANR	41849	PrimaryExpression	100		41823	0					
+ANR	41850	SizeofExpression	sizeof ( wchar_t )		41823	1					
+ANR	41851	Sizeof	sizeof		41823	0					
+ANR	41852	SizeofOperand	wchar_t		41823	1					
+ANR	41853	IfStatement	if ( data == NULL )		41823	1					
+ANR	41854	Condition	data == NULL	88:12:2613:2624	41823	0	True				
+ANR	41855	EqualityExpression	data == NULL		41823	0		==			
+ANR	41856	Identifier	data		41823	0					
+ANR	41857	Identifier	NULL		41823	1					
+ANR	41858	CompoundStatement		8:26:184:184	41823	1					
+ANR	41859	ExpressionStatement	exit ( - 1 )	88:27:2628:2636	41823	0	True				
+ANR	41860	CallExpression	exit ( - 1 )		41823	0					
+ANR	41861	Callee	exit		41823	0					
+ANR	41862	Identifier	exit		41823	0					
+ANR	41863	ArgumentList	- 1		41823	1					
+ANR	41864	Argument	- 1		41823	0					
+ANR	41865	UnaryOperationExpression	- 1		41823	0					
+ANR	41866	UnaryOperator	-		41823	0					
+ANR	41867	PrimaryExpression	1		41823	1					
+ANR	41868	Statement	wmemset	89:8:2647:2653	41823	2	True				
+ANR	41869	Statement	(	89:15:2654:2654	41823	3	True				
+ANR	41870	Statement	data	89:16:2655:2658	41823	4	True				
+ANR	41871	Statement	","	89:20:2659:2659	41823	5	True				
+ANR	41872	Statement	L	89:22:2661:2661	41823	6	True				
+ANR	41873	Statement	'A'	89:23:2662:2664	41823	7	True				
+ANR	41874	Statement	","	89:26:2665:2665	41823	8	True				
+ANR	41875	Statement	100	89:28:2667:2669	41823	9	True				
+ANR	41876	Statement	-	89:31:2670:2670	41823	10	True				
+ANR	41877	Statement	1	89:32:2671:2671	41823	11	True				
+ANR	41878	Statement	)	89:33:2672:2672	41823	12	True				
+ANR	41879	ExpressionStatement		89:34:2673:2673	41823	13	True				
+ANR	41880	Statement	data	90:8:2684:2687	41823	14	True				
+ANR	41881	Statement	[	90:12:2688:2688	41823	15	True				
+ANR	41882	Statement	100	90:13:2689:2691	41823	16	True				
+ANR	41883	Statement	-	90:16:2692:2692	41823	17	True				
+ANR	41884	Statement	1	90:17:2693:2693	41823	18	True				
+ANR	41885	Statement	]	90:18:2694:2694	41823	19	True				
+ANR	41886	Statement	=	90:20:2696:2696	41823	20	True				
+ANR	41887	Statement	L	90:22:2698:2698	41823	21	True				
+ANR	41888	ExpressionStatement	'\\0'	90:23:2699:2703	41823	22	True				
+ANR	41889	PrimaryExpression	'\\0'		41823	0					
+ANR	41890	ExpressionStatement	free ( data )	92:8:2805:2815	41823	23	True				
+ANR	41891	CallExpression	free ( data )		41823	0					
+ANR	41892	Callee	free		41823	0					
+ANR	41893	Identifier	free		41823	0					
+ANR	41894	ArgumentList	data		41823	1					
+ANR	41895	Argument	data		41823	0					
+ANR	41896	Identifier	data		41823	0					
+ANR	41897	IfStatement	if ( GLOBAL_CONST_TRUE )		41823	3					
+ANR	41898	Condition	GLOBAL_CONST_TRUE	94:7:2832:2848	41823	0	True				
+ANR	41899	Identifier	GLOBAL_CONST_TRUE		41823	0					
+ANR	41900	CompoundStatement		15:4:413:413	41823	1					
+ANR	41901	ExpressionStatement		99:8:3047:3047	41823	0	True				
+ANR	41902	ReturnType	static void		41823	1					
+ANR	41903	Identifier	goodB2G2		41823	2					
+ANR	41904	ParameterList			41823	3					
+ANR	41905	CFGEntryNode	ENTRY		41823		True				
+ANR	41906	CFGExitNode	EXIT		41823		True				
+ANR	41907	Symbol	malloc		41823						
+ANR	41908	Symbol	NULL		41823						
+ANR	41909	Symbol	data		41823						
+ANR	41910	Symbol	GLOBAL_CONST_TRUE		41823						
+ANR	41911	Function	goodG2B1	104:0:3223:3936							
+ANR	41912	FunctionDef	goodG2B1 ()		41911	0					
+ANR	41913	CompoundStatement		105:0:3247:3936	41911	0					
+ANR	41914	IdentifierDeclStatement	wchar_t * data ;	106:4:3254:3268	41911	0	True				
+ANR	41915	IdentifierDecl	* data		41911	0					
+ANR	41916	IdentifierDeclType	wchar_t *		41911	0					
+ANR	41917	Identifier	data		41911	1					
+ANR	41918	ExpressionStatement	data = NULL	108:4:3302:3313	41911	1	True				
+ANR	41919	AssignmentExpression	data = NULL		41911	0		=			
+ANR	41920	Identifier	data		41911	0					
+ANR	41921	Identifier	NULL		41911	1					
+ANR	41922	IfStatement	if ( GLOBAL_CONST_FALSE )		41911	2					
+ANR	41923	Condition	GLOBAL_CONST_FALSE	109:7:3323:3340	41911	0	True				
+ANR	41924	Identifier	GLOBAL_CONST_FALSE		41911	0					
+ANR	41925	CompoundStatement		6:4:100:100	41911	1					
+ANR	41926	ExpressionStatement	"printLine ( ""Benign, fixed string"" )"	112:8:3435:3468	41911	0	True				
+ANR	41927	CallExpression	"printLine ( ""Benign, fixed string"" )"		41911	0					
+ANR	41928	Callee	printLine		41911	0					
+ANR	41929	Identifier	printLine		41911	0					
+ANR	41930	ArgumentList	"""Benign, fixed string"""		41911	1					
+ANR	41931	Argument	"""Benign, fixed string"""		41911	0					
+ANR	41932	PrimaryExpression	"""Benign, fixed string"""		41911	0					
+ANR	41933	ElseStatement	else		41911	0					
+ANR	41934	CompoundStatement		11:4:244:244	41911	0					
+ANR	41935	ExpressionStatement	data = ( wchar_t * ) malloc ( 100 * sizeof ( wchar_t ) )	116:8:3503:3548	41911	0	True				
+ANR	41936	AssignmentExpression	data = ( wchar_t * ) malloc ( 100 * sizeof ( wchar_t ) )		41911	0		=			
+ANR	41937	Identifier	data		41911	0					
+ANR	41938	CastExpression	( wchar_t * ) malloc ( 100 * sizeof ( wchar_t ) )		41911	1					
+ANR	41939	CastTarget	wchar_t *		41911	0					
+ANR	41940	CallExpression	malloc ( 100 * sizeof ( wchar_t ) )		41911	1					
+ANR	41941	Callee	malloc		41911	0					
+ANR	41942	Identifier	malloc		41911	0					
+ANR	41943	ArgumentList	100 * sizeof ( wchar_t )		41911	1					
+ANR	41944	Argument	100 * sizeof ( wchar_t )		41911	0					
+ANR	41945	MultiplicativeExpression	100 * sizeof ( wchar_t )		41911	0		*			
+ANR	41946	PrimaryExpression	100		41911	0					
+ANR	41947	SizeofExpression	sizeof ( wchar_t )		41911	1					
+ANR	41948	Sizeof	sizeof		41911	0					
+ANR	41949	SizeofOperand	wchar_t		41911	1					
+ANR	41950	IfStatement	if ( data == NULL )		41911	1					
+ANR	41951	Condition	data == NULL	117:12:3563:3574	41911	0	True				
+ANR	41952	EqualityExpression	data == NULL		41911	0		==			
+ANR	41953	Identifier	data		41911	0					
+ANR	41954	Identifier	NULL		41911	1					
+ANR	41955	CompoundStatement		13:26:329:329	41911	1					
+ANR	41956	ExpressionStatement	exit ( - 1 )	117:27:3578:3586	41911	0	True				
+ANR	41957	CallExpression	exit ( - 1 )		41911	0					
+ANR	41958	Callee	exit		41911	0					
+ANR	41959	Identifier	exit		41911	0					
+ANR	41960	ArgumentList	- 1		41911	1					
+ANR	41961	Argument	- 1		41911	0					
+ANR	41962	UnaryOperationExpression	- 1		41911	0					
+ANR	41963	UnaryOperator	-		41911	0					
+ANR	41964	PrimaryExpression	1		41911	1					
+ANR	41965	Statement	wmemset	118:8:3597:3603	41911	2	True				
+ANR	41966	Statement	(	118:15:3604:3604	41911	3	True				
+ANR	41967	Statement	data	118:16:3605:3608	41911	4	True				
+ANR	41968	Statement	","	118:20:3609:3609	41911	5	True				
+ANR	41969	Statement	L	118:22:3611:3611	41911	6	True				
+ANR	41970	Statement	'A'	118:23:3612:3614	41911	7	True				
+ANR	41971	Statement	","	118:26:3615:3615	41911	8	True				
+ANR	41972	Statement	100	118:28:3617:3619	41911	9	True				
+ANR	41973	Statement	-	118:31:3620:3620	41911	10	True				
+ANR	41974	Statement	1	118:32:3621:3621	41911	11	True				
+ANR	41975	Statement	)	118:33:3622:3622	41911	12	True				
+ANR	41976	ExpressionStatement		118:34:3623:3623	41911	13	True				
+ANR	41977	Statement	data	119:8:3634:3637	41911	14	True				
+ANR	41978	Statement	[	119:12:3638:3638	41911	15	True				
+ANR	41979	Statement	100	119:13:3639:3641	41911	16	True				
+ANR	41980	Statement	-	119:16:3642:3642	41911	17	True				
+ANR	41981	Statement	1	119:17:3643:3643	41911	18	True				
+ANR	41982	Statement	]	119:18:3644:3644	41911	19	True				
+ANR	41983	Statement	=	119:20:3646:3646	41911	20	True				
+ANR	41984	Statement	L	119:22:3648:3648	41911	21	True				
+ANR	41985	ExpressionStatement	'\\0'	119:23:3649:3653	41911	22	True				
+ANR	41986	PrimaryExpression	'\\0'		41911	0					
+ANR	41987	IfStatement	if ( GLOBAL_CONST_TRUE )		41911	3					
+ANR	41988	Condition	GLOBAL_CONST_TRUE	122:7:3721:3737	41911	0	True				
+ANR	41989	Identifier	GLOBAL_CONST_TRUE		41911	0					
+ANR	41990	CompoundStatement		19:4:497:497	41911	1					
+ANR	41991	ExpressionStatement	printWLine ( data )	125:8:3824:3840	41911	0	True				
+ANR	41992	CallExpression	printWLine ( data )		41911	0					
+ANR	41993	Callee	printWLine		41911	0					
+ANR	41994	Identifier	printWLine		41911	0					
+ANR	41995	ArgumentList	data		41911	1					
+ANR	41996	Argument	data		41911	0					
+ANR	41997	Identifier	data		41911	0					
+ANR	41998	ReturnType	static void		41911	1					
+ANR	41999	Identifier	goodG2B1		41911	2					
+ANR	42000	ParameterList			41911	3					
+ANR	42001	CFGEntryNode	ENTRY		41911		True				
+ANR	42002	CFGExitNode	EXIT		41911		True				
+ANR	42003	Symbol	GLOBAL_CONST_FALSE		41911						
+ANR	42004	Symbol	malloc		41911						
+ANR	42005	Symbol	NULL		41911						
+ANR	42006	Symbol	data		41911						
+ANR	42007	Symbol	GLOBAL_CONST_TRUE		41911						
+ANR	42008	Function	goodG2B2	131:0:4028:4596							
+ANR	42009	FunctionDef	goodG2B2 ()		42008	0					
+ANR	42010	CompoundStatement		132:0:4052:4596	42008	0					
+ANR	42011	IdentifierDeclStatement	wchar_t * data ;	133:4:4059:4073	42008	0	True				
+ANR	42012	IdentifierDecl	* data		42008	0					
+ANR	42013	IdentifierDeclType	wchar_t *		42008	0					
+ANR	42014	Identifier	data		42008	1					
+ANR	42015	ExpressionStatement	data = NULL	135:4:4107:4118	42008	1	True				
+ANR	42016	AssignmentExpression	data = NULL		42008	0		=			
+ANR	42017	Identifier	data		42008	0					
+ANR	42018	Identifier	NULL		42008	1					
+ANR	42019	IfStatement	if ( GLOBAL_CONST_TRUE )		42008	2					
+ANR	42020	Condition	GLOBAL_CONST_TRUE	136:7:4128:4144	42008	0	True				
+ANR	42021	Identifier	GLOBAL_CONST_TRUE		42008	0					
+ANR	42022	CompoundStatement		6:4:99:99	42008	1					
+ANR	42023	ExpressionStatement	data = ( wchar_t * ) malloc ( 100 * sizeof ( wchar_t ) )	138:8:4163:4208	42008	0	True				
+ANR	42024	AssignmentExpression	data = ( wchar_t * ) malloc ( 100 * sizeof ( wchar_t ) )		42008	0		=			
+ANR	42025	Identifier	data		42008	0					
+ANR	42026	CastExpression	( wchar_t * ) malloc ( 100 * sizeof ( wchar_t ) )		42008	1					
+ANR	42027	CastTarget	wchar_t *		42008	0					
+ANR	42028	CallExpression	malloc ( 100 * sizeof ( wchar_t ) )		42008	1					
+ANR	42029	Callee	malloc		42008	0					
+ANR	42030	Identifier	malloc		42008	0					
+ANR	42031	ArgumentList	100 * sizeof ( wchar_t )		42008	1					
+ANR	42032	Argument	100 * sizeof ( wchar_t )		42008	0					
+ANR	42033	MultiplicativeExpression	100 * sizeof ( wchar_t )		42008	0		*			
+ANR	42034	PrimaryExpression	100		42008	0					
+ANR	42035	SizeofExpression	sizeof ( wchar_t )		42008	1					
+ANR	42036	Sizeof	sizeof		42008	0					
+ANR	42037	SizeofOperand	wchar_t		42008	1					
+ANR	42038	IfStatement	if ( data == NULL )		42008	1					
+ANR	42039	Condition	data == NULL	139:12:4223:4234	42008	0	True				
+ANR	42040	EqualityExpression	data == NULL		42008	0		==			
+ANR	42041	Identifier	data		42008	0					
+ANR	42042	Identifier	NULL		42008	1					
+ANR	42043	CompoundStatement		8:26:184:184	42008	1					
+ANR	42044	ExpressionStatement	exit ( - 1 )	139:27:4238:4246	42008	0	True				
+ANR	42045	CallExpression	exit ( - 1 )		42008	0					
+ANR	42046	Callee	exit		42008	0					
+ANR	42047	Identifier	exit		42008	0					
+ANR	42048	ArgumentList	- 1		42008	1					
+ANR	42049	Argument	- 1		42008	0					
+ANR	42050	UnaryOperationExpression	- 1		42008	0					
+ANR	42051	UnaryOperator	-		42008	0					
+ANR	42052	PrimaryExpression	1		42008	1					
+ANR	42053	Statement	wmemset	140:8:4257:4263	42008	2	True				
+ANR	42054	Statement	(	140:15:4264:4264	42008	3	True				
+ANR	42055	Statement	data	140:16:4265:4268	42008	4	True				
+ANR	42056	Statement	","	140:20:4269:4269	42008	5	True				
+ANR	42057	Statement	L	140:22:4271:4271	42008	6	True				
+ANR	42058	Statement	'A'	140:23:4272:4274	42008	7	True				
+ANR	42059	Statement	","	140:26:4275:4275	42008	8	True				
+ANR	42060	Statement	100	140:28:4277:4279	42008	9	True				
+ANR	42061	Statement	-	140:31:4280:4280	42008	10	True				
+ANR	42062	Statement	1	140:32:4281:4281	42008	11	True				
+ANR	42063	Statement	)	140:33:4282:4282	42008	12	True				
+ANR	42064	ExpressionStatement		140:34:4283:4283	42008	13	True				
+ANR	42065	Statement	data	141:8:4294:4297	42008	14	True				
+ANR	42066	Statement	[	141:12:4298:4298	42008	15	True				
+ANR	42067	Statement	100	141:13:4299:4301	42008	16	True				
+ANR	42068	Statement	-	141:16:4302:4302	42008	17	True				
+ANR	42069	Statement	1	141:17:4303:4303	42008	18	True				
+ANR	42070	Statement	]	141:18:4304:4304	42008	19	True				
+ANR	42071	Statement	=	141:20:4306:4306	42008	20	True				
+ANR	42072	Statement	L	141:22:4308:4308	42008	21	True				
+ANR	42073	ExpressionStatement	'\\0'	141:23:4309:4313	42008	22	True				
+ANR	42074	PrimaryExpression	'\\0'		42008	0					
+ANR	42075	IfStatement	if ( GLOBAL_CONST_TRUE )		42008	3					
+ANR	42076	Condition	GLOBAL_CONST_TRUE	144:7:4381:4397	42008	0	True				
+ANR	42077	Identifier	GLOBAL_CONST_TRUE		42008	0					
+ANR	42078	CompoundStatement		14:4:352:352	42008	1					
+ANR	42079	ExpressionStatement	printWLine ( data )	147:8:4484:4500	42008	0	True				
+ANR	42080	CallExpression	printWLine ( data )		42008	0					
+ANR	42081	Callee	printWLine		42008	0					
+ANR	42082	Identifier	printWLine		42008	0					
+ANR	42083	ArgumentList	data		42008	1					
+ANR	42084	Argument	data		42008	0					
+ANR	42085	Identifier	data		42008	0					
+ANR	42086	ReturnType	static void		42008	1					
+ANR	42087	Identifier	goodG2B2		42008	2					
+ANR	42088	ParameterList			42008	3					
+ANR	42089	CFGEntryNode	ENTRY		42008		True				
+ANR	42090	CFGExitNode	EXIT		42008		True				
+ANR	42091	Symbol	malloc		42008						
+ANR	42092	Symbol	NULL		42008						
+ANR	42093	Symbol	data		42008						
+ANR	42094	Symbol	GLOBAL_CONST_TRUE		42008						
+ANR	42095	Function	CWE416_Use_After_Free__malloc_free_wchar_t_09_good	152:0:4601:4731							
+ANR	42096	FunctionDef	CWE416_Use_After_Free__malloc_free_wchar_t_09_good ()		42095	0					
+ANR	42097	CompoundStatement		153:0:4660:4731	42095	0					
+ANR	42098	ExpressionStatement	goodB2G1 ( )	154:4:4667:4677	42095	0	True				
+ANR	42099	CallExpression	goodB2G1 ( )		42095	0					
+ANR	42100	Callee	goodB2G1		42095	0					
+ANR	42101	Identifier	goodB2G1		42095	0					
+ANR	42102	ArgumentList			42095	1					
+ANR	42103	ExpressionStatement	goodB2G2 ( )	155:4:4684:4694	42095	1	True				
+ANR	42104	CallExpression	goodB2G2 ( )		42095	0					
+ANR	42105	Callee	goodB2G2		42095	0					
+ANR	42106	Identifier	goodB2G2		42095	0					
+ANR	42107	ArgumentList			42095	1					
+ANR	42108	ExpressionStatement	goodG2B1 ( )	156:4:4701:4711	42095	2	True				
+ANR	42109	CallExpression	goodG2B1 ( )		42095	0					
+ANR	42110	Callee	goodG2B1		42095	0					
+ANR	42111	Identifier	goodG2B1		42095	0					
+ANR	42112	ArgumentList			42095	1					
+ANR	42113	ExpressionStatement	goodG2B2 ( )	157:4:4718:4728	42095	3	True				
+ANR	42114	CallExpression	goodG2B2 ( )		42095	0					
+ANR	42115	Callee	goodG2B2		42095	0					
+ANR	42116	Identifier	goodG2B2		42095	0					
+ANR	42117	ArgumentList			42095	1					
+ANR	42118	ReturnType	void		42095	1					
+ANR	42119	Identifier	CWE416_Use_After_Free__malloc_free_wchar_t_09_good		42095	2					
+ANR	42120	ParameterList			42095	3					
+ANR	42121	CFGEntryNode	ENTRY		42095		True				
+ANR	42122	CFGExitNode	EXIT		42095		True				
+ANR	42123	Function	main	169:0:5078:5533							
+ANR	42124	FunctionDef	"main (int argc , char * argv [ ])"		42123	0					
+ANR	42125	CompoundStatement		170:0:5113:5533	42123	0					
+ANR	42126	ExpressionStatement	srand ( ( unsigned ) time ( NULL ) )	172:4:5147:5176	42123	0	True				
+ANR	42127	CallExpression	srand ( ( unsigned ) time ( NULL ) )		42123	0					
+ANR	42128	Callee	srand		42123	0					
+ANR	42129	Identifier	srand		42123	0					
+ANR	42130	ArgumentList	( unsigned ) time ( NULL )		42123	1					
+ANR	42131	Argument	( unsigned ) time ( NULL )		42123	0					
+ANR	42132	CastExpression	( unsigned ) time ( NULL )		42123	0					
+ANR	42133	CastTarget	unsigned		42123	0					
+ANR	42134	CallExpression	time ( NULL )		42123	1					
+ANR	42135	Callee	time		42123	0					
+ANR	42136	Identifier	time		42123	0					
+ANR	42137	ArgumentList	NULL		42123	1					
+ANR	42138	Argument	NULL		42123	0					
+ANR	42139	Identifier	NULL		42123	0					
+ANR	42140	ExpressionStatement	"printLine ( ""Calling good()..."" )"	174:4:5201:5231	42123	1	True				
+ANR	42141	CallExpression	"printLine ( ""Calling good()..."" )"		42123	0					
+ANR	42142	Callee	printLine		42123	0					
+ANR	42143	Identifier	printLine		42123	0					
+ANR	42144	ArgumentList	"""Calling good()..."""		42123	1					
+ANR	42145	Argument	"""Calling good()..."""		42123	0					
+ANR	42146	PrimaryExpression	"""Calling good()..."""		42123	0					
+ANR	42147	ExpressionStatement	CWE416_Use_After_Free__malloc_free_wchar_t_09_good ( )	175:4:5238:5290	42123	2	True				
+ANR	42148	CallExpression	CWE416_Use_After_Free__malloc_free_wchar_t_09_good ( )		42123	0					
+ANR	42149	Callee	CWE416_Use_After_Free__malloc_free_wchar_t_09_good		42123	0					
+ANR	42150	Identifier	CWE416_Use_After_Free__malloc_free_wchar_t_09_good		42123	0					
+ANR	42151	ArgumentList			42123	1					
+ANR	42152	ExpressionStatement	"printLine ( ""Finished good()"" )"	176:4:5297:5325	42123	3	True				
+ANR	42153	CallExpression	"printLine ( ""Finished good()"" )"		42123	0					
+ANR	42154	Callee	printLine		42123	0					
+ANR	42155	Identifier	printLine		42123	0					
+ANR	42156	ArgumentList	"""Finished good()"""		42123	1					
+ANR	42157	Argument	"""Finished good()"""		42123	0					
+ANR	42158	PrimaryExpression	"""Finished good()"""		42123	0					
+ANR	42159	ExpressionStatement	"printLine ( ""Calling bad()..."" )"	179:4:5372:5401	42123	4	True				
+ANR	42160	CallExpression	"printLine ( ""Calling bad()..."" )"		42123	0					
+ANR	42161	Callee	printLine		42123	0					
+ANR	42162	Identifier	printLine		42123	0					
+ANR	42163	ArgumentList	"""Calling bad()..."""		42123	1					
+ANR	42164	Argument	"""Calling bad()..."""		42123	0					
+ANR	42165	PrimaryExpression	"""Calling bad()..."""		42123	0					
+ANR	42166	ExpressionStatement	CWE416_Use_After_Free__malloc_free_wchar_t_09_bad ( )	180:4:5408:5459	42123	5	True				
+ANR	42167	CallExpression	CWE416_Use_After_Free__malloc_free_wchar_t_09_bad ( )		42123	0					
+ANR	42168	Callee	CWE416_Use_After_Free__malloc_free_wchar_t_09_bad		42123	0					
+ANR	42169	Identifier	CWE416_Use_After_Free__malloc_free_wchar_t_09_bad		42123	0					
+ANR	42170	ArgumentList			42123	1					
+ANR	42171	ExpressionStatement	"printLine ( ""Finished bad()"" )"	181:4:5466:5493	42123	6	True				
+ANR	42172	CallExpression	"printLine ( ""Finished bad()"" )"		42123	0					
+ANR	42173	Callee	printLine		42123	0					
+ANR	42174	Identifier	printLine		42123	0					
+ANR	42175	ArgumentList	"""Finished bad()"""		42123	1					
+ANR	42176	Argument	"""Finished bad()"""		42123	0					
+ANR	42177	PrimaryExpression	"""Finished bad()"""		42123	0					
+ANR	42178	ReturnStatement	return 0 ;	183:4:5522:5530	42123	7	True				
+ANR	42179	PrimaryExpression	0		42123	0					
+ANR	42180	ReturnType	int		42123	1					
+ANR	42181	Identifier	main		42123	2					
+ANR	42182	ParameterList	"int argc , char * argv [ ]"		42123	3					
+ANR	42183	Parameter	int argc	169:9:5087:5094	42123	0	True				
+ANR	42184	ParameterType	int		42123	0					
+ANR	42185	Identifier	argc		42123	1					
+ANR	42186	Parameter	char * argv [ ]	169:19:5097:5109	42123	1	True				
+ANR	42187	ParameterType	char * [ ]		42123	0					
+ANR	42188	Identifier	argv		42123	1					
+ANR	42189	CFGEntryNode	ENTRY		42123		True				
+ANR	42190	CFGExitNode	EXIT		42123		True				
+ANR	42191	Symbol	argc		42123						
+ANR	42192	Symbol	NULL		42123						
+ANR	42193	Symbol	time		42123						
+ANR	42194	Symbol	argv		42123						

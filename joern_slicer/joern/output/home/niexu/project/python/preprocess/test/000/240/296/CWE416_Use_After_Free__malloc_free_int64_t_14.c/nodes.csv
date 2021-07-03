@@ -1,0 +1,618 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	3050	File	/home/niexu/project/python/preprocess/test/000/240/296/CWE416_Use_After_Free__malloc_free_int64_t_14.c								
+ANR	3051	Function	CWE416_Use_After_Free__malloc_free_int64_t_14_bad	24:0:658:1401							
+ANR	3052	FunctionDef	CWE416_Use_After_Free__malloc_free_int64_t_14_bad ()		3051	0					
+ANR	3053	CompoundStatement		25:0:716:1401	3051	0					
+ANR	3054	IdentifierDeclStatement	int64_t * data ;	26:4:723:737	3051	0	True				
+ANR	3055	IdentifierDecl	* data		3051	0					
+ANR	3056	IdentifierDeclType	int64_t *		3051	0					
+ANR	3057	Identifier	data		3051	1					
+ANR	3058	ExpressionStatement	data = NULL	28:4:771:782	3051	1	True				
+ANR	3059	AssignmentExpression	data = NULL		3051	0		=			
+ANR	3060	Identifier	data		3051	0					
+ANR	3061	Identifier	NULL		3051	1					
+ANR	3062	IfStatement	if ( globalFive == 5 )		3051	2					
+ANR	3063	Condition	globalFive == 5	29:7:792:804	3051	0	True				
+ANR	3064	EqualityExpression	globalFive == 5		3051	0		==			
+ANR	3065	Identifier	globalFive		3051	0					
+ANR	3066	PrimaryExpression	5		3051	1					
+ANR	3067	CompoundStatement		6:4:95:95	3051	1					
+ANR	3068	ExpressionStatement	data = ( int64_t * ) malloc ( 100 * sizeof ( int64_t ) )	31:8:823:868	3051	0	True				
+ANR	3069	AssignmentExpression	data = ( int64_t * ) malloc ( 100 * sizeof ( int64_t ) )		3051	0		=			
+ANR	3070	Identifier	data		3051	0					
+ANR	3071	CastExpression	( int64_t * ) malloc ( 100 * sizeof ( int64_t ) )		3051	1					
+ANR	3072	CastTarget	int64_t *		3051	0					
+ANR	3073	CallExpression	malloc ( 100 * sizeof ( int64_t ) )		3051	1					
+ANR	3074	Callee	malloc		3051	0					
+ANR	3075	Identifier	malloc		3051	0					
+ANR	3076	ArgumentList	100 * sizeof ( int64_t )		3051	1					
+ANR	3077	Argument	100 * sizeof ( int64_t )		3051	0					
+ANR	3078	MultiplicativeExpression	100 * sizeof ( int64_t )		3051	0		*			
+ANR	3079	PrimaryExpression	100		3051	0					
+ANR	3080	SizeofExpression	sizeof ( int64_t )		3051	1					
+ANR	3081	Sizeof	sizeof		3051	0					
+ANR	3082	SizeofOperand	int64_t		3051	1					
+ANR	3083	IfStatement	if ( data == NULL )		3051	1					
+ANR	3084	Condition	data == NULL	32:12:883:894	3051	0	True				
+ANR	3085	EqualityExpression	data == NULL		3051	0		==			
+ANR	3086	Identifier	data		3051	0					
+ANR	3087	Identifier	NULL		3051	1					
+ANR	3088	CompoundStatement		8:26:180:180	3051	1					
+ANR	3089	ExpressionStatement	exit ( - 1 )	32:27:898:906	3051	0	True				
+ANR	3090	CallExpression	exit ( - 1 )		3051	0					
+ANR	3091	Callee	exit		3051	0					
+ANR	3092	Identifier	exit		3051	0					
+ANR	3093	ArgumentList	- 1		3051	1					
+ANR	3094	Argument	- 1		3051	0					
+ANR	3095	UnaryOperationExpression	- 1		3051	0					
+ANR	3096	UnaryOperator	-		3051	0					
+ANR	3097	PrimaryExpression	1		3051	1					
+ANR	3098	CompoundStatement		10:12:215:223	3051	2					
+ANR	3099	IdentifierDeclStatement	size_t i ;	34:12:932:940	3051	0	True				
+ANR	3100	IdentifierDecl	i		3051	0					
+ANR	3101	IdentifierDeclType	size_t		3051	0					
+ANR	3102	Identifier	i		3051	1					
+ANR	3103	ForStatement	for ( i = 0 ; i < 100 ; i ++ )		3051	1					
+ANR	3104	ForInit	i = 0 ;	35:16:959:964	3051	0	True				
+ANR	3105	AssignmentExpression	i = 0		3051	0		=			
+ANR	3106	Identifier	i		3051	0					
+ANR	3107	PrimaryExpression	0		3051	1					
+ANR	3108	Condition	i < 100	35:23:966:972	3051	1	True				
+ANR	3109	RelationalExpression	i < 100		3051	0		<			
+ANR	3110	Identifier	i		3051	0					
+ANR	3111	PrimaryExpression	100		3051	1					
+ANR	3112	PostIncDecOperationExpression	i ++	35:32:975:977	3051	2	True				
+ANR	3113	Identifier	i		3051	0					
+ANR	3114	IncDec	++		3051	1					
+ANR	3115	CompoundStatement		12:12:276:276	3051	3					
+ANR	3116	Statement	data	37:16:1012:1015	3051	0	True				
+ANR	3117	Statement	[	37:20:1016:1016	3051	1	True				
+ANR	3118	Statement	i	37:21:1017:1017	3051	2	True				
+ANR	3119	Statement	]	37:22:1018:1018	3051	3	True				
+ANR	3120	Statement	=	37:24:1020:1020	3051	4	True				
+ANR	3121	Statement	5L	37:26:1022:1023	3051	5	True				
+ANR	3122	ExpressionStatement	L	37:28:1024:1025	3051	6	True				
+ANR	3123	Identifier	L		3051	0					
+ANR	3124	ExpressionStatement	free ( data )	41:8:1153:1163	3051	3	True				
+ANR	3125	CallExpression	free ( data )		3051	0					
+ANR	3126	Callee	free		3051	0					
+ANR	3127	Identifier	free		3051	0					
+ANR	3128	ArgumentList	data		3051	1					
+ANR	3129	Argument	data		3051	0					
+ANR	3130	Identifier	data		3051	0					
+ANR	3131	IfStatement	if ( globalFive == 5 )		3051	3					
+ANR	3132	Condition	globalFive == 5	43:7:1180:1192	3051	0	True				
+ANR	3133	EqualityExpression	globalFive == 5		3051	0		==			
+ANR	3134	Identifier	globalFive		3051	0					
+ANR	3135	PrimaryExpression	5		3051	1					
+ANR	3136	CompoundStatement		20:4:483:483	3051	1					
+ANR	3137	ExpressionStatement	printLongLongLine ( data [ 0 ] )	46:8:1279:1305	3051	0	True				
+ANR	3138	CallExpression	printLongLongLine ( data [ 0 ] )		3051	0					
+ANR	3139	Callee	printLongLongLine		3051	0					
+ANR	3140	Identifier	printLongLongLine		3051	0					
+ANR	3141	ArgumentList	data [ 0 ]		3051	1					
+ANR	3142	Argument	data [ 0 ]		3051	0					
+ANR	3143	ArrayIndexing	data [ 0 ]		3051	0					
+ANR	3144	Identifier	data		3051	0					
+ANR	3145	PrimaryExpression	0		3051	1					
+ANR	3146	ReturnType	void		3051	1					
+ANR	3147	Identifier	CWE416_Use_After_Free__malloc_free_int64_t_14_bad		3051	2					
+ANR	3148	ParameterList			3051	3					
+ANR	3149	CFGEntryNode	ENTRY		3051		True				
+ANR	3150	CFGExitNode	EXIT		3051		True				
+ANR	3151	Symbol	malloc		3051						
+ANR	3152	Symbol	NULL		3051						
+ANR	3153	Symbol	data		3051						
+ANR	3154	Symbol	i		3051						
+ANR	3155	Symbol	globalFive		3051						
+ANR	3156	Symbol	* data		3051						
+ANR	3157	Function	goodB2G1	56:0:1551:2456							
+ANR	3158	FunctionDef	goodB2G1 ()		3157	0					
+ANR	3159	CompoundStatement		57:0:1575:2456	3157	0					
+ANR	3160	IdentifierDeclStatement	int64_t * data ;	58:4:1582:1596	3157	0	True				
+ANR	3161	IdentifierDecl	* data		3157	0					
+ANR	3162	IdentifierDeclType	int64_t *		3157	0					
+ANR	3163	Identifier	data		3157	1					
+ANR	3164	ExpressionStatement	data = NULL	60:4:1630:1641	3157	1	True				
+ANR	3165	AssignmentExpression	data = NULL		3157	0		=			
+ANR	3166	Identifier	data		3157	0					
+ANR	3167	Identifier	NULL		3157	1					
+ANR	3168	IfStatement	if ( globalFive == 5 )		3157	2					
+ANR	3169	Condition	globalFive == 5	61:7:1651:1663	3157	0	True				
+ANR	3170	EqualityExpression	globalFive == 5		3157	0		==			
+ANR	3171	Identifier	globalFive		3157	0					
+ANR	3172	PrimaryExpression	5		3157	1					
+ANR	3173	CompoundStatement		6:4:95:95	3157	1					
+ANR	3174	ExpressionStatement	data = ( int64_t * ) malloc ( 100 * sizeof ( int64_t ) )	63:8:1682:1727	3157	0	True				
+ANR	3175	AssignmentExpression	data = ( int64_t * ) malloc ( 100 * sizeof ( int64_t ) )		3157	0		=			
+ANR	3176	Identifier	data		3157	0					
+ANR	3177	CastExpression	( int64_t * ) malloc ( 100 * sizeof ( int64_t ) )		3157	1					
+ANR	3178	CastTarget	int64_t *		3157	0					
+ANR	3179	CallExpression	malloc ( 100 * sizeof ( int64_t ) )		3157	1					
+ANR	3180	Callee	malloc		3157	0					
+ANR	3181	Identifier	malloc		3157	0					
+ANR	3182	ArgumentList	100 * sizeof ( int64_t )		3157	1					
+ANR	3183	Argument	100 * sizeof ( int64_t )		3157	0					
+ANR	3184	MultiplicativeExpression	100 * sizeof ( int64_t )		3157	0		*			
+ANR	3185	PrimaryExpression	100		3157	0					
+ANR	3186	SizeofExpression	sizeof ( int64_t )		3157	1					
+ANR	3187	Sizeof	sizeof		3157	0					
+ANR	3188	SizeofOperand	int64_t		3157	1					
+ANR	3189	IfStatement	if ( data == NULL )		3157	1					
+ANR	3190	Condition	data == NULL	64:12:1742:1753	3157	0	True				
+ANR	3191	EqualityExpression	data == NULL		3157	0		==			
+ANR	3192	Identifier	data		3157	0					
+ANR	3193	Identifier	NULL		3157	1					
+ANR	3194	CompoundStatement		8:26:180:180	3157	1					
+ANR	3195	ExpressionStatement	exit ( - 1 )	64:27:1757:1765	3157	0	True				
+ANR	3196	CallExpression	exit ( - 1 )		3157	0					
+ANR	3197	Callee	exit		3157	0					
+ANR	3198	Identifier	exit		3157	0					
+ANR	3199	ArgumentList	- 1		3157	1					
+ANR	3200	Argument	- 1		3157	0					
+ANR	3201	UnaryOperationExpression	- 1		3157	0					
+ANR	3202	UnaryOperator	-		3157	0					
+ANR	3203	PrimaryExpression	1		3157	1					
+ANR	3204	CompoundStatement		10:12:215:223	3157	2					
+ANR	3205	IdentifierDeclStatement	size_t i ;	66:12:1791:1799	3157	0	True				
+ANR	3206	IdentifierDecl	i		3157	0					
+ANR	3207	IdentifierDeclType	size_t		3157	0					
+ANR	3208	Identifier	i		3157	1					
+ANR	3209	ForStatement	for ( i = 0 ; i < 100 ; i ++ )		3157	1					
+ANR	3210	ForInit	i = 0 ;	67:16:1818:1823	3157	0	True				
+ANR	3211	AssignmentExpression	i = 0		3157	0		=			
+ANR	3212	Identifier	i		3157	0					
+ANR	3213	PrimaryExpression	0		3157	1					
+ANR	3214	Condition	i < 100	67:23:1825:1831	3157	1	True				
+ANR	3215	RelationalExpression	i < 100		3157	0		<			
+ANR	3216	Identifier	i		3157	0					
+ANR	3217	PrimaryExpression	100		3157	1					
+ANR	3218	PostIncDecOperationExpression	i ++	67:32:1834:1836	3157	2	True				
+ANR	3219	Identifier	i		3157	0					
+ANR	3220	IncDec	++		3157	1					
+ANR	3221	CompoundStatement		12:12:276:276	3157	3					
+ANR	3222	Statement	data	69:16:1871:1874	3157	0	True				
+ANR	3223	Statement	[	69:20:1875:1875	3157	1	True				
+ANR	3224	Statement	i	69:21:1876:1876	3157	2	True				
+ANR	3225	Statement	]	69:22:1877:1877	3157	3	True				
+ANR	3226	Statement	=	69:24:1879:1879	3157	4	True				
+ANR	3227	Statement	5L	69:26:1881:1882	3157	5	True				
+ANR	3228	ExpressionStatement	L	69:28:1883:1884	3157	6	True				
+ANR	3229	Identifier	L		3157	0					
+ANR	3230	ExpressionStatement	free ( data )	73:8:2012:2022	3157	3	True				
+ANR	3231	CallExpression	free ( data )		3157	0					
+ANR	3232	Callee	free		3157	0					
+ANR	3233	Identifier	free		3157	0					
+ANR	3234	ArgumentList	data		3157	1					
+ANR	3235	Argument	data		3157	0					
+ANR	3236	Identifier	data		3157	0					
+ANR	3237	IfStatement	if ( globalFive != 5 )		3157	3					
+ANR	3238	Condition	globalFive != 5	75:7:2039:2051	3157	0	True				
+ANR	3239	EqualityExpression	globalFive != 5		3157	0		!=			
+ANR	3240	Identifier	globalFive		3157	0					
+ANR	3241	PrimaryExpression	5		3157	1					
+ANR	3242	CompoundStatement		20:4:483:483	3157	1					
+ANR	3243	ExpressionStatement	"printLine ( ""Benign, fixed string"" )"	78:8:2146:2179	3157	0	True				
+ANR	3244	CallExpression	"printLine ( ""Benign, fixed string"" )"		3157	0					
+ANR	3245	Callee	printLine		3157	0					
+ANR	3246	Identifier	printLine		3157	0					
+ANR	3247	ArgumentList	"""Benign, fixed string"""		3157	1					
+ANR	3248	Argument	"""Benign, fixed string"""		3157	0					
+ANR	3249	PrimaryExpression	"""Benign, fixed string"""		3157	0					
+ANR	3250	ElseStatement	else		3157	0					
+ANR	3251	CompoundStatement		25:4:627:627	3157	0					
+ANR	3252	ExpressionStatement		85:8:2394:2394	3157	0	True				
+ANR	3253	ReturnType	static void		3157	1					
+ANR	3254	Identifier	goodB2G1		3157	2					
+ANR	3255	ParameterList			3157	3					
+ANR	3256	CFGEntryNode	ENTRY		3157		True				
+ANR	3257	CFGExitNode	EXIT		3157		True				
+ANR	3258	Symbol	malloc		3157						
+ANR	3259	Symbol	NULL		3157						
+ANR	3260	Symbol	data		3157						
+ANR	3261	Symbol	i		3157						
+ANR	3262	Symbol	globalFive		3157						
+ANR	3263	Function	goodB2G2	90:0:2549:3310							
+ANR	3264	FunctionDef	goodB2G2 ()		3263	0					
+ANR	3265	CompoundStatement		91:0:2573:3310	3263	0					
+ANR	3266	IdentifierDeclStatement	int64_t * data ;	92:4:2580:2594	3263	0	True				
+ANR	3267	IdentifierDecl	* data		3263	0					
+ANR	3268	IdentifierDeclType	int64_t *		3263	0					
+ANR	3269	Identifier	data		3263	1					
+ANR	3270	ExpressionStatement	data = NULL	94:4:2628:2639	3263	1	True				
+ANR	3271	AssignmentExpression	data = NULL		3263	0		=			
+ANR	3272	Identifier	data		3263	0					
+ANR	3273	Identifier	NULL		3263	1					
+ANR	3274	IfStatement	if ( globalFive == 5 )		3263	2					
+ANR	3275	Condition	globalFive == 5	95:7:2649:2661	3263	0	True				
+ANR	3276	EqualityExpression	globalFive == 5		3263	0		==			
+ANR	3277	Identifier	globalFive		3263	0					
+ANR	3278	PrimaryExpression	5		3263	1					
+ANR	3279	CompoundStatement		6:4:95:95	3263	1					
+ANR	3280	ExpressionStatement	data = ( int64_t * ) malloc ( 100 * sizeof ( int64_t ) )	97:8:2680:2725	3263	0	True				
+ANR	3281	AssignmentExpression	data = ( int64_t * ) malloc ( 100 * sizeof ( int64_t ) )		3263	0		=			
+ANR	3282	Identifier	data		3263	0					
+ANR	3283	CastExpression	( int64_t * ) malloc ( 100 * sizeof ( int64_t ) )		3263	1					
+ANR	3284	CastTarget	int64_t *		3263	0					
+ANR	3285	CallExpression	malloc ( 100 * sizeof ( int64_t ) )		3263	1					
+ANR	3286	Callee	malloc		3263	0					
+ANR	3287	Identifier	malloc		3263	0					
+ANR	3288	ArgumentList	100 * sizeof ( int64_t )		3263	1					
+ANR	3289	Argument	100 * sizeof ( int64_t )		3263	0					
+ANR	3290	MultiplicativeExpression	100 * sizeof ( int64_t )		3263	0		*			
+ANR	3291	PrimaryExpression	100		3263	0					
+ANR	3292	SizeofExpression	sizeof ( int64_t )		3263	1					
+ANR	3293	Sizeof	sizeof		3263	0					
+ANR	3294	SizeofOperand	int64_t		3263	1					
+ANR	3295	IfStatement	if ( data == NULL )		3263	1					
+ANR	3296	Condition	data == NULL	98:12:2740:2751	3263	0	True				
+ANR	3297	EqualityExpression	data == NULL		3263	0		==			
+ANR	3298	Identifier	data		3263	0					
+ANR	3299	Identifier	NULL		3263	1					
+ANR	3300	CompoundStatement		8:26:180:180	3263	1					
+ANR	3301	ExpressionStatement	exit ( - 1 )	98:27:2755:2763	3263	0	True				
+ANR	3302	CallExpression	exit ( - 1 )		3263	0					
+ANR	3303	Callee	exit		3263	0					
+ANR	3304	Identifier	exit		3263	0					
+ANR	3305	ArgumentList	- 1		3263	1					
+ANR	3306	Argument	- 1		3263	0					
+ANR	3307	UnaryOperationExpression	- 1		3263	0					
+ANR	3308	UnaryOperator	-		3263	0					
+ANR	3309	PrimaryExpression	1		3263	1					
+ANR	3310	CompoundStatement		10:12:215:223	3263	2					
+ANR	3311	IdentifierDeclStatement	size_t i ;	100:12:2789:2797	3263	0	True				
+ANR	3312	IdentifierDecl	i		3263	0					
+ANR	3313	IdentifierDeclType	size_t		3263	0					
+ANR	3314	Identifier	i		3263	1					
+ANR	3315	ForStatement	for ( i = 0 ; i < 100 ; i ++ )		3263	1					
+ANR	3316	ForInit	i = 0 ;	101:16:2816:2821	3263	0	True				
+ANR	3317	AssignmentExpression	i = 0		3263	0		=			
+ANR	3318	Identifier	i		3263	0					
+ANR	3319	PrimaryExpression	0		3263	1					
+ANR	3320	Condition	i < 100	101:23:2823:2829	3263	1	True				
+ANR	3321	RelationalExpression	i < 100		3263	0		<			
+ANR	3322	Identifier	i		3263	0					
+ANR	3323	PrimaryExpression	100		3263	1					
+ANR	3324	PostIncDecOperationExpression	i ++	101:32:2832:2834	3263	2	True				
+ANR	3325	Identifier	i		3263	0					
+ANR	3326	IncDec	++		3263	1					
+ANR	3327	CompoundStatement		12:12:276:276	3263	3					
+ANR	3328	Statement	data	103:16:2869:2872	3263	0	True				
+ANR	3329	Statement	[	103:20:2873:2873	3263	1	True				
+ANR	3330	Statement	i	103:21:2874:2874	3263	2	True				
+ANR	3331	Statement	]	103:22:2875:2875	3263	3	True				
+ANR	3332	Statement	=	103:24:2877:2877	3263	4	True				
+ANR	3333	Statement	5L	103:26:2879:2880	3263	5	True				
+ANR	3334	ExpressionStatement	L	103:28:2881:2882	3263	6	True				
+ANR	3335	Identifier	L		3263	0					
+ANR	3336	ExpressionStatement	free ( data )	107:8:3010:3020	3263	3	True				
+ANR	3337	CallExpression	free ( data )		3263	0					
+ANR	3338	Callee	free		3263	0					
+ANR	3339	Identifier	free		3263	0					
+ANR	3340	ArgumentList	data		3263	1					
+ANR	3341	Argument	data		3263	0					
+ANR	3342	Identifier	data		3263	0					
+ANR	3343	IfStatement	if ( globalFive == 5 )		3263	3					
+ANR	3344	Condition	globalFive == 5	109:7:3037:3049	3263	0	True				
+ANR	3345	EqualityExpression	globalFive == 5		3263	0		==			
+ANR	3346	Identifier	globalFive		3263	0					
+ANR	3347	PrimaryExpression	5		3263	1					
+ANR	3348	CompoundStatement		20:4:483:483	3263	1					
+ANR	3349	ExpressionStatement		114:8:3248:3248	3263	0	True				
+ANR	3350	ReturnType	static void		3263	1					
+ANR	3351	Identifier	goodB2G2		3263	2					
+ANR	3352	ParameterList			3263	3					
+ANR	3353	CFGEntryNode	ENTRY		3263		True				
+ANR	3354	CFGExitNode	EXIT		3263		True				
+ANR	3355	Symbol	malloc		3263						
+ANR	3356	Symbol	NULL		3263						
+ANR	3357	Symbol	data		3263						
+ANR	3358	Symbol	i		3263						
+ANR	3359	Symbol	globalFive		3263						
+ANR	3360	Function	goodG2B1	119:0:3415:4207							
+ANR	3361	FunctionDef	goodG2B1 ()		3360	0					
+ANR	3362	CompoundStatement		120:0:3439:4207	3360	0					
+ANR	3363	IdentifierDeclStatement	int64_t * data ;	121:4:3446:3460	3360	0	True				
+ANR	3364	IdentifierDecl	* data		3360	0					
+ANR	3365	IdentifierDeclType	int64_t *		3360	0					
+ANR	3366	Identifier	data		3360	1					
+ANR	3367	ExpressionStatement	data = NULL	123:4:3494:3505	3360	1	True				
+ANR	3368	AssignmentExpression	data = NULL		3360	0		=			
+ANR	3369	Identifier	data		3360	0					
+ANR	3370	Identifier	NULL		3360	1					
+ANR	3371	IfStatement	if ( globalFive != 5 )		3360	2					
+ANR	3372	Condition	globalFive != 5	124:7:3515:3527	3360	0	True				
+ANR	3373	EqualityExpression	globalFive != 5		3360	0		!=			
+ANR	3374	Identifier	globalFive		3360	0					
+ANR	3375	PrimaryExpression	5		3360	1					
+ANR	3376	CompoundStatement		6:4:95:95	3360	1					
+ANR	3377	ExpressionStatement	"printLine ( ""Benign, fixed string"" )"	127:8:3622:3655	3360	0	True				
+ANR	3378	CallExpression	"printLine ( ""Benign, fixed string"" )"		3360	0					
+ANR	3379	Callee	printLine		3360	0					
+ANR	3380	Identifier	printLine		3360	0					
+ANR	3381	ArgumentList	"""Benign, fixed string"""		3360	1					
+ANR	3382	Argument	"""Benign, fixed string"""		3360	0					
+ANR	3383	PrimaryExpression	"""Benign, fixed string"""		3360	0					
+ANR	3384	ElseStatement	else		3360	0					
+ANR	3385	CompoundStatement		11:4:239:239	3360	0					
+ANR	3386	ExpressionStatement	data = ( int64_t * ) malloc ( 100 * sizeof ( int64_t ) )	131:8:3690:3735	3360	0	True				
+ANR	3387	AssignmentExpression	data = ( int64_t * ) malloc ( 100 * sizeof ( int64_t ) )		3360	0		=			
+ANR	3388	Identifier	data		3360	0					
+ANR	3389	CastExpression	( int64_t * ) malloc ( 100 * sizeof ( int64_t ) )		3360	1					
+ANR	3390	CastTarget	int64_t *		3360	0					
+ANR	3391	CallExpression	malloc ( 100 * sizeof ( int64_t ) )		3360	1					
+ANR	3392	Callee	malloc		3360	0					
+ANR	3393	Identifier	malloc		3360	0					
+ANR	3394	ArgumentList	100 * sizeof ( int64_t )		3360	1					
+ANR	3395	Argument	100 * sizeof ( int64_t )		3360	0					
+ANR	3396	MultiplicativeExpression	100 * sizeof ( int64_t )		3360	0		*			
+ANR	3397	PrimaryExpression	100		3360	0					
+ANR	3398	SizeofExpression	sizeof ( int64_t )		3360	1					
+ANR	3399	Sizeof	sizeof		3360	0					
+ANR	3400	SizeofOperand	int64_t		3360	1					
+ANR	3401	IfStatement	if ( data == NULL )		3360	1					
+ANR	3402	Condition	data == NULL	132:12:3750:3761	3360	0	True				
+ANR	3403	EqualityExpression	data == NULL		3360	0		==			
+ANR	3404	Identifier	data		3360	0					
+ANR	3405	Identifier	NULL		3360	1					
+ANR	3406	CompoundStatement		13:26:324:324	3360	1					
+ANR	3407	ExpressionStatement	exit ( - 1 )	132:27:3765:3773	3360	0	True				
+ANR	3408	CallExpression	exit ( - 1 )		3360	0					
+ANR	3409	Callee	exit		3360	0					
+ANR	3410	Identifier	exit		3360	0					
+ANR	3411	ArgumentList	- 1		3360	1					
+ANR	3412	Argument	- 1		3360	0					
+ANR	3413	UnaryOperationExpression	- 1		3360	0					
+ANR	3414	UnaryOperator	-		3360	0					
+ANR	3415	PrimaryExpression	1		3360	1					
+ANR	3416	CompoundStatement		15:12:359:367	3360	2					
+ANR	3417	IdentifierDeclStatement	size_t i ;	134:12:3799:3807	3360	0	True				
+ANR	3418	IdentifierDecl	i		3360	0					
+ANR	3419	IdentifierDeclType	size_t		3360	0					
+ANR	3420	Identifier	i		3360	1					
+ANR	3421	ForStatement	for ( i = 0 ; i < 100 ; i ++ )		3360	1					
+ANR	3422	ForInit	i = 0 ;	135:16:3826:3831	3360	0	True				
+ANR	3423	AssignmentExpression	i = 0		3360	0		=			
+ANR	3424	Identifier	i		3360	0					
+ANR	3425	PrimaryExpression	0		3360	1					
+ANR	3426	Condition	i < 100	135:23:3833:3839	3360	1	True				
+ANR	3427	RelationalExpression	i < 100		3360	0		<			
+ANR	3428	Identifier	i		3360	0					
+ANR	3429	PrimaryExpression	100		3360	1					
+ANR	3430	PostIncDecOperationExpression	i ++	135:32:3842:3844	3360	2	True				
+ANR	3431	Identifier	i		3360	0					
+ANR	3432	IncDec	++		3360	1					
+ANR	3433	CompoundStatement		17:12:420:420	3360	3					
+ANR	3434	Statement	data	137:16:3879:3882	3360	0	True				
+ANR	3435	Statement	[	137:20:3883:3883	3360	1	True				
+ANR	3436	Statement	i	137:21:3884:3884	3360	2	True				
+ANR	3437	Statement	]	137:22:3885:3885	3360	3	True				
+ANR	3438	Statement	=	137:24:3887:3887	3360	4	True				
+ANR	3439	Statement	5L	137:26:3889:3890	3360	5	True				
+ANR	3440	ExpressionStatement	L	137:28:3891:3892	3360	6	True				
+ANR	3441	Identifier	L		3360	0					
+ANR	3442	IfStatement	if ( globalFive == 5 )		3360	3					
+ANR	3443	Condition	globalFive == 5	142:7:3986:3998	3360	0	True				
+ANR	3444	EqualityExpression	globalFive == 5		3360	0		==			
+ANR	3445	Identifier	globalFive		3360	0					
+ANR	3446	PrimaryExpression	5		3360	1					
+ANR	3447	CompoundStatement		24:4:566:566	3360	1					
+ANR	3448	ExpressionStatement	printLongLongLine ( data [ 0 ] )	145:8:4085:4111	3360	0	True				
+ANR	3449	CallExpression	printLongLongLine ( data [ 0 ] )		3360	0					
+ANR	3450	Callee	printLongLongLine		3360	0					
+ANR	3451	Identifier	printLongLongLine		3360	0					
+ANR	3452	ArgumentList	data [ 0 ]		3360	1					
+ANR	3453	Argument	data [ 0 ]		3360	0					
+ANR	3454	ArrayIndexing	data [ 0 ]		3360	0					
+ANR	3455	Identifier	data		3360	0					
+ANR	3456	PrimaryExpression	0		3360	1					
+ANR	3457	ReturnType	static void		3360	1					
+ANR	3458	Identifier	goodG2B1		3360	2					
+ANR	3459	ParameterList			3360	3					
+ANR	3460	CFGEntryNode	ENTRY		3360		True				
+ANR	3461	CFGExitNode	EXIT		3360		True				
+ANR	3462	Symbol	malloc		3360						
+ANR	3463	Symbol	NULL		3360						
+ANR	3464	Symbol	data		3360						
+ANR	3465	Symbol	i		3360						
+ANR	3466	Symbol	globalFive		3360						
+ANR	3467	Symbol	* data		3360						
+ANR	3468	Function	goodG2B2	151:0:4299:4947							
+ANR	3469	FunctionDef	goodG2B2 ()		3468	0					
+ANR	3470	CompoundStatement		152:0:4323:4947	3468	0					
+ANR	3471	IdentifierDeclStatement	int64_t * data ;	153:4:4330:4344	3468	0	True				
+ANR	3472	IdentifierDecl	* data		3468	0					
+ANR	3473	IdentifierDeclType	int64_t *		3468	0					
+ANR	3474	Identifier	data		3468	1					
+ANR	3475	ExpressionStatement	data = NULL	155:4:4378:4389	3468	1	True				
+ANR	3476	AssignmentExpression	data = NULL		3468	0		=			
+ANR	3477	Identifier	data		3468	0					
+ANR	3478	Identifier	NULL		3468	1					
+ANR	3479	IfStatement	if ( globalFive == 5 )		3468	2					
+ANR	3480	Condition	globalFive == 5	156:7:4399:4411	3468	0	True				
+ANR	3481	EqualityExpression	globalFive == 5		3468	0		==			
+ANR	3482	Identifier	globalFive		3468	0					
+ANR	3483	PrimaryExpression	5		3468	1					
+ANR	3484	CompoundStatement		6:4:95:95	3468	1					
+ANR	3485	ExpressionStatement	data = ( int64_t * ) malloc ( 100 * sizeof ( int64_t ) )	158:8:4430:4475	3468	0	True				
+ANR	3486	AssignmentExpression	data = ( int64_t * ) malloc ( 100 * sizeof ( int64_t ) )		3468	0		=			
+ANR	3487	Identifier	data		3468	0					
+ANR	3488	CastExpression	( int64_t * ) malloc ( 100 * sizeof ( int64_t ) )		3468	1					
+ANR	3489	CastTarget	int64_t *		3468	0					
+ANR	3490	CallExpression	malloc ( 100 * sizeof ( int64_t ) )		3468	1					
+ANR	3491	Callee	malloc		3468	0					
+ANR	3492	Identifier	malloc		3468	0					
+ANR	3493	ArgumentList	100 * sizeof ( int64_t )		3468	1					
+ANR	3494	Argument	100 * sizeof ( int64_t )		3468	0					
+ANR	3495	MultiplicativeExpression	100 * sizeof ( int64_t )		3468	0		*			
+ANR	3496	PrimaryExpression	100		3468	0					
+ANR	3497	SizeofExpression	sizeof ( int64_t )		3468	1					
+ANR	3498	Sizeof	sizeof		3468	0					
+ANR	3499	SizeofOperand	int64_t		3468	1					
+ANR	3500	IfStatement	if ( data == NULL )		3468	1					
+ANR	3501	Condition	data == NULL	159:12:4490:4501	3468	0	True				
+ANR	3502	EqualityExpression	data == NULL		3468	0		==			
+ANR	3503	Identifier	data		3468	0					
+ANR	3504	Identifier	NULL		3468	1					
+ANR	3505	CompoundStatement		8:26:180:180	3468	1					
+ANR	3506	ExpressionStatement	exit ( - 1 )	159:27:4505:4513	3468	0	True				
+ANR	3507	CallExpression	exit ( - 1 )		3468	0					
+ANR	3508	Callee	exit		3468	0					
+ANR	3509	Identifier	exit		3468	0					
+ANR	3510	ArgumentList	- 1		3468	1					
+ANR	3511	Argument	- 1		3468	0					
+ANR	3512	UnaryOperationExpression	- 1		3468	0					
+ANR	3513	UnaryOperator	-		3468	0					
+ANR	3514	PrimaryExpression	1		3468	1					
+ANR	3515	CompoundStatement		10:12:215:223	3468	2					
+ANR	3516	IdentifierDeclStatement	size_t i ;	161:12:4539:4547	3468	0	True				
+ANR	3517	IdentifierDecl	i		3468	0					
+ANR	3518	IdentifierDeclType	size_t		3468	0					
+ANR	3519	Identifier	i		3468	1					
+ANR	3520	ForStatement	for ( i = 0 ; i < 100 ; i ++ )		3468	1					
+ANR	3521	ForInit	i = 0 ;	162:16:4566:4571	3468	0	True				
+ANR	3522	AssignmentExpression	i = 0		3468	0		=			
+ANR	3523	Identifier	i		3468	0					
+ANR	3524	PrimaryExpression	0		3468	1					
+ANR	3525	Condition	i < 100	162:23:4573:4579	3468	1	True				
+ANR	3526	RelationalExpression	i < 100		3468	0		<			
+ANR	3527	Identifier	i		3468	0					
+ANR	3528	PrimaryExpression	100		3468	1					
+ANR	3529	PostIncDecOperationExpression	i ++	162:32:4582:4584	3468	2	True				
+ANR	3530	Identifier	i		3468	0					
+ANR	3531	IncDec	++		3468	1					
+ANR	3532	CompoundStatement		12:12:276:276	3468	3					
+ANR	3533	Statement	data	164:16:4619:4622	3468	0	True				
+ANR	3534	Statement	[	164:20:4623:4623	3468	1	True				
+ANR	3535	Statement	i	164:21:4624:4624	3468	2	True				
+ANR	3536	Statement	]	164:22:4625:4625	3468	3	True				
+ANR	3537	Statement	=	164:24:4627:4627	3468	4	True				
+ANR	3538	Statement	5L	164:26:4629:4630	3468	5	True				
+ANR	3539	ExpressionStatement	L	164:28:4631:4632	3468	6	True				
+ANR	3540	Identifier	L		3468	0					
+ANR	3541	IfStatement	if ( globalFive == 5 )		3468	3					
+ANR	3542	Condition	globalFive == 5	169:7:4726:4738	3468	0	True				
+ANR	3543	EqualityExpression	globalFive == 5		3468	0		==			
+ANR	3544	Identifier	globalFive		3468	0					
+ANR	3545	PrimaryExpression	5		3468	1					
+ANR	3546	CompoundStatement		19:4:422:422	3468	1					
+ANR	3547	ExpressionStatement	printLongLongLine ( data [ 0 ] )	172:8:4825:4851	3468	0	True				
+ANR	3548	CallExpression	printLongLongLine ( data [ 0 ] )		3468	0					
+ANR	3549	Callee	printLongLongLine		3468	0					
+ANR	3550	Identifier	printLongLongLine		3468	0					
+ANR	3551	ArgumentList	data [ 0 ]		3468	1					
+ANR	3552	Argument	data [ 0 ]		3468	0					
+ANR	3553	ArrayIndexing	data [ 0 ]		3468	0					
+ANR	3554	Identifier	data		3468	0					
+ANR	3555	PrimaryExpression	0		3468	1					
+ANR	3556	ReturnType	static void		3468	1					
+ANR	3557	Identifier	goodG2B2		3468	2					
+ANR	3558	ParameterList			3468	3					
+ANR	3559	CFGEntryNode	ENTRY		3468		True				
+ANR	3560	CFGExitNode	EXIT		3468		True				
+ANR	3561	Symbol	malloc		3468						
+ANR	3562	Symbol	NULL		3468						
+ANR	3563	Symbol	data		3468						
+ANR	3564	Symbol	i		3468						
+ANR	3565	Symbol	globalFive		3468						
+ANR	3566	Symbol	* data		3468						
+ANR	3567	Function	CWE416_Use_After_Free__malloc_free_int64_t_14_good	177:0:4952:5082							
+ANR	3568	FunctionDef	CWE416_Use_After_Free__malloc_free_int64_t_14_good ()		3567	0					
+ANR	3569	CompoundStatement		178:0:5011:5082	3567	0					
+ANR	3570	ExpressionStatement	goodB2G1 ( )	179:4:5018:5028	3567	0	True				
+ANR	3571	CallExpression	goodB2G1 ( )		3567	0					
+ANR	3572	Callee	goodB2G1		3567	0					
+ANR	3573	Identifier	goodB2G1		3567	0					
+ANR	3574	ArgumentList			3567	1					
+ANR	3575	ExpressionStatement	goodB2G2 ( )	180:4:5035:5045	3567	1	True				
+ANR	3576	CallExpression	goodB2G2 ( )		3567	0					
+ANR	3577	Callee	goodB2G2		3567	0					
+ANR	3578	Identifier	goodB2G2		3567	0					
+ANR	3579	ArgumentList			3567	1					
+ANR	3580	ExpressionStatement	goodG2B1 ( )	181:4:5052:5062	3567	2	True				
+ANR	3581	CallExpression	goodG2B1 ( )		3567	0					
+ANR	3582	Callee	goodG2B1		3567	0					
+ANR	3583	Identifier	goodG2B1		3567	0					
+ANR	3584	ArgumentList			3567	1					
+ANR	3585	ExpressionStatement	goodG2B2 ( )	182:4:5069:5079	3567	3	True				
+ANR	3586	CallExpression	goodG2B2 ( )		3567	0					
+ANR	3587	Callee	goodG2B2		3567	0					
+ANR	3588	Identifier	goodG2B2		3567	0					
+ANR	3589	ArgumentList			3567	1					
+ANR	3590	ReturnType	void		3567	1					
+ANR	3591	Identifier	CWE416_Use_After_Free__malloc_free_int64_t_14_good		3567	2					
+ANR	3592	ParameterList			3567	3					
+ANR	3593	CFGEntryNode	ENTRY		3567		True				
+ANR	3594	CFGExitNode	EXIT		3567		True				
+ANR	3595	Function	main	194:0:5429:5884							
+ANR	3596	FunctionDef	"main (int argc , char * argv [ ])"		3595	0					
+ANR	3597	CompoundStatement		195:0:5464:5884	3595	0					
+ANR	3598	ExpressionStatement	srand ( ( unsigned ) time ( NULL ) )	197:4:5498:5527	3595	0	True				
+ANR	3599	CallExpression	srand ( ( unsigned ) time ( NULL ) )		3595	0					
+ANR	3600	Callee	srand		3595	0					
+ANR	3601	Identifier	srand		3595	0					
+ANR	3602	ArgumentList	( unsigned ) time ( NULL )		3595	1					
+ANR	3603	Argument	( unsigned ) time ( NULL )		3595	0					
+ANR	3604	CastExpression	( unsigned ) time ( NULL )		3595	0					
+ANR	3605	CastTarget	unsigned		3595	0					
+ANR	3606	CallExpression	time ( NULL )		3595	1					
+ANR	3607	Callee	time		3595	0					
+ANR	3608	Identifier	time		3595	0					
+ANR	3609	ArgumentList	NULL		3595	1					
+ANR	3610	Argument	NULL		3595	0					
+ANR	3611	Identifier	NULL		3595	0					
+ANR	3612	ExpressionStatement	"printLine ( ""Calling good()..."" )"	199:4:5552:5582	3595	1	True				
+ANR	3613	CallExpression	"printLine ( ""Calling good()..."" )"		3595	0					
+ANR	3614	Callee	printLine		3595	0					
+ANR	3615	Identifier	printLine		3595	0					
+ANR	3616	ArgumentList	"""Calling good()..."""		3595	1					
+ANR	3617	Argument	"""Calling good()..."""		3595	0					
+ANR	3618	PrimaryExpression	"""Calling good()..."""		3595	0					
+ANR	3619	ExpressionStatement	CWE416_Use_After_Free__malloc_free_int64_t_14_good ( )	200:4:5589:5641	3595	2	True				
+ANR	3620	CallExpression	CWE416_Use_After_Free__malloc_free_int64_t_14_good ( )		3595	0					
+ANR	3621	Callee	CWE416_Use_After_Free__malloc_free_int64_t_14_good		3595	0					
+ANR	3622	Identifier	CWE416_Use_After_Free__malloc_free_int64_t_14_good		3595	0					
+ANR	3623	ArgumentList			3595	1					
+ANR	3624	ExpressionStatement	"printLine ( ""Finished good()"" )"	201:4:5648:5676	3595	3	True				
+ANR	3625	CallExpression	"printLine ( ""Finished good()"" )"		3595	0					
+ANR	3626	Callee	printLine		3595	0					
+ANR	3627	Identifier	printLine		3595	0					
+ANR	3628	ArgumentList	"""Finished good()"""		3595	1					
+ANR	3629	Argument	"""Finished good()"""		3595	0					
+ANR	3630	PrimaryExpression	"""Finished good()"""		3595	0					
+ANR	3631	ExpressionStatement	"printLine ( ""Calling bad()..."" )"	204:4:5723:5752	3595	4	True				
+ANR	3632	CallExpression	"printLine ( ""Calling bad()..."" )"		3595	0					
+ANR	3633	Callee	printLine		3595	0					
+ANR	3634	Identifier	printLine		3595	0					
+ANR	3635	ArgumentList	"""Calling bad()..."""		3595	1					
+ANR	3636	Argument	"""Calling bad()..."""		3595	0					
+ANR	3637	PrimaryExpression	"""Calling bad()..."""		3595	0					
+ANR	3638	ExpressionStatement	CWE416_Use_After_Free__malloc_free_int64_t_14_bad ( )	205:4:5759:5810	3595	5	True				
+ANR	3639	CallExpression	CWE416_Use_After_Free__malloc_free_int64_t_14_bad ( )		3595	0					
+ANR	3640	Callee	CWE416_Use_After_Free__malloc_free_int64_t_14_bad		3595	0					
+ANR	3641	Identifier	CWE416_Use_After_Free__malloc_free_int64_t_14_bad		3595	0					
+ANR	3642	ArgumentList			3595	1					
+ANR	3643	ExpressionStatement	"printLine ( ""Finished bad()"" )"	206:4:5817:5844	3595	6	True				
+ANR	3644	CallExpression	"printLine ( ""Finished bad()"" )"		3595	0					
+ANR	3645	Callee	printLine		3595	0					
+ANR	3646	Identifier	printLine		3595	0					
+ANR	3647	ArgumentList	"""Finished bad()"""		3595	1					
+ANR	3648	Argument	"""Finished bad()"""		3595	0					
+ANR	3649	PrimaryExpression	"""Finished bad()"""		3595	0					
+ANR	3650	ReturnStatement	return 0 ;	208:4:5873:5881	3595	7	True				
+ANR	3651	PrimaryExpression	0		3595	0					
+ANR	3652	ReturnType	int		3595	1					
+ANR	3653	Identifier	main		3595	2					
+ANR	3654	ParameterList	"int argc , char * argv [ ]"		3595	3					
+ANR	3655	Parameter	int argc	194:9:5438:5445	3595	0	True				
+ANR	3656	ParameterType	int		3595	0					
+ANR	3657	Identifier	argc		3595	1					
+ANR	3658	Parameter	char * argv [ ]	194:19:5448:5460	3595	1	True				
+ANR	3659	ParameterType	char * [ ]		3595	0					
+ANR	3660	Identifier	argv		3595	1					
+ANR	3661	CFGEntryNode	ENTRY		3595		True				
+ANR	3662	CFGExitNode	EXIT		3595		True				
+ANR	3663	Symbol	argc		3595						
+ANR	3664	Symbol	NULL		3595						
+ANR	3665	Symbol	time		3595						
+ANR	3666	Symbol	argv		3595						
